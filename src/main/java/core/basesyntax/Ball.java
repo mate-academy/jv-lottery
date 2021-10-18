@@ -32,7 +32,7 @@ public class Ball {
     public String toString() {
         return "Ball color: "
                 + getColor()
-                +", ball number: "
+                + ", ball number: "
                 + getNumber();
     }
 }
