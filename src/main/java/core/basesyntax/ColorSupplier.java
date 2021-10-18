@@ -1,4 +1,4 @@
-package core.basesyntax;
+package main.java.core.basesyntax;
 
 public class ColorSupplier {
     public String getRandomColor() {
