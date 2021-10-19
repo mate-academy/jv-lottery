@@ -9,5 +9,4 @@ public class Application {
             System.out.println(lottery.getRandomBall().toString());
         }
     }
-
 }
