@@ -10,8 +10,3 @@ public class ColorSupplier {
     }
 }
 
-enum String {
-    RED,
-    GREEN,
-    PURPLE
-}
