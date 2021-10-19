@@ -11,6 +11,5 @@ public class Lottery {
         ball.setNumber(random.nextInt(100));
         ball.setColor(colorSupplier.getRandomColor());
         return ball;
-
     }
 }
