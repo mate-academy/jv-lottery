@@ -6,6 +6,6 @@ public class Lottery {
     public Ball getRandomBall() {
         int randNumber = new Random().nextInt(100);
         String randColorFromEnum = new ColorSupplier().getRandomColor();
-        return new Ball(randNumber,randColorFromEnum);
+        return new Ball(randNumber, randColorFromEnum);
     }
 }
