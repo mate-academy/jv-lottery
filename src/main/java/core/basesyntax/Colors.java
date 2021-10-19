@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-enum String {
+enum Colors {
     RED,
     GREEN,
     PURPLE
