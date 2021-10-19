@@ -11,7 +11,10 @@ public class Ball {
 
     @Override
     public String toString() {
-        return String.format(number + " " + color);
+        return "Ball {"
+                + "color = '" + color + '\''
+                + ", number = " + number
+                + '}';
     }
 
     public int getNumber() {
