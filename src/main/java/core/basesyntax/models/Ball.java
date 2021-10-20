@@ -13,6 +13,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return String.format("Color - %s; Number - %d;", this.color.name(), number);
+        return "Color - " + this.color.name() + "; Number - " + number + ";");
     }
 }
