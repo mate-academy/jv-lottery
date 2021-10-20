@@ -9,11 +9,6 @@ public class Ball {
         this.color = color;
     }
 
-    public Ball(Ball ball) {
-        this.number = ball.getNumber();
-        this.color = ball.getColor();
-    }
-
     public int getNumber() {
         return number;
     }
