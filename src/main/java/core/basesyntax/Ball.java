@@ -28,7 +28,9 @@ public class Ball {
         return number;
     }
     
-    public void toString(Ball ball) {
-        System.out.println("Color - " + ball.color + ", number - " + ball.number);
+    public String toString() {
+        return "Ball{"
+                + "color=" + color
+                + ", number=" + number + "}";
     }
 }
