@@ -9,16 +9,16 @@ public class Ball {
         this.number = number;
     }
 
-    @Override
-    public String toString() {
-        return "Color: '" + color.toLowerCase() + '\'' + ", number: " + number;
-    }
-
     public String getColor() {
         return color;
     }
 
     public int getNumber() {
         return number;
+    }
+
+    @Override
+    public String toString() {
+        return "Color: '" + color.toLowerCase() + '\'' + ", number: " + number;
     }
 }
