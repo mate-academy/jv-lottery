@@ -27,4 +27,8 @@ public class Ball {
     public int getNumber() {
         return number;
     }
+    
+    public void toString(Ball ball) {
+        System.out.println("Color - " + ball.color + ", number - " + ball.number);
+    }
 }
