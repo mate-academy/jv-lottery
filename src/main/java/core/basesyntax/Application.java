@@ -5,9 +5,9 @@ public class Application {
         int i = 0;
         Ball ball = new Ball();
         while (i < 3) {
-        ball = new Lottery().getRandomBall();
-        ball.toString(ball);
-        i++;
+            ball = new Lottery().getRandomBall();
+            ball.toString(ball);
+            i++;
         }
     }
 }
