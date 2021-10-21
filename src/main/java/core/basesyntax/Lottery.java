@@ -12,5 +12,4 @@ public class Lottery {
         ball.setNumber(random.nextInt(100));
         return ball;
     }
-
 }
