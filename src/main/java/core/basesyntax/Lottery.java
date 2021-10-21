@@ -3,8 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    public static Ball getRandomBall() {
-        Ball randomBall = new Ball(ColorSupplier.getRandomColor(), new Random().nextInt(100));
-        return randomBall;
+    public Ball getRandomBall() {
+        ColorSupplier color = new ColorSupplier();
+        return new Ball(color.getRandomColor(), new Random().nextInt(100));
     }
 }
