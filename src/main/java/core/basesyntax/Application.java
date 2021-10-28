@@ -1,7 +1,15 @@
 package core.basesyntax;
 
+import static core.basesyntax.Lottery.getRandomBall;
+
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        Ball ball = getRandomBall();
+        Ball ball1 = getRandomBall();
+        Ball ball2 = getRandomBall();
+        Ball[] bollArray = new Ball[] {ball, ball1, ball2};
+        for (Ball bollForEach : bollArray) {
+            System.out.println(bollForEach);
+        }
     }
 }
