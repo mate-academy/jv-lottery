@@ -14,3 +14,5 @@ This method should create a ball with a random color and a random number (the ma
 
 To test the program, in main() method, create three balls using `getRandomBall()` method from `Lottery` class.
 And print information about them in the console.
+
+#### [Try to avoid these common mistakes, while solving task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/oop/lottery)
