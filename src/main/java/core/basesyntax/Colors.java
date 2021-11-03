@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public enum Colors {
 
     Green("Green"),
@@ -11,7 +9,7 @@ public enum Colors {
     Red("Red"),
     Blue("Blue");
 
-   private final String color;
+    private final String color;
 
     Colors(String color) {
         this.color = color;
@@ -20,8 +18,5 @@ public enum Colors {
     public String getColor() {
         return color;
     }
-
-
-
 
 }

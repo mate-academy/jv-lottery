@@ -4,9 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-
     public String getRandomColor() {
-
         Colors[] val = Colors.values();
         Colors randomColor;
         int rnd;
@@ -16,5 +14,6 @@ public class ColorSupplier {
 
         return randomColor.toString();
     }
+
 }
 
