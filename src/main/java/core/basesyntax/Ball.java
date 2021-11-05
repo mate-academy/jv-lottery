@@ -1,14 +1,32 @@
 package core.basesyntax;
 
 public class Ball {
+    private String color;
+    private int number;
 
-    private final ColorSupplier colorSupplier = new ColorSupplier();
-    private final Lottery lottery = new Lottery();
-    private String color = colorSupplier.getRandomColor();
-    private int number = lottery.getRandomBall();
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    @Override
     public String toString() {
-        String readyBall = color + " " + number;
-        return readyBall;
+        return String.format("Color: " + color + "\nNumber: " + number);
     }
 }
