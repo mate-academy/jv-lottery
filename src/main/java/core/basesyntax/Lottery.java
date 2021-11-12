@@ -14,6 +14,12 @@ public class Lottery extends ColorSupplier {
 
     @Override
     public String toString() {
-        return "Number: " + getRandomNumber() + "   Color: " + getRandomColor();
+        return "Ball{"
+                + "color='"
+                + getRandomColor()
+                + '\''
+                + ", number="
+                + getRandomNumber()
+                + '}';
     }
 }
