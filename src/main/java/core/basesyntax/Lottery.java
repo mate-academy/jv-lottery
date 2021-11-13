@@ -3,13 +3,13 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
-    public int getRandomNumber() {
-        Random random = new Random();
-        return random.nextInt(100);
-    }
+    private static final Integer MAX_BALL_VALUE = new Random().nextInt(100);
 
     public String getRandomBall() {
-        return "Number: " + getRandomNumber() + "   Color: " + getRandomColor();
+        return "Color: "
+                + getRandomColor()
+                + " Number: "
+                + MAX_BALL_VALUE;
     }
 
     @Override
@@ -19,7 +19,7 @@ public class Lottery extends ColorSupplier {
                 + getRandomColor()
                 + '\''
                 + ", number="
-                + getRandomNumber()
+                + MAX_BALL_VALUE
                 + '}';
     }
 }
