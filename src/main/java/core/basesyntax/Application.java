@@ -5,9 +5,9 @@ public class Application {
 
     public static void main(String[] args) {
         Ball[] balls = new Ball[NUMBER_OF_BALLS];
+        Lottery lottery = new Lottery();
         for (int i = 0; i < balls.length; i++) {
-            balls[i] = new Lottery().getRandomBall();
-            System.out.println(balls[i]);
+            System.out.println(lottery.getRandomBall());
         }
     }
 }
