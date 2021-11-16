@@ -7,8 +7,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        color = new ColorSupplier().getRandomColor().toString();
-        number = new Random().nextInt(100);
         return "Ball{"
                 + "color='" + color + '\''
                 + ", number=" + number
