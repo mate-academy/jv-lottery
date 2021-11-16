@@ -6,6 +6,7 @@ public class Application {
 
         Lottery[] randomThreeBalls = new Lottery[]{newBall, newBall, newBall};
         for (Lottery balls : randomThreeBalls) {
+
             System.out.println(balls.getRandomBall());
         }
 

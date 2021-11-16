@@ -2,24 +2,14 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery extends ColorSupplier {
-    private static final Integer MAX_BALL_VALUE = new Random().nextInt(100);
+public class Lottery extends Ball {
+    private static final int MAX_BALL_VALUE = new Random().nextInt(100);
+    private final ColorSupplier colorSupplier = new ColorSupplier();
 
-    public String getRandomBall() {
-        return "Color: "
-                + getRandomColor()
-                + " Number: "
-                + MAX_BALL_VALUE;
-    }
-
-    @Override
-    public String toString() {
-        return "Ball{"
-                + "color='"
-                + getRandomColor()
-                + '\''
-                + ", number="
-                + MAX_BALL_VALUE
-                + '}';
+    public Ball getRandomBall() {
+        Lottery newBall = new Lottery();
+        newBall.setColor(colorSupplier.getRandomColor().toString());
+        newBall.setNumber(MAX_BALL_VALUE);
+        return newBall;
     }
 }
