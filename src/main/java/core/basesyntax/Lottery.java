@@ -2,7 +2,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    public static String getRandomBall() {
+    public String getRandomBall() {
        Random random = new Random();
        Ball ball = new Ball();
        ball.color = new ColorSupplier().getRandomColor().toString();
