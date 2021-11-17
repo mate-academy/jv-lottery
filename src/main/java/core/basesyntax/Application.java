@@ -4,10 +4,8 @@ public class Application {
     public static void main(String[] args) {
         Lottery newBall = new Lottery();
 
-        Lottery[] randomThreeBalls = new Lottery[]{newBall, newBall, newBall};
-        for (Lottery balls : randomThreeBalls) {
-
-            System.out.println(balls.getRandomBall());
+        for (int i = 0; i < 3; i++) {
+            System.out.println(newBall.getRandomBall());
         }
 
     }
