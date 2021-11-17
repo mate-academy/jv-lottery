@@ -1,8 +1,7 @@
 package core.basesyntax;
-import java.util.Random;
 
 public class Ball {
-    public String color;
+    protected String color;
     public int number;
 
     @Override
