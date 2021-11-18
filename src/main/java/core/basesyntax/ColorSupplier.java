@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class ColorSupplier extends Ball {
+public class ColorSupplier {
     private final Random randomGenerationEnum = new Random();
 
     public DifferentColors getRandomColor() {
