@@ -6,13 +6,13 @@ public class Lottery {
     private Random random = new Random();
     private ColorSupplier param = new ColorSupplier();
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         Ball ball = new Ball();
         //int numb = random.nextInt(100);
         //String col = param.getRandomColor();
         //System.out.println(ball.toString(col,numb));
         ball.setNumber(random.nextInt(100));
         ball.setColor(param.getRandomColor());
-        return ball.toString();
+        return ball;
     }
 }
