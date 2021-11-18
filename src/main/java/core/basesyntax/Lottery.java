@@ -8,6 +8,6 @@ public class Lottery {
         ColorList color = colorSupplier.getRandomColorList();
         Random random = new Random();
         int value = random.nextInt(100);
-        return "Ball{" + "colorRandomOfEnum='" + color + '\'' + ", numberRandom=" + value + '}';
+        return "Ball{" + "colorRandomOfEnum ='" + color + '\'' + ", numberRandom =" + value + '}';
     }
 }
