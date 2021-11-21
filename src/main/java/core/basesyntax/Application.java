@@ -10,7 +10,8 @@ public class Application {
 
         for (Ball randomBall : balls) {
             randomBall = lottery.getRandomBall();
-            System.out.println("The ball number: " + randomBall.getNumber() + " has color: " + randomBall.getColor());
+            System.out.println("The ball number: " + randomBall.getNumber()
+                    + " has color: " + randomBall.getColor());
         }
     }
 }
