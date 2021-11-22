@@ -22,6 +22,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Ball number " + getNumber()
+                + " has color " + getColor();
     }
 }
