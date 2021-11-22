@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 public class Ball {
     private final int numberBall;
     private final String colorBall;
@@ -10,6 +11,7 @@ public class Ball {
     public String getColorBall() {
         return colorBall;
     }
+
     public Ball(String colorBall, int numberBall) {
         this.colorBall = colorBall;
         this.numberBall = numberBall;
