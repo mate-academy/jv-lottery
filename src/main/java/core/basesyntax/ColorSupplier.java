@@ -1,7 +1,12 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class ColorSupplier {
-    public String getRandomColor() {
-        return null;
+    private final Random randomGenerationEnum = new Random();
+
+    public DifferentColors getRandomColor() {
+        int index = randomGenerationEnum.nextInt(DifferentColors.values().length);
+        return DifferentColors.values()[index];
     }
 }
