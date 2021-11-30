@@ -1,7 +1,10 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class ColorSupplier {
-    public String getRandomColor() {
-        return null;
+    public DifColors getRandomColor() {
+        int index = new Random().nextInt(DifColors.values().length);
+        return DifColors.values()[index];
     }
 }
