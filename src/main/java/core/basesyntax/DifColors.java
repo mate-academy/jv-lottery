@@ -4,5 +4,6 @@ public enum DifColors {
     RED,
     GREEN,
     YELLOW,
-    WHITE
+    WHITE;
+
 }
