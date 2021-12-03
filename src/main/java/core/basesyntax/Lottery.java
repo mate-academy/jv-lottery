@@ -3,11 +3,12 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    public String getRandomBall() {
-        ColorSupplier colorSupplier = new ColorSupplier();
-        ColorList color = colorSupplier.getRandomColorList();
-        Random random = new Random();
-        int value = random.nextInt(100);
-        return "Ball{" + "colorRandomOfEnum ='" + color + '\'' + ", numberRandom =" + value + '}';
+    private final ColorSupplier colorSupplier = new ColorSupplier();
+    private final Random random = new Random();
+
+    public Ball getRandomBall() {
+        String color = colorSupplier.getRandomColor();
+        int number = random.nextInt(100);
+        return new Ball(color, number);
     }
 }
