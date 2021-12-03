@@ -1,9 +1,10 @@
 package core.basesyntax;
 
-public enum ColorList {
+public enum Color {
     RED,
     WHITE,
     GREEN,
     BLACK,
+    YELLOW,
     GREY
 }
