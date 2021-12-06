@@ -6,25 +6,11 @@ public class ColorSupplier {
 
     public String getRandomColor() {
 
-        int colors = 0;
-        for (Color color : Color.values()) {
-            colors++;
-        }
+        Color[] colors = Color.values();
 
         Random random = new Random();
 
-        int colorNumber = random.nextInt(colors - 1);
-
-        colors = 0;
-
-        String resultColor = "";
-
-        for (Color color : Color.values()) {
-            if (colors == colorNumber) {
-                resultColor = color.toString();
-            }
-            colors++;
-        }
+        String resultColor = colors[random.nextInt(colors.length)].toString();
 
         return resultColor;
     }
