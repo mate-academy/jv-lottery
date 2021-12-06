@@ -15,6 +15,6 @@ public class Ball {
 
     public String toString() {
 
-        return color + number;
+        return color + " " + number;
     }
 }
