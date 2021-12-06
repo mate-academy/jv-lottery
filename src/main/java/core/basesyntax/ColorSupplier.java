@@ -4,10 +4,6 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-    public ColorSupplier() {
-
-    }
-
     public String getRandomColor() {
 
         int colors = 0;
