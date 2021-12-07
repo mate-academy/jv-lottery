@@ -9,12 +9,3 @@ public class ColorSupplier {
     }
 }
 
-enum Colors {
-    RED,
-    ORANGE,
-    YELLOW,
-    GREEN,
-    BLUE,
-    BLACK,
-    WHITE
-}
