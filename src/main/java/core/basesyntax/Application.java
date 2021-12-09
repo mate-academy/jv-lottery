@@ -7,6 +7,5 @@ public class Application extends Lottery {
             Ball ball = new Ball();
             System.out.println(ball.toString());
         }
-
     }
 }
