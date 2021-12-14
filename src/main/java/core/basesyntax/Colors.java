@@ -9,6 +9,6 @@ public enum Colors {
     PURPLE,
     PINK,
     GREY
+    ;
 }
 
-;
