@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 public class Application {
+    //could you check my code again please
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
         Lottery lotteryDraw = new Lottery();
