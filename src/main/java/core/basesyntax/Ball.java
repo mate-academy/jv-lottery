@@ -8,6 +8,7 @@ public class Ball {
     public String toString() {
         return "Ball  " +
                 "colour is " + color +
-                ", number = " + number;
+                ", number = " + number +
+                ".";
     }
 }
