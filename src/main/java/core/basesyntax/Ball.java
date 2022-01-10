@@ -5,7 +5,6 @@ public class Ball {
     private Integer number;
 
     public Ball() {
-
     }
 
     public Ball(String color, Integer number) {
