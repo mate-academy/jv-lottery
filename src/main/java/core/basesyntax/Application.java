@@ -2,9 +2,11 @@ package core.basesyntax;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Application {
-    private static final Lottery LOTTERY = new Lottery();
+    private static final Random random = new Random();
+    private static final Lottery LOTTERY = new Lottery(random);
 
     public static void main(String[] args) {
         List<Ball> balls = new ArrayList<>();
