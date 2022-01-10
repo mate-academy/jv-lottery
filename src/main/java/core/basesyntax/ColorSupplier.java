@@ -11,6 +11,7 @@ public class ColorSupplier {
     }
 
     public String getRandomColor() {
-        return List.of(Color.values()).get(random.nextInt(List.of(Color.values()).size())).toString();
+        return List.of(Color.values())
+                .get(random.nextInt(List.of(Color.values()).size())).toString();
     }
 }
