@@ -9,5 +9,6 @@ public class Application {
         System.out.println(ballFirst.getRandomBall());
         System.out.println(ballSecond.getRandomBall());
         System.out.println(ballThird.getRandomBall());
+
     }
 }
