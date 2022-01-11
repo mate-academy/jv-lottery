@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-import javax.swing.*;
 import java.util.Random;
 
 public class Lottery {
