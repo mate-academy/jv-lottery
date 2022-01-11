@@ -9,7 +9,8 @@ Your tasks are:
 This method should return a random color, based on the enum values (use `Random` class for this) 
 
 Then create a `Lottery` class with `getRandomBall()` method, which will return the ball.
-This method should create a ball with a random color and a random number (the maximum possible number should be 100) and return this ball from the method.
+This method should create a ball with a random color and a random number (the maximum possible number 
+should be 100) and return this ball from the method.
 
 
 To test the program, in main() method, create three balls using `getRandomBall()` method from `Lottery` class.
