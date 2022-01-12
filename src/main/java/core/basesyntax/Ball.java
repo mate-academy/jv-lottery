@@ -21,7 +21,8 @@ public class Ball {
         this.color = color;
     }
 
-    public void getBallInfo() {
-        System.out.println("Ball is " + this.getColor() + " with number " + this.getNumber());
+    @Override
+    public String toString() {
+        return color + " ball with number " + number;
     }
 }
