@@ -22,7 +22,10 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball color is '" + color + '\''
-                + ", number is " + number;
+        StringBuilder builder = new StringBuilder();
+        return builder.append("Ball color is ")
+                      .append(color)
+                      .append(", number is ")
+                      .append(number).toString();
     }
 }
