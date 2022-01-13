@@ -9,6 +9,4 @@ public class ColorSupplier {
         return ballcolor.toString();
     }
 
-    public ColorSupplier() {}
-
 }
