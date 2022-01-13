@@ -22,10 +22,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        return builder.append("Ball color is ")
-                      .append(color)
-                      .append(", number is ")
-                      .append(number).toString();
+        return "Ball color is " + color + ", number is " + number;
     }
 }
