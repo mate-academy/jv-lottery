@@ -9,12 +9,25 @@ public class Ball {
         this.number = number;
     }
 
-    //public Color getRandomColor() {
-    //return color;
+    public String getColor() {
+        return color;
+    }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Hey! New ball has color " + color + " and number " + number;
     }
+
 }
