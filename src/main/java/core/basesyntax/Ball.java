@@ -15,11 +15,14 @@ public class Ball {
     }
 }
 enum Color {
-    WHITE,
-    BLACK,
-    BLUE,
-    PURPLE,
+    RED,
+    ORANGE,
+    YELLOW,
     GREEN,
-    PINK,
-    RED
+    BLUE,
+    VIOLET,
+    BROWN,
+    BLACK,
+    WHITE,
+    GRAY
 }
