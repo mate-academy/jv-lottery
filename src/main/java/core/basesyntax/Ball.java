@@ -14,15 +14,3 @@ public class Ball {
         return "Ball color is [" + color + "] and number is [" + number + "]";
     }
 }
-enum Color {
-    RED,
-    ORANGE,
-    YELLOW,
-    GREEN,
-    BLUE,
-    VIOLET,
-    BROWN,
-    BLACK,
-    WHITE,
-    GRAY
-}
