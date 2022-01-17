@@ -7,8 +7,8 @@ class Lottery extends ColorSupplier {
         Random random = new Random();
         int randomIndex = random.nextInt(100);
         Ball ballGenerate = new Ball();
-        ballGenerate.setBallColor(getRandomColor());
-        ballGenerate.setBallNumber(randomIndex);
+        ballGenerate.setColor(getRandomColor());
+        ballGenerate.setNumber(randomIndex);
         return ballGenerate;
     }
 }
