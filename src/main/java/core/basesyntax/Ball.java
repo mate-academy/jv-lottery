@@ -10,7 +10,7 @@ public class Ball {
     }
 
     public String toString() {
-        return "Ball color -- " + color + ", and ball number -- " + number;
+        return "Ball color -- " + color + ", and ball number -- " + number + ".";
     }
 
 }
