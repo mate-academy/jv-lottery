@@ -4,8 +4,8 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball(String c, int number) {
-        this.color = c;
+    public Ball(String color, int number) {
+        this.color = color;
         this.number = number;
     }
 
