@@ -1,5 +1,5 @@
 package core.basesyntax;
 
-public enum randomColors {
+public enum RandomColors {
     BLUE, GREEN, YELLOW, BLACK, GREY
 }
