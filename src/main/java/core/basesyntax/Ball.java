@@ -1,10 +1,10 @@
 package core.basesyntax;
 
-public class Ball {
-    private String color;
-    private int number;
+public class Ball extends ColorSupplier {
+    private String color = String.valueOf(getRandomColor());
+    private int number = getRandomNumber();
 
-    public Ball(){
+    public Ball() {
     }
 
     public Ball(String colorBall, int numberBall) {
@@ -14,9 +14,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
