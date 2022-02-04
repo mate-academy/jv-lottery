@@ -1,7 +1,10 @@
 package core.basesyntax;
 
-public class Lottery extends Ball {
-    public String getRandomBall() {
-        return getColor() + " ball with number " + getNumber();
+public class Lottery extends ColorSupplier {
+    public Ball getRandomBall() {
+        Ball ball = new Ball();
+        ball.setColor(getRandomColor());
+        ball.setNumber(nextInt(100));
+        return ball;
     }
 }
