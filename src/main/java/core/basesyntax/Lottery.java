@@ -9,6 +9,4 @@ public class Lottery {
         Ball ball = new Ball(color, number);
         return ball;
     }
-
-
 }
