@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Ball extends ColorSupplier {
-private int number;
-private String color;
+    private int number;
+    private String color;
 
     public int getNumber() {
         return number;
