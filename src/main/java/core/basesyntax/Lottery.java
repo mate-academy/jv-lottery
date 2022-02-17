@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class Lottery extends ColorSupplier {
     public Ball getRandomBall() {
-        String rndColorStr = getRandomColor();
-        Random rndN = new Random();
-        int rndNum = rndN.nextInt(100);
-        Ball rndBall = new Ball();
-        rndBall.setNumber(rndNum);
-        rndBall.setColor(rndColorStr);
-        return rndBall;
+        String randomBallColor = getRandomColor();
+        Random randomNumber = new Random();
+        int randomBallNumber = randomNumber.nextInt(100);
+        Ball randomBall = new Ball();
+        randomBall.setNumber(randomBallNumber);
+        randomBall.setColor(randomBallColor);
+        return randomBall;
     }
 }
