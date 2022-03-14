@@ -1,7 +1,16 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
+
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        Lottery firstRandomBall = new Lottery();
+        Lottery secondRandomBall = new Lottery();
+        Lottery thirdRandomBall = new Lottery();
+
+        System.out.println(firstRandomBall.getRandomBall());
+        System.out.println(secondRandomBall.getRandomBall());
+        System.out.println(thirdRandomBall.getRandomBall());
     }
 }
