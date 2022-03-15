@@ -8,8 +8,8 @@ public class Lottery {
         String color = colorSupplier.getRandomColor();
         Ball ball = new Ball();
         ball.setColor(color);
-        Random random = new Random();
-        ball.setNumber(random.nextInt(100));
+        int randomNumber = new Random().nextInt(100);
+        ball.setNumber(randomNumber);
         return ball;
     }
 }
