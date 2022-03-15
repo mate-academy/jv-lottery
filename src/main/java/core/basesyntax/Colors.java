@@ -6,9 +6,5 @@ public enum Colors {
     RED,
     BLUE,
     BLACK,
-    GREEN;
-
-    public static String toString(Colors color) {
-        return toString(color);
-    }
+    GREEN
 }
