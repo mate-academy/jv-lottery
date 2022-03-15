@@ -1,7 +1,11 @@
 package core.basesyntax;
 
-public class Application {
+public class Application extends Lottery {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        String[] winners = new String[3];
+        for (int i = 0; i < winners.length; i++) {
+            winners[i] = getRandomBall();
+            System.out.println(winners[i]);
+        }
     }
 }
