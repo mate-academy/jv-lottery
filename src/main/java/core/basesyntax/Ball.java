@@ -4,16 +4,16 @@ public class Ball {
     private final Color color;
     private final int number;
 
-    protected Ball(Color color, int number) {
+    public Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }
 
-    protected Color getColor() {
+    public Color getColor() {
         return this.color;
     }
 
-    protected int getNumber() {
+    public int getNumber() {
         return this.number;
     }
 
