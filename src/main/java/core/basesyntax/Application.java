@@ -6,8 +6,10 @@ public class Application {
         Lottery two = new Lottery();
         Lottery three = new Lottery();
 
-        System.out.println(one.getRandomBall());
-        System.out.println(two.getRandomBall());
-        System.out.println(three.getRandomBall());
+        Lottery [] arrayLotteryBall = {one, two, three};
+
+        for (Lottery ball : arrayLotteryBall) {
+            System.out.println(ball.getRandomBall());
+        }
     }
 }

@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Lottery extends Ball {
     public Lottery() {
+        super();
     }
 
     public Lottery(int value, String color) {
