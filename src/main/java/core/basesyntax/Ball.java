@@ -1,6 +1,8 @@
 package core.basesyntax;
 
+import java.awt.*;
+
 public class Ball {
-    String color;
+    Color color;
     int number;
 }
