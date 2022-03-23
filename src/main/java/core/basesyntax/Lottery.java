@@ -9,5 +9,4 @@ public class Lottery {
     public Ball getRandomBall() {
         return new Ball(supplier.getRandomColor(), random.nextInt(100));
     }
-
 }
