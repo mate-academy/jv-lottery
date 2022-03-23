@@ -4,9 +4,10 @@ import java.util.Random;
 
 public class Lottery {
     static final int BOUND = 100;
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
         Random random = new Random();
-        return new Ball(ColorSupplier.getRandomColor(), random.nextInt(BOUND));
+        return new Ball(colorSupplier.getRandomColor(), random.nextInt(BOUND));
     }
 }
