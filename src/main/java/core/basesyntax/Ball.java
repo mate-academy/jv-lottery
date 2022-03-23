@@ -12,7 +12,7 @@ public class Ball {
     }
 
     private int getRandomNumber() {
-        return new Random().nextInt((100-1)+1);
+        return new Random().nextInt((100 - 1) + 1);
     }
 
     @Override
