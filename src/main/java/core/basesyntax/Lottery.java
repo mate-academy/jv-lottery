@@ -6,9 +6,6 @@ public class Lottery {
     private static final int UPPER_CASE = 100;
 
     public Ball getRandomBall() {
-        Ball ball = new Ball();
-        ball.setColor(new ColorSupplier().getRandomColor());
-        ball.setNumber(new Random().nextInt(UPPER_CASE));
-        return ball;
+        return new Ball(new ColorSupplier().getRandomColor(), new Random().nextInt(UPPER_CASE));
     }
 }
