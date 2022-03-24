@@ -5,9 +5,10 @@ import java.util.Random;
 public class Ball {
     private String color;
     private int number;
+    ColorSupplier supplier = new ColorSupplier();
 
     public Ball() {
-        this.color = ColorSupplier.getRandomColor();
+        this.color = supplier.getRandomColor();
         this.number = getRandomNumber();
     }
 
