@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery<BOUND> {
+public class Lottery {
     private static final int MY_BOUND = 100;
     private ColorSupplier colorSupplier = new ColorSupplier();
 
