@@ -13,6 +13,5 @@ public class Lottery {
         ball.setColor(color.getRandomColor());
         ball.setNumber(numb);
         return ball.toString(ball.getColor(), ball.getNumber());
-
     }
 }
