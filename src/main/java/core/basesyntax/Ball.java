@@ -20,7 +20,8 @@ public class Ball {
         return this.number;
     }
 
-    public String toString(String color,int number) {
+    @Override
+    public String toString() {
         return (color + "-" + number);
     }
 }

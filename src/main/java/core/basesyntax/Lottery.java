@@ -7,11 +7,11 @@ public class Lottery {
     protected Random random = new Random();
     private ColorSupplier color = new ColorSupplier();
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         int numb = random.nextInt(RANDOM_BOUND);
         Ball ball = new Ball();
         ball.setColor(color.getRandomColor());
         ball.setNumber(numb);
-        return ball.toString(ball.getColor(), ball.getNumber());
+        return ball;
     }
 }
