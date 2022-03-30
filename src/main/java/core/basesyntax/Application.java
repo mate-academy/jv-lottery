@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public class Application {
     public static final int BALLS_NUMBER = 3;
     public static final int MAX_NUMBER_OF_BALL = 100;
