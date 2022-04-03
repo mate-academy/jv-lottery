@@ -1,16 +1,22 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Ball {
-    Colors color;
-    int number;
+    private int number;
+    private Colors color;
+
+    public Ball(Colors color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Ball{"
+                + "color='"
+                + color
+                + '\''
+                + ", number="
+                + number
+                + '}';
     }
 }
