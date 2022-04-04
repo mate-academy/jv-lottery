@@ -1,7 +1,6 @@
 package core.basesyntax.lotteryball;
 
 import core.basesyntax.enums.Colors;
-
 import java.util.Random;
 
 public class ColorSupplier {

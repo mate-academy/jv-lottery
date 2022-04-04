@@ -7,6 +7,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "And ball is " + ballColor + " and the number is " + ballNumber + ". We have a WINNER!";
+        return "And ball is " + ballColor + " and number is " + ballNumber + ".We have a WINNER";
     }
 }
