@@ -5,9 +5,12 @@ public class Application {
         Ball[] balls = new Ball[3];
         Lottery lottery = new Lottery();
 
-        for (int i = 0; i < 3; i++) {
-            balls[i] = randomBall.getRandomBall();
-            System.out.println(balls[i]);
-        }
+        Ball first = lottery.getRandomBall();
+        Ball second = lottery.getRandomBall();
+        Ball third = lottery.getRandomBall();
+
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
     }
 }
