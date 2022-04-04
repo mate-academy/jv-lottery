@@ -3,7 +3,7 @@ package core.basesyntax.lotteryball;
 import java.util.Random;
 
 public class Lottery {
-    public Ball ball;
+    private Ball ball;
 
     // Create ball parameters by this method according to task
     public Ball getRandomBall() {
