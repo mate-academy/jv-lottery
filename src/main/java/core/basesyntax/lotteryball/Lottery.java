@@ -7,8 +7,8 @@ public class Lottery {
 
     public Ball getRandomBall() {
         ball = new Ball();
-        ball.ballColor = new ColorSupplier().getRandomColor();
-        ball.ballNumber = new Random().nextInt(100);
+        ball.setBallColor(new ColorSupplier().getRandomColor());
+        ball.setBallNumber(new Random().nextInt(100));
         return ball;
     }
 }

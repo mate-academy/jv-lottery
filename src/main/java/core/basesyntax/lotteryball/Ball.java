@@ -1,8 +1,17 @@
 package core.basesyntax.lotteryball;
 
 public class Ball {
-    String ballColor;
-    int ballNumber;
+    private String ballColor;
+    private int ballNumber;
+
+    public void setBallColor(String ballColor) {
+        this.ballColor = ballColor;
+    }
+
+    public void setBallNumber(int ballNumber) {
+        this.ballNumber = ballNumber;
+    }
+
 
     @Override
     public String toString() {
