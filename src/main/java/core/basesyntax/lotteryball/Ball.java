@@ -1,9 +1,8 @@
 package core.basesyntax.lotteryball;
 
 public class Ball {
-    //No accuse out lottery package group
-    protected String ballColor;
-    protected int ballNumber;
+    String ballColor;
+    int ballNumber;
 
     @Override
     public String toString() {

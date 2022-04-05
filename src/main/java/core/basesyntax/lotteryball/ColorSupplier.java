@@ -1,11 +1,13 @@
 package core.basesyntax.lotteryball;
 
-import core.basesyntax.enums.Colors;
+import core.basesyntax.enums.Color;
 import java.util.Random;
 
 public class ColorSupplier {
+    Random r = new Random();
+
     public String getRandomColor() {
-        int index = new Random().nextInt(Colors.values().length);
-        return Colors.values()[index].toString();
+        int index = r.nextInt(Color.values().length);
+        return Color.values()[index].toString();
     }
 }

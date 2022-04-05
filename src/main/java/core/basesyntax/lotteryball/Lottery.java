@@ -5,7 +5,6 @@ import java.util.Random;
 public class Lottery {
     private Ball ball;
 
-    // Create ball parameters by this method according to task
     public Ball getRandomBall() {
         ball = new Ball();
         ball.ballColor = new ColorSupplier().getRandomColor();
