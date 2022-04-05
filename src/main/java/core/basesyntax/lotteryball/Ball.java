@@ -12,7 +12,6 @@ public class Ball {
         this.ballNumber = ballNumber;
     }
 
-
     @Override
     public String toString() {
         return "And ball is " + ballColor + " and number is " + ballNumber + ".We have a WINNER";
