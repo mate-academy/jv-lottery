@@ -12,12 +12,4 @@ public class Lottery {
         ball.setBallNumber(random.nextInt(100));
         return ball;
     }
-
-    public void getRandom(Random random) {
-        this.random = random;
-    }
-
-    public void getColorSupplier(ColorSupplier colorSupplier) {
-        this.colorSupplier = colorSupplier;
-    }
 }
