@@ -1,10 +1,10 @@
 package core.basesyntax.lotteryball;
+
 import java.util.Random;
 
 public class Lottery {
-    Random random = new Random();
-    ColorSupplier colorSupplier = new ColorSupplier();
-
+    private Random random = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
@@ -13,11 +13,11 @@ public class Lottery {
         return ball;
     }
 
-    public void setRandom(Random random) {
+    public void getRandom(Random random) {
         this.random = random;
     }
 
-    public void setColorSupplier(ColorSupplier colorSupplier) {
+    public void getColorSupplier(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
     }
 }
