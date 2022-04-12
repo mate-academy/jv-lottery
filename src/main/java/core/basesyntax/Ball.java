@@ -17,5 +17,4 @@ public class Ball {
         String ball = "ball";
         return ball;
     }
-
 }
