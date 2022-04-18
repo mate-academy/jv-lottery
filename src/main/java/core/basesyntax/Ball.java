@@ -15,6 +15,6 @@ public class Ball {
     @Override
     public String toString() {
         String ball = "ball";
-        return "Ball with number:  " +  number +  " and color: " + color;
+        return "Ball with number:" + number + "and color:" + color;
     }
 }
