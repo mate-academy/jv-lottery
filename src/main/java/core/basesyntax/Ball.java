@@ -8,13 +8,13 @@ public class Ball {
         this.number = number;
     }
 
-    public void setColor(Color c) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
     @Override
     public String toString() {
         String ball = "ball";
-        return "Ball with number:" + number + "and color:" + color;
+        return "Ball with number: " + number + " and color: " + color;
     }
 }
