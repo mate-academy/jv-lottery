@@ -14,10 +14,14 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "numbers=" + numbers +
-                ", colors='" + colors + '\'' +
+        return "Ball{"
+                +
+                "numbers=" + numbers
+                +
+                ", colors='" + colors + '\''
+                +
                 '}';
     }
 }
+
 
