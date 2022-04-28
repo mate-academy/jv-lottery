@@ -6,13 +6,17 @@ public class Lottery {
     private final int numberOfBalls;// = 100;
     private final int lotteryDraw;
 
-    public Lottery(int numberOfBalls, int lotteryDraw) {
-        this.numberOfBalls = numberOfBalls;
-        this.lotteryDraw = lotteryDraw;
+    public Lottery() {
+        this(100, 3);
     }
 
     public Lottery(int numberOfBalls) {
         this(numberOfBalls, 3);
+    }
+
+    public Lottery(int numberOfBalls, int lotteryDraw) {
+        this.numberOfBalls = numberOfBalls;
+        this.lotteryDraw = lotteryDraw;
     }
 
     public int getNumberOfBalls() {
@@ -21,10 +25,6 @@ public class Lottery {
 
     public int getLotteryDraw() {
         return lotteryDraw;
-    }
-
-    public Lottery() {
-        this(100, 3);
     }
 
     public Ball getRandomBall() {
