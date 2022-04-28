@@ -3,20 +3,35 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    private static final int SIZE = 100;
-    private static final Random RANDOM = new Random();
-    public static int randomNumber()  {
-        return RANDOM.nextInt(SIZE);
+    private final int numberOfBalls;// = 100;
+    private final int lotteryDraw;
+
+    public Lottery(int numberOfBalls, int lotteryDraw) {
+        this.numberOfBalls = numberOfBalls;
+        this.lotteryDraw = lotteryDraw;
+    }
+
+    public Lottery(int numberOfBalls) {
+        this(numberOfBalls, 3);
+    }
+
+    public int getNumberOfBalls() {
+        return numberOfBalls;
+    }
+
+    public int getLotteryDraw() {
+        return lotteryDraw;
     }
 
     public Lottery() {
-
+        this(100, 3);
     }
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        ball.setColor(Colors.randomColor().toString());
-        ball.setNumber(randomNumber());
+        ColorSupplier supplier = new ColorSupplier();
+        ball.setColor(supplier.getRandomColor());
+        ball.setNumber(new Random().nextInt(numberOfBalls));
         return ball;
     }
 }
