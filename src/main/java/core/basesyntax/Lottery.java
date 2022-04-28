@@ -1,11 +1,9 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public class Lottery {
     public Ball getRandomBall() {
-        int number = new Random().nextInt(100);
-        Ball ball = new Ball(new ColorSupplier().getRandomColor(), number);
+        int number = Application.random.nextInt(Application.maxLimit);
+        Ball ball = new Ball(Application.colorSupplier.getRandomColor(), number);
         return ball;
     }
 }
