@@ -3,24 +3,17 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    private final int numberOfBalls;// = 100;
+    private static final ColorSupplier colorSupplier = new ColorSupplier();
+    private static final Random randomInt = new Random();
+    private static final int MAX_RANDOM_NUMBER = 100;
     private final int lotteryDraw;
 
     public Lottery() {
-        this(100, 3);
+        this(3);
     }
 
-    public Lottery(int numberOfBalls) {
-        this(numberOfBalls, 3);
-    }
-
-    public Lottery(int numberOfBalls, int lotteryDraw) {
-        this.numberOfBalls = numberOfBalls;
+    public Lottery(int lotteryDraw) {
         this.lotteryDraw = lotteryDraw;
-    }
-
-    public int getNumberOfBalls() {
-        return numberOfBalls;
     }
 
     public int getLotteryDraw() {
@@ -29,9 +22,8 @@ public class Lottery {
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        ColorSupplier supplier = new ColorSupplier();
-        ball.setColor(supplier.getRandomColor());
-        ball.setNumber(new Random().nextInt(numberOfBalls));
+        ball.setColor(colorSupplier.getRandomColor());
+        ball.setNumber(randomInt.nextInt(MAX_RANDOM_NUMBER));
         return ball;
     }
 }
