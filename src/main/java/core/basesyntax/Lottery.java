@@ -9,11 +9,7 @@ public class Lottery {
     private final int lotteryDraw;
 
     public Lottery() {
-        this(3);
-    }
-
-    public Lottery(int lotteryDraw) {
-        this.lotteryDraw = lotteryDraw;
+        this.lotteryDraw = 3;
     }
 
     public int getLotteryDraw() {
