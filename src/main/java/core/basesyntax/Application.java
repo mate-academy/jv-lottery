@@ -10,7 +10,7 @@ public class Application {
         }
 
         for (Ball ball : balls) {
-            System.out.println("Ball number " + ball.getNumber() + " is " + ball.getColor());
+            System.out.println(ball);
         }
     }
 }
