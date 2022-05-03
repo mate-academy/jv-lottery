@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 public class Ball {
-
     private String color;
     private int number;
 
@@ -15,9 +14,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{"
-                + "color='" + color + '\''
-                + ", number=" + number
-                + '}';
+        return color + " " + number;
     }
+
 }
