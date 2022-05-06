@@ -3,6 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    static final int MAXNUMBER = 100;
+    private Random number = new Random();
+
     public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.setNumber(getRandomNumber());
@@ -10,9 +13,8 @@ public class Lottery {
         return ball;
     }
 
-    public int getRandomNumber() {
-        Random number = new Random();
-        int value = number.nextInt(100);
+    private int getRandomNumber() {
+        int value = number.nextInt(MAXNUMBER);
         return value;
     }
 }
