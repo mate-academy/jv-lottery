@@ -1,27 +1,22 @@
 package core.basesyntax;
 
 public class Ball {
-    private int numbers;
-    private String colors;
+    private int number;
+    private String color;
 
-    public void setNumbers(int numbers) {
-        this.numbers = numbers;
+    public void setNumbers(int number) {
+        this.number = number;
     }
 
-    public void setColors(String colors) {
-        this.colors = colors;
+    public void setColors(String color) {
+        this.color = color;
     }
 
     @Override
     public String toString() {
         return "Ball{"
-                +
-                "numbers=" + numbers
-                +
-                ", colors='" + colors + '\''
-                +
-                '}';
+                + "number=" + number
+                + ", color='" + color + '\''
+                + '}';
     }
 }
-
-
