@@ -12,9 +12,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "number=" + number +
-                ", color='" + color + '\'' +
-                '}';
+        return "Ball[" + "number=" + this.number + ", color='" + this.color + '\'' + ']';
     }
 }
+
