@@ -7,8 +7,7 @@ public class Application {
        Ball[] balls = new Ball[BALLS_MAX];
         Lottery lottery = new Lottery();
         for (int i = 0; i < balls.length; i++) {
-            balls[i] = lottery.getRandomColor();
-          //  System.out.println(ball[i]);
+            balls[i] = lottery.getRandomBall();
         }
         for (Ball ball: balls) {
             System.out.println(ball);
