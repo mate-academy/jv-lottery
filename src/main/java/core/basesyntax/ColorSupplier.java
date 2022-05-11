@@ -9,6 +9,3 @@ public class ColorSupplier {
         return Color.values()[index];
     }
 }
-
-
-//make a global Random field and use it here
