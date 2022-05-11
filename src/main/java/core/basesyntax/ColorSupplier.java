@@ -1,15 +1,14 @@
 package core.basesyntax;
 
-import java.awt.*;
 import java.util.Random;
 
 public class ColorSupplier {
-    public static Color getRandomColor() {
-        int index = new Random().nextInt(Color.values().length);
-        return String.valueOf(Color.valuesOf()[index]);
+    //private final Random random = new Random();
+    public Color getRandomColor() {
+        return null;
+        //int indexColor = random.nextInt(Color.values().length);
+        int indexColor = new Random().nextInt(Color.values().length);
+       // return String.valueOf(Color.values()[indexColor]);
+        return Color.values()[indexColor];
     }
 }
-
-
-//implement method String getRandomColor() in class ColorSupplier.
-// This method should return a random color, based on the enum values (use Random class for this)
