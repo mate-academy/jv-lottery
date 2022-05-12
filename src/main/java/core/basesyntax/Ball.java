@@ -14,4 +14,3 @@ public class Ball {
         return "Ball[" + "number=" + this.number + ", color='" + this.color + '\'' + ']';
     }
 }
-
