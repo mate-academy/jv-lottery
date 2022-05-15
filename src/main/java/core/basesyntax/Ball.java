@@ -10,7 +10,7 @@ public class Ball {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "number: " + number + ", color: " + color;
     }
 }
