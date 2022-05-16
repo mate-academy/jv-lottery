@@ -7,9 +7,9 @@ public class Lottery {
     private ColorSupplier colorSupplier;
     private Random random;
 
-    public Lottery() {
-        this.colorSupplier = new ColorSupplier();
-        this.random = new Random();
+    public Lottery(ColorSupplier colorSupplier, Random random) {
+        this.colorSupplier = colorSupplier;
+        this.random = random;
     }
 
     public Ball getRandomBall() {
