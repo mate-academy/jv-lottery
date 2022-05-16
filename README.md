@@ -3,7 +3,7 @@
 Let's create a simple lottery that will return balls with a random color and random number.
 
 Your tasks are:
-- create `core.basesyntax.Ball` class with the following fields: `color` and `number` and override `toString()` method
+- create `Ball` class with the following fields: `color` and `number` and override `toString()` method
 - create enum with different colors
 - implement method `String getRandomColor()` in class `ColorSupplier`. 
 This method should return a random color, based on the enum values (use `Random` class for this) 
