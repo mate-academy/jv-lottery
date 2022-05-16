@@ -16,5 +16,4 @@ public class Ball {
                 + ", color='" + color + '\''
                 + '}';
     }
-
 }
