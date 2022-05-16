@@ -6,12 +6,12 @@ public class Lottery {
     private final Random randomNumber;
     private final ColorSupplier colorSupplier;
 
-    public Lottery(Random random, ColorSupplier colorSupplier) {
-        this.randomNumber = random;
+    public Lottery(Random randomNumber, ColorSupplier colorSupplier) {
+        this.randomNumber = randomNumber;
         this.colorSupplier = colorSupplier;
     }
 
     public Ball getRandomBall() {
-        return new Ball(colorSupplier.getRandomColor(), randomNumber.nextInt(100));
+        return new Ball(colorSupplier.getRandomColor(randomNumber), randomNumber.nextInt(100));
     }
 }
