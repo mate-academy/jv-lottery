@@ -1,27 +1,16 @@
 package core.basesyntax;
 
-public class Ball extends Lottery {
-    private String ballColor;
-    private int ballNumber;
+public class Ball {
+    private final String color;
+    private final int number;
 
-    public String getColor() {
-        return ballColor;
-    }
-
-    public int getNumber() {
-        return ballNumber;
-    }
-
-    public void setColor(String color) {
-        this.ballColor = color;
-    }
-
-    public void setNumber(int number) {
-        this.ballNumber = number;
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return ballColor + " " + ballNumber;
+        return color + " " + number;
     }
 }
