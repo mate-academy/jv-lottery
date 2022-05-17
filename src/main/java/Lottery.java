@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class Lottery {
+    private static final int BOUND = 100;
     private final Random random;
     private final ColorSupplier colorSupplier;
 
@@ -10,7 +11,6 @@ public class Lottery {
     }
 
     public Ball getRandomBall() {
-        final int randomInteger = random.nextInt(100);
-        return new Ball(randomInteger, colorSupplier.getRandomColor());
+        return new Ball(random.nextInt(BOUND), colorSupplier.getRandomColor());
     }
 }
