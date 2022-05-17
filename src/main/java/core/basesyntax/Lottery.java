@@ -3,6 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private Random random = new Random();
+
     public Random getRandom() {
         return random;
     }
@@ -11,7 +13,6 @@ public class Lottery {
         this.random = random;
     }
 
-    private Random random = new Random();
 
     public Ball getRandomBall() {
         ColorSupplier supplier = new ColorSupplier();
