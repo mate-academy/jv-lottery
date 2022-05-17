@@ -6,7 +6,7 @@ public class ColorSupplier {
     private final Random random;
 
     public ColorSupplier(Random random) {
-        this.random=random;
+        this.random = random;
     }
 
     public String getRandomColor() {
