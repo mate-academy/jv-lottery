@@ -13,7 +13,6 @@ public class Lottery {
         this.random = random;
     }
 
-
     public Ball getRandomBall() {
         ColorSupplier supplier = new ColorSupplier();
         String color = supplier.getRandomColor();
