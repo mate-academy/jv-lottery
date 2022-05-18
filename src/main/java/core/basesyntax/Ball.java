@@ -1,10 +1,12 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Ball {
     private final Color color;
-    private final int number;
+    private final Random number;
 
-    public Ball(Color color, int number) {
+    public Ball(Color color, Random number) {
         this.color = color;
         this.number = number;
     }
