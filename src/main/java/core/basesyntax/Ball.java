@@ -3,20 +3,25 @@ package core.basesyntax;
 public class Ball {
     private String color;
     private int number;
-    public Ball(String color, int number){
+
+    public Ball(String color, int number) {
         this.color = color;
         this.number = number;
     }
-    public String getColor(){
+
+    public String getColor() {
         return color;
     }
-    public int getNumber(){
+
+    public int getNumber() {
         return number;
     }
-    public void setColor(String color){
+
+    public void setColor(String color) {
         this.color = color;
     }
-    public void setNumber(int number){
+
+    public void setNumber(int number) {
         this.number = number;
     }
 
