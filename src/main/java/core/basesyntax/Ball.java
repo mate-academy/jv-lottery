@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 public class Ball {
+    static final int MAX_NUMBER = 100;
     private String color;
     private int number;
 
