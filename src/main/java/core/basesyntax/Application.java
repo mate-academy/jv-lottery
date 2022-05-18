@@ -7,7 +7,7 @@ public class Application {
         Ball [] balls = new Ball[3];
         Lottery lottery = new Lottery(new Random(), new ColorSupplier());
 
-        for(Ball currentBall : balls) {
+        for (Ball currentBall : balls) {
             currentBall = lottery.getRandomBall();
             System.out.println(currentBall);
         }
