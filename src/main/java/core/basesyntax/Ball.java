@@ -9,6 +9,10 @@ public class Ball {
         this.number = number;
     }
 
+    public Ball() {
+
+    }
+
     public String getColor() {
         return color;
     }
