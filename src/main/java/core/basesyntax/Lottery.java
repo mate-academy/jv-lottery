@@ -12,7 +12,11 @@ public class Lottery {
         this.colorSupplier = colorSupplier;
     }
 
+    public int randomNumber() {
+        return random.nextInt(MAX_VALUE);
+    }
+
     public Ball getRandomBall() {
-        return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAX_VALUE));
+        return new Ball(colorSupplier.getRandomColor(), randomNumber());
     }
 }
