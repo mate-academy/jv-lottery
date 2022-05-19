@@ -15,5 +15,4 @@ public class Lottery {
     public Ball getRandomBall() {
         return new Ball(colour.getRandomColor(), number.nextInt(MAX_VALUE));
     }
-
 }
