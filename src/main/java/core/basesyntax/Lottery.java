@@ -12,7 +12,7 @@ public class Lottery {
         this.colorSupplier = colorSupplier;
     }
 
-    public int randomNumber() {
+    private int randomNumber() {
         return random.nextInt(MAX_VALUE);
     }
 
