@@ -1,15 +1,20 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Application {
     public static void main(String[] args) {
-        Lottery lotery1 = new Lottery();
-        Ball firstBall = lotery1.getRandomBall();
-        Ball secondBall = lotery1.getRandomBall();
-        Ball thirdBall = lotery1.getRandomBall();
+        Random random = new Random();
+        ColorSupplier colorSupplier = new ColorSupplier(random);
+        Lottery lotery = new Lottery(random, colorSupplier);
+        Ball[] balls = new Ball[3];
+        for (int i = 0; i < 3; i++) {
+            balls[i] = lotery.getRandomBall();
+        }
         System.out.println("Lets guess three BALLS, are you ready? \nGo.....");
-        System.out.println(firstBall.toString());
-        System.out.println(secondBall.toString());
-        System.out.println(thirdBall.toString());
+        for (int i = 0; i < 3; i++) {
+            System.out.println(balls[i].toString());
+        }
         System.out.println("\nDid you win you billion?");
     }
 }
