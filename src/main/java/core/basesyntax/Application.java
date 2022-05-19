@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
+
 public class Application {
     private static final int NUM_BALL = 3;
 
