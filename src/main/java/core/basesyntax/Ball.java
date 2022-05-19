@@ -13,5 +13,4 @@ public class Ball {
     public String toString() {
         return "We have ball # " + this.number + " whith color: " + this.color;
     }
-
 }
