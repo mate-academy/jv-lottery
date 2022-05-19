@@ -5,8 +5,8 @@ import java.util.Random;
 public class ColorSupplier {
     private final Random getColour;
 
-    public ColorSupplier() {
-        getColour = new Random();
+    public ColorSupplier(Random random) {
+        getColour = random;
     }
 
     public String getRandomColor() {
