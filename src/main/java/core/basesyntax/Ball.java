@@ -2,11 +2,11 @@ package core.basesyntax;
 
 public class Ball {
     private final String colour;
-    private final int printedNumber;
+    private final int number;
 
     public Ball(String colour, int number) {
         this.colour = colour;
-        printedNumber = number;
+        this.number = number;
     }
 
     @Override
