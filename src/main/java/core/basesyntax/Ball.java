@@ -16,7 +16,7 @@ public class Ball {
         return number;
     }
 
-    public void setNumber(int i) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
