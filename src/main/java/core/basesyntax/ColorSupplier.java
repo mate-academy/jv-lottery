@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        int index = new Random().nextInt(ColorType.values().length);
-        return ColorType.values()[index].name();
+        int index = new Random().nextInt(Color.values().length);
+        return Color.values()[index].name();
     }
 }
