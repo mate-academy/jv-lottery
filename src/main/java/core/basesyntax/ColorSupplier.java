@@ -8,6 +8,7 @@ public class ColorSupplier {
 
     public String getRandomColor() {
         int index = randomColor.nextInt(Color.values().length);
-        return color = String.valueOf(Color.values()[index]);
+        color = String.valueOf(Color.values()[index]);
+        return color;
     }
 }
