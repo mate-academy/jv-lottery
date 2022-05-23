@@ -1,10 +1,15 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
-        Lottery lot = new Lottery();
+        Lottery lottery = new Lottery();
+        Ball[] balls = new Ball[3];
         for (int i = 0; i < 3; i++) {
-            System.out.println(lot.getRandomBall());
+            balls[i] = new Ball();
+            balls[i] = lottery.getRandomBall();
+            System.out.println(balls[i]);
         }
     }
 }
