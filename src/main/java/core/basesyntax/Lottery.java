@@ -6,9 +6,9 @@ public class Lottery {
     private ColorSupplier supplier = new ColorSupplier();
     private Random random = new Random();
 
+    final int constant = 100;
+
     public Ball getRandomBall() {
-        Ball ball = new Ball(supplier.getRandomColor(), random.nextInt(100));
-        return ball;
+        return new Ball(supplier.getRandomColor(), random.nextInt(constant));
     }
 }
-
