@@ -7,10 +7,9 @@ public class Application {
 
     public static void main(String[] args) {
         Lottery lottery = new Lottery(new ColorSupplier(new Random()), new Random());
-        Ball[] balls = new Ball[BALLS_NUMBER];
-        for (int i = 0; i < BALLS_NUMBER; i++) {
-            balls[i] = lottery.getRandomBall();
-            System.out.println(balls[i]);
+        for (int i = 1; i <= BALLS_NUMBER; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println(ball);
         }
     }
 }
