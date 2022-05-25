@@ -2,6 +2,7 @@ package core.basesyntax;
 
 public enum Color {
     BLACK("black"), YELLOW("yellow"), RED("red"), GREEN("green"), WHITE("white"), ORANGE("orange");
+
     private String color;
 
     Color(String color) {
@@ -10,9 +11,5 @@ public enum Color {
 
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 }
