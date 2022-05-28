@@ -19,6 +19,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Win ball is number " + this.number + " and it's colour is " + this.color;
+        return "Win ball is number: " + this.number + " and it's colour is: " + this.color;
     }
 }
