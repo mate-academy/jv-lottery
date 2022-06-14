@@ -11,7 +11,7 @@ public class Lottery {
         int index = random.nextInt(Color.values().length);
         Ball ball = new Ball();
         ball.setNumber(random.nextInt(MAX_NUMBER));
-        ball.setColor(String.valueOf(Color.values()[index]));
+        ball.setColor(colorSupplier.getRandomColor());
         return ball;
     }
 }
