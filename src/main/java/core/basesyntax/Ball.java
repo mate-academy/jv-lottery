@@ -1,12 +1,14 @@
 package core.basesyntax;
-import java.util.Random;
+
 public class Ball extends Lottery {
     private String color;
     private int number;
 
-    public Ball() { }
+    public Ball() {
 
-    public Ball(int number, String color){
+    }
+
+    public Ball(int number, String color) {
         this.color = color;
         this.number = number;
     }
