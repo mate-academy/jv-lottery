@@ -1,13 +1,22 @@
 package core.basesyntax;
 
+import java.awt.*;
 import java.util.Random;
 
 public  class  Ball {
-    Random randN = new Random();
-    String [] colorArray = new String[]{"green", "black", "yellow","white", "purple","blue"};
-    public String  color(){
-     String color = colorArray[randN.nextInt(5)];
-       return color;
+     private String color;
+     private int number;
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return color + " " + number;
+    }
 }
