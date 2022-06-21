@@ -3,7 +3,6 @@ package core.basesyntax;
 public class Ball extends Lottery {
     private String color;
     private int number;
-
     public Ball() {
 
     }
@@ -23,6 +22,6 @@ public class Ball extends Lottery {
 
     @Override
     public String toString() {
-        return "number: " + getNumber() + ", color: " + getColor();
+        return "Ball {number: " + number + ", color: " + color + " }";
     }
 }
