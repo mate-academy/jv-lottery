@@ -6,11 +6,11 @@ public class Lottery {
     public String getRandomBall() {
         ColorSupplier randColor = new ColorSupplier();
         Random num = new Random();
-        int random = num.nextInt(100);
-        Ball bead = new Ball();
-        bead.setColor(randColor.getRandomColor().toString());
-        bead.setNumber(random);
+        int randomNumber = num.nextInt(100);
+        Ball ball = new Ball();
+        ball.setColor(randColor.getRandomColor());
+        ball.setNumber(randomNumber);
 
-        return bead.getColor() + " " + bead.getNumber();
+        return ball.getColor() + " " + ball.getNumber();
     }
 }
