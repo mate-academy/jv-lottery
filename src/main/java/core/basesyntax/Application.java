@@ -7,8 +7,8 @@ public class Application {
             randomBalls[i] = new Ball();
             randomBalls[i] = randomBalls[i].getRandomBall();
         }
-        for (Ball balls: randomBalls) {
-            System.out.println(balls.toString());
+        for (Ball ball: randomBalls) {
+            System.out.println(ball.toString());
         }
     }
 }
