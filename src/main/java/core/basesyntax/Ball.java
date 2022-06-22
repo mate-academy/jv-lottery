@@ -3,8 +3,8 @@ package core.basesyntax;
 public class Ball extends Lottery {
     private String color;
     private int number;
-    public Ball() {
 
+    public Ball() {
     }
 
     public Ball(int number, String color) {
