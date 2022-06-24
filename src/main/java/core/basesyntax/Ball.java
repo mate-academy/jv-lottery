@@ -6,7 +6,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return getColor() + " " + getNumber();
     }
 
     public String getColor() {
