@@ -4,7 +4,5 @@ public class Main {
             Lottery lottery = new Lottery();
             System.out.println(lottery.getRandomBall());
         }
-
-
     }
 }

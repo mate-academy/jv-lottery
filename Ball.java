@@ -8,7 +8,7 @@ public class Ball {
     }
 
     public String toString() {
-        return "The color of the ball is: " + color + ", the number of the ball is: " + number;
+        return "The color of the ball is: " + color + ", and the number of the ball is: " + number;
     }
 
 }
