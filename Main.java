@@ -5,4 +5,5 @@ public class Main {
             System.out.println(lottery.getRandomBall());
         }
     }
+    
 }
