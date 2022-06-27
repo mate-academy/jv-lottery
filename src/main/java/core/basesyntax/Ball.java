@@ -30,5 +30,3 @@ public class Ball {
         this.number = number;
     }
 }
-
-// create Ball class with the following fields: color and number and override toString() method
