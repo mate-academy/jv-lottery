@@ -8,9 +8,4 @@ public class Lottery extends Ball {
         newBall.getColor();
         return newBall;
     }
-
-    @Override
-    public String toString() {
-        return "Lottery{}";
-    }
 }
