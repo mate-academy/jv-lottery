@@ -15,10 +15,10 @@ public class Ball extends ColorSupplier {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "number=" + number +
-                ", color='" + color + '\'' +
-                '}';
+        return "Ball{"
+                + "number=" + number
+                + ", color='" + color + '\''
+                + '}';
     }
 }
 
