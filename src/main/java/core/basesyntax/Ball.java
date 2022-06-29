@@ -3,6 +3,7 @@ package core.basesyntax;
 public class Ball extends ColorSupplier {
     private int number;
     private String color;
+    
     public void getNumber() {
         this.number = (int)(Math.random() * 100);
     }
