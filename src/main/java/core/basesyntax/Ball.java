@@ -10,6 +10,7 @@ public class Ball extends ColorSupplier {
     public void getColor() {
         this.color = getRandomColor();
     }
+    
     @Override
     public String toString() {
         return "Ball{"
