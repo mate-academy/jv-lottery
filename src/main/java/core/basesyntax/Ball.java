@@ -22,7 +22,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Ball color = " + color + "; ball number = " + number + ";";
     }
 
 }
