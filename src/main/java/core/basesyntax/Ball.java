@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public class Ball extends ColorSupplier {
 
     private int number;

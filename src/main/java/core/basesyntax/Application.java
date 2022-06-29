@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import core.basesyntax.Lottery;
-
 public class Application {
     public static void main(String[] args) {
         Lottery ball1 = new Lottery();
