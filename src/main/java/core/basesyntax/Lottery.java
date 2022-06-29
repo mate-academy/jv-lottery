@@ -1,3 +1,5 @@
+package core.basesyntax;
+
 import java.util.Random;
 public class Lottery {
     protected Ball getRandomBall() {
