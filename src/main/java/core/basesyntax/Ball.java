@@ -20,5 +20,3 @@ public class Ball extends ColorSupplier {
                 + '}';
     }
 }
-
-
