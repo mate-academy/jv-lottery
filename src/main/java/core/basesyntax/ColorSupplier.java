@@ -4,14 +4,24 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-    enum Color {
-        Green,
-        Red,
-        Yellow
+    public enum Color {
+        GREEN,
+        RED,
+        YELLOW
     }
 
+    private Random random = new Random();
+
     public Color getRandomColor() {
-        int index = new Random().nextInt(Color.values().length);
+        int index = random.nextInt(Color.values().length);
         return Color.values()[index];
+    }
+
+    public Random getRandom() {
+        return random;
+    }
+
+    public void setRandom(Random random) {
+        this.random = random;
     }
 }
