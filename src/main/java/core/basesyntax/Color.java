@@ -8,5 +8,6 @@ public enum Color {
     PURPLE,
     GREEN,
     SILVER,
-    GOLD
+    GOLD,
+    ORANGE
 }
