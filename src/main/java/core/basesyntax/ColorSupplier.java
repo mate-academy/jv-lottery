@@ -16,12 +16,4 @@ public class ColorSupplier {
         int index = random.nextInt(Color.values().length);
         return Color.values()[index];
     }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
 }
