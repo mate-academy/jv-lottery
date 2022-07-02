@@ -12,5 +12,5 @@ public class Loterry extends ColorSupplier {
         Random random = new Random();
         int ball = random.nextInt(10);
         return ball;
-   }
+    }
 }
