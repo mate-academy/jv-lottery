@@ -9,7 +9,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        return builder.append("color: ").append(color).append("number: ").append(number).toString();
+        return "color: " + color + "number: " + number;
     }
 }
