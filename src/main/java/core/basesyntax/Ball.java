@@ -5,22 +5,29 @@ public class Ball {
     private int number;
 
     Ball(String color, int number) {
+        setColor(color);
+        setNumber(number);
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
         this.number = number;
     }
 
     @Override
     public String toString() {
-        return this.color + " " + this.number;
-    }
-
-    enum Color {
-        RED,
-        GREEN,
-        BLUE,
-        YELLOW,
-        BLACK,
-        MAGENTA,
-        GRAY
+        return "Ball with color: " + getColor() + " and number: " + getNumber();
     }
 }
+
