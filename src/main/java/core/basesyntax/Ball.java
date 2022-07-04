@@ -25,5 +25,3 @@ public class Ball {
         return "Ball is: " + getColor() + " with number: " + getNumber();
     }
 }
-
-
