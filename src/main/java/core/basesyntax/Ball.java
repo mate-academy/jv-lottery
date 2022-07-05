@@ -4,9 +4,9 @@ public class Ball {
     private String color;
     private int number;
 
-    Ball(String color, int number) {
-        setColor(color);
-        setNumber(number);
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     public String getColor() {
@@ -30,4 +30,3 @@ public class Ball {
         return "Ball with color: " + getColor() + " and number: " + getNumber();
     }
 }
-
