@@ -4,9 +4,6 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball() {
-    }
-
     public String getColor() {
         return color;
     }
