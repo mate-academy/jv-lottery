@@ -24,5 +24,4 @@ public class Ball {
     public String toString() {
         return "Ball color = " + getColor() + "; ball number = " + getNumber() + ";";
     }
-
 }
