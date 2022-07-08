@@ -1,8 +1,12 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class ColorSupplier {
+    static Random random = new Random();
+
     public static String getRandomColor() {
-        int index = Lottery.random.nextInt(Color.values().length);
+        int index = random.nextInt(Color.values().length);
         return Color.values()[index].name();
     }
 }
