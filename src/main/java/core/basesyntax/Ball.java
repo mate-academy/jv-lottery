@@ -25,6 +25,7 @@ public class Ball {
         this.number = number;
     }
 
+    @Override
     public String toString() {
         return getColor() + " " + getNumber();
     }
