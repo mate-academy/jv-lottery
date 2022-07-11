@@ -5,8 +5,8 @@ public class Ball {
     private int number;
 
     public Ball(String color, int number) {
-        setColor(color);
-        setNumber(number);
+        this.color = color;
+        this.number = number;
     }
 
     public int getNumber() {
