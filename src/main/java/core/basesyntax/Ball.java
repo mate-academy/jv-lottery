@@ -1,11 +1,8 @@
 package core.basesyntax;
 
-import java.awt.*;
-import java.util.Random;
-
-public  class  Ball {
-     private String color;
-     private int number;
+public class Ball {
+    private String color;
+    private int number;
 
     public void setColor(String color) {
         this.color = color;
