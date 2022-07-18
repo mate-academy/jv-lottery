@@ -10,7 +10,7 @@ public class Lottery {
     public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.setNumber(random.nextInt(MAX_RANDOM_NUMBER));
-        ball.setColor(color.getRandomColor());
+        ball.setColor(colorSupplier.getRandomColor());
         return ball;
     }
 }
