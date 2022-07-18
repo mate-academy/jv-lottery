@@ -2,9 +2,10 @@ package core.basesyntax;
 
 public class Application {
     public static void main(String[] args) {
+        Lottery lottery = new Lottery();
         for (int i = 0; i < 3; i++) {
-            Ball getRandomBall = Lottery.getRandomBall();
-            System.out.println("Random ball: " + i + " " + getRandomBall);
+            Ball randomBall = lottery.getRandomBall();
+            System.out.println(randomBall);
         }
     }
 }
