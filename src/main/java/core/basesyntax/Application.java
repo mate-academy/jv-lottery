@@ -9,8 +9,6 @@ public class Application {
         Ball ball2 = lottery.getRandomBall();
         Ball ball3 = lottery.getRandomBall();
         var lotteryBasket = new Object[]{ball1, ball2, ball3};
-
         Arrays.stream(lotteryBasket).forEach(System.out::println);
     }
-
 }
