@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Application {
 
+
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
         var lotteryBasket = new Object[3];
