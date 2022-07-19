@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.Base64;
+
 public class Ball {
     private String color;
     private int number;
