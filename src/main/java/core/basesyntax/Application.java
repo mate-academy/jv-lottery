@@ -8,6 +8,5 @@ public class Application {
         for (int i = 0; i < balls.length; i++) {
             System.out.println(lottery.getRandomBall());
         }
-
     }
 }
