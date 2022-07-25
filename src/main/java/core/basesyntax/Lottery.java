@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class Lottery {
     public String getRandomBall() {
-        Random randomsNumber = new Random();
-        int numberOfRandBall = randomsNumber.nextInt(100);
-        ColorSupplier randomsColor = new ColorSupplier();
-        String colorOfRandomBall = randomsColor.getRandomColor();
-        Ball randomsBall = new Ball(colorOfRandomBall, numberOfRandBall);
+        Random random = new Random();
+        int randomNumber = random.nextInt(100);
+        ColorSupplier colorSupplier = new ColorSupplier();
+        String randomColor = colorSupplier.getRandomColor();
+        Ball randomsBall = new Ball(randomColor, randomNumber);
         return String.valueOf(randomsBall);
     }
 }
