@@ -9,7 +9,6 @@ public class Ball {
     public Ball() {
         ColorSupplier color = new ColorSupplier();
         this.color = color.getRandomColor();
-
         this.number = new Random().nextInt(99) + 1;
     }
 
