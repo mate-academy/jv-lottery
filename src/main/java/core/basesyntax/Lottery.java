@@ -5,10 +5,10 @@ import java.util.Random;
 public class Lottery {
     public Ball getRandomBall() {
         Random rand = new Random();
-        int ballNum = rand.nextInt(100);
-        ColorSupplier cs = new ColorSupplier();
-        String color = cs.getRandomColor();
+        int ballNumber = rand.nextInt(100);
+        ColorSupplier colorSupplier = new ColorSupplier();
+        String color = colorSupplier.getRandomColor();
 
-        return new Ball(color, ballNum);
+        return new Ball(color, ballNumber);
     }
 }
