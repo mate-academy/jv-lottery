@@ -6,10 +6,9 @@ public class Ball {
     private final String color;
     private final int number;
 
-    public Ball() {
-        ColorSupplier color = new ColorSupplier();
-        this.color = color.getRandomColor();
-        this.number = new Random().nextInt(99) + 1;
+    public Ball(int number, String color) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
