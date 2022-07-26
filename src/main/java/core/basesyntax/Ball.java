@@ -11,4 +11,9 @@ public class Ball {
                 ", number=" + number +
                 '}';
     }
+
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 }
