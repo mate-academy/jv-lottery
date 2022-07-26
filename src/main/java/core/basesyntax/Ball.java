@@ -15,6 +15,7 @@ public class Ball {
                 "color='" + color + '\'' +
                 ", number=" + number +
                 '}';
+
     }
 }
 

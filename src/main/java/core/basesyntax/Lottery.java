@@ -12,5 +12,6 @@ public class Lottery {
         int number = rnd.nextInt(HUNDRED);
         Ball ball = new Ball(color, number);
         return ball;
+
     }
 }
