@@ -13,7 +13,7 @@ public class Ball {
         this.color = color;
     }
 
-    public void  setNumber(int number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
