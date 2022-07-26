@@ -2,13 +2,11 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class ColorSupplier extends Ball {
+public class ColorSupplier {
     public String getRandomColor() {
-        String color;
         Random random = new Random();
-        int ranValue = random.nextInt(4);
-        Colors[] allColors = Colors.values();
-        color = allColors[ranValue].toString();
-        return color;
+        Color[] colors = Color.values();
+        int index = random.nextInt(colors.length);
+        return colors[index].toString();
     }
 }
