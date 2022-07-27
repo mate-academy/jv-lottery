@@ -13,9 +13,9 @@ public class Ball {
     }
 
     @Override
-    public String toString () {
-        return "Your random ball:\n" +
-                "humber - "
+    public String toString() {
+        return "Your random ball:\n"
+                + "humber - "
                 + number
                 + "\n"
                 + "color - "
