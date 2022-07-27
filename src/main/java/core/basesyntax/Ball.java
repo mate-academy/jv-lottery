@@ -1,18 +1,18 @@
 package core.basesyntax;
 
 public class Ball {
-    private String name;
+    private int number;
     private String color;
 
-    public Ball(String name, String color) {
-        this.name = name;
+    public Ball(int number, String color) {
+        this.number = number;
         this.color = color;
     }
 
     @Override
     public String toString() {
         return "Ball{"
-                + "name='" + name + '\''
+                + "number='" + number + '\''
                 + ", color='" + color + '\''
                 + '}';
     }
