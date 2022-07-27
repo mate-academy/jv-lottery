@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Ball {
-    private int numder;
+    private int number;
     private String color;
 
     public void setColor(String color) {
@@ -9,14 +9,14 @@ public class Ball {
     }
 
     public void setNumder(int numder) {
-        this.numder = numder;
+        this.number = numder;
     }
 
     @Override
     public String toString() {
         return "Ball{"
                 + "color='" + color + '\''
-                + ", numder=" + numder
+                + ", numder=" + number
                 + '}';
     }
 }
