@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        Colors[] colors = new Colors[] { Colors.RED, Colors.GREEN, Colors.BLUE, Colors.YELLOW };
-        return colors[(int) (Math.random() * 4)].toString();
+        Color[] colors = Color.values();
+        return colors[(int) (Math.random() * colors.length)].toString();
     }
 }
