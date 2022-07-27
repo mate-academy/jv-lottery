@@ -14,11 +14,4 @@ public class Ball {
         return number + " " + color;
     }
 
-    public enum Color {
-        BLACK,
-        BROWN,
-        RED,
-        BLUE,
-        GREEN;
-    }
 }
