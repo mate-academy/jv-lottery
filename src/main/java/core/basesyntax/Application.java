@@ -1,7 +1,8 @@
 package core.basesyntax;
 
 /**
- * To test the program, in main() method, create three balls using getRandomBall() method from Lottery class.
+ * To test the program, in main() method,
+ * create three balls using getRandomBall() method from Lottery class.
  * And print information about them in the console.
  */
 public class Application {
@@ -13,6 +14,4 @@ public class Application {
             System.out.println(balls[i].toString());
         }
     }
-
-
 }
