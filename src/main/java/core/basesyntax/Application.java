@@ -10,7 +10,7 @@ public class Application {
                 randomizer.getRandomBall()
         };
 
-        for ( Ball ball: balls) {
+        for (Ball ball: balls) {
             System.out.println(ball.toString());
         }
     }
