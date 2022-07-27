@@ -14,14 +14,13 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Your random ball:\n"
+        return "Your random ball:"
+                + System.lineSeparator()
                 + "humber - "
                 + number
-                + "\n"
+                + System.lineSeparator()
                 + "color - "
                 + color
-                + "\n"
-                + "\n"
-                .trim();
+                + System.lineSeparator();
     }
 }
