@@ -1,10 +1,5 @@
 package core.basesyntax;
 
-/**
- * To test the program, in main() method,
- * create three balls using getRandomBall() method from Lottery class.
- * And print information about them in the console.
- */
 public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
