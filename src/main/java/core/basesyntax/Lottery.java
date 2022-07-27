@@ -15,7 +15,7 @@ public class Lottery extends ColorSupplier {
      */
     public Ball getRandomBall() {
         String ballColor = getRandomColor();
-        int ballNamber = new Random(MAX_NUMBER).nextInt() + 1;
+        int ballNamber = new Random().nextInt(MAX_NUMBER) + 1;
         return new Ball(Integer.toString(ballNamber), ballColor);
     }
 }
