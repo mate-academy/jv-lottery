@@ -6,7 +6,8 @@ public class Application {
         Lottery[] lotteries = new Lottery[3];
         for (int i = 0; i < lotteries.length; i++) {
             lotteries[i] = new Lottery();
-            System.out.println("color "+lotteries[i].getRandomBall().getColor()+" number "+lotteries[i].getRandomBall().getNumber());
+            System.out.println("color " + lotteries[i].getRandomBall().getColor()
+                    + " number " + lotteries[i].getRandomBall().getNumber());
         }
     }
 }
