@@ -8,15 +8,15 @@ public class Ball {
         this.color = color;
     }
 
-    public void setNumder(int numder) {
-        this.number = numder;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
         return "Ball{"
                 + "color='" + color + '\''
-                + ", numder=" + number
+                + ", number=" + number
                 + '}';
     }
 }
