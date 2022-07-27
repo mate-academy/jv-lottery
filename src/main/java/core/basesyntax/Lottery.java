@@ -6,11 +6,11 @@ public class Lottery {
     private static final int maxNumber = 100;
     private final ColorSupplier color;
 
-    public Lottery (ColorSupplier color) {
+    public Lottery(ColorSupplier color) {
         this.color = color;
     }
 
-    public Ball getRandomBall () {
+    public Ball getRandomBall() {
 
         int number = new Random().nextInt(maxNumber);
 
