@@ -30,8 +30,8 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball " +
-                "color is '" + color + '\'' +
-                ", number is " + number;
+        return "Ball "
+                + "color is '" + color + '\''
+                + ", number is " + number;
     }
 }
