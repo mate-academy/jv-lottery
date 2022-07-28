@@ -1,13 +1,9 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery {
     public String getRandomBall() {
-        StringBuilder balls = new StringBuilder();
-
-        for (int i = 0; i < 3; i++) {
-            balls.append(new Ball().toString()).append("\n");
-        }
-
-        return balls.toString();
+        return new Ball(new ColorSupplier().getRandomColor(),new Random().nextInt(100)).toString();
     }
 }

@@ -7,17 +7,22 @@ public class Ball {
     private int number;
 
     public String getColor() {
-        return new ColorSupplier().getRandomColor().toLowerCase();
+        return color;
     }
 
     public int getNumber() {
-        return new Random().nextInt(100);
+        return number;
+    }
+
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return "Your Ball is: " + getColor()
+        return "Your Ball is: " + color
                 + '\''
-                + ", with number=" + getNumber();
+                + ", with number=" + number;
     }
 }
