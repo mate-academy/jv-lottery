@@ -10,11 +10,9 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
-
     @Override
     public String toString() {
         return "Win ball number is: " + this.number + " was "
                 + this.color.toLowerCase(Locale.ROOT) + " color.";
     }
-
 }
