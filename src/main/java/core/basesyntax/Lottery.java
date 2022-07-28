@@ -9,7 +9,7 @@ public class Lottery {
         ColorSupplier colorSupplier = new ColorSupplier();
         String color = colorSupplier.getRandomColor();
         Random random = new Random();
-        int numb = random.nextInt(MAX_NUMBER_OF_BALLS);
-        return new Ball(color,numb);
+        int number = random.nextInt(MAX_NUMBER_OF_BALLS);
+        return new Ball(color,number);
     }
 }
