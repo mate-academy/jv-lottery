@@ -7,6 +7,5 @@ public class Application {
         for (int i = 1; i < 4;i++) {
             System.out.println(lottery.getRandomBall());
         }
-
     }
 }
