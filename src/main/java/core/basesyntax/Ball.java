@@ -1,10 +1,13 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public class Ball {
     private String color;
     private int number;
+
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 
     public String getColor() {
         return color;
@@ -12,11 +15,6 @@ public class Ball {
 
     public int getNumber() {
         return number;
-    }
-
-    public Ball(String color, int number) {
-        this.color = color;
-        this.number = number;
     }
 
     @Override
