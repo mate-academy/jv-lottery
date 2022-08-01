@@ -8,7 +8,5 @@ public class Application {
             balls[i] = lottery.getRandomBall();
             System.out.println(balls[i]);
         }
-
-
     }
 }
