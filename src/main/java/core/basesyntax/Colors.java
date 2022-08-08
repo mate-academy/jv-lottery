@@ -1,16 +1,16 @@
 package core.basesyntax;
 
 public enum Colors {
-    BLUE("Голубой"),
-    WHITE("Белый"),
-    RED("Красный"),
-    YELLOW("Желтый"),
-    GREEN("Зелёный"),
-    PINK("Розовый"),
-    BLACK("Черный"),
-    ORANGE("Оранжевый"),
-    GREY("Серый"),
-    VIOLET("Фиолетовый");
+    BLUE("Blue"),
+    WHITE("White"),
+    RED("Red"),
+    YELLOW("Yellow"),
+    GREEN("Green"),
+    PINK("Pink"),
+    BLACK("Black"),
+    ORANGE("Orange"),
+    GREY("Grey"),
+    VIOLET("Violet");
 
     private final String title;
 
@@ -26,5 +26,4 @@ public enum Colors {
     public String getTitle() {
         return title;
     }
-
 }
