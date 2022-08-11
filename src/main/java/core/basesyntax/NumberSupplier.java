@@ -3,11 +3,10 @@ package core.basesyntax;
 import java.util.Random;
 
 public class NumberSupplier {
-
-    private static final Random RANDOM = new Random();
-    private static final int BOUND = 100;
+    private final Random random = new Random();
+    private final int bound = 100;
 
     public int getRandomNumber() {
-        return RANDOM.nextInt(BOUND);
+        return random.nextInt(bound);
     }
 }
