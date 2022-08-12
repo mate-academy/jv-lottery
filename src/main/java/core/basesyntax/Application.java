@@ -5,10 +5,11 @@ public class Application {
 
         Ball[] ball = new Ball[3];
 
-        for (int i = 1; i <= 3; i++){
+        for (int i = 1; i <= 3; i++) {
 
-            ball[i-1] = new Lottery().getRandomBall();
-            System.out.println("Ball #" + i + " was created in " + ball[i-1].color + " color with number of " + ball[i-1].number);
+            ball[i - 1] = new Lottery().getRandomBall();
+            System.out.println("Ball #" + i + " was created in " + ball[i - 1].getColor()
+                    + " color with number of " + ball[i - 1].getNumber());
         }
 
     }
