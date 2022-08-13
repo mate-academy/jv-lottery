@@ -6,12 +6,12 @@ public class Lottery {
     private static final int BALL_NUMBER = 100;
 
     public Ball getRandomBall() {
-        Ball randomBall = new Ball();
+        Ball newRandomBall = new Ball();
         ColorSupplier coloursSupplier = new ColorSupplier();
         Colors randomColor = coloursSupplier.getRandomColor();
-        randomBall.setColor(randomColor.name());
+        newRandomBall.setColor(randomColor.name());
         Random random = new Random();
-        randomBall.setNumber(random.nextInt(BALL_NUMBER));
-        return randomBall;
+        newRandomBall.setNumber(random.nextInt(BALL_NUMBER));
+        return newRandomBall;
     }
 }
