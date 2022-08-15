@@ -10,5 +10,3 @@ public class ColorSupplier {
         return String.valueOf(Colors.values()[randomNumber]);
     }
 }
-
-
