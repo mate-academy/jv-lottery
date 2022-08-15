@@ -7,5 +7,3 @@ public class ColorSupplier {
         return Color.values()[new Random().nextInt(Color.values().length)].name();
     }
 }
-
-
