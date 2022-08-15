@@ -10,6 +10,11 @@ public class Ball {
         this.number = number;
     }
 
+    public String print() {
+
+        return "Color " + color + " number " + number + ".";
+    }
+
     public String getColor() {
 
         return color;
