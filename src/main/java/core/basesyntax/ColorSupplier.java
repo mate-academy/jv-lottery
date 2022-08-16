@@ -10,5 +10,3 @@ public class ColorSupplier {
         return Color.values()[randomNumber].name();
     }
 }
-
-
