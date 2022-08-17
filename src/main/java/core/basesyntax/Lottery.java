@@ -6,8 +6,8 @@ public class Lottery {
     private static final int MAX_BOUND = 100;
 
     public Ball getRandomBall() {
-        int number = new Random().nextInt(MAX_BOUND) + 1;
-        String color = new ColorSupplier().getRandomColor();
-        return new Ball(color, number);
+        Random randomVariables = new Random();
+        ColorSupplier colorVariables = new ColorSupplier();
+        return new Ball(colorVariables.getRandomColor(), randomVariables.nextInt(MAX_BOUND) + 1);
     }
 }
