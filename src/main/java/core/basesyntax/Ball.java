@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Ball extends Lottery {
+    private int number;
    private String color;
-   private int number;
 
     public Ball() {}
 
