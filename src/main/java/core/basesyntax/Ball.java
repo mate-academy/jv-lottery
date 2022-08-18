@@ -1,10 +1,13 @@
 package core.basesyntax;
 
 public class Ball extends Lottery {
-    private int number;
-   private String color;
 
-    public Ball() {}
+    private int number;
+    private String color;
+
+    public Ball() {
+
+    }
 
     public Ball(String color,int number) {
         this.color = color;
