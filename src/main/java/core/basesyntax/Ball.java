@@ -1,12 +1,8 @@
 package core.basesyntax;
 
-public class Ball extends Lottery {
+public class Ball {
     private String color;
     private int number;
-
-    public enum Colors {
-        RED, BLUE, GREEN, YELLOW, PURPLE
-    }
 
     public void setColor(String color) {
         this.color = color;
