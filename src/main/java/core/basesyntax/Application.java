@@ -9,7 +9,5 @@ public class Application {
         for (Lottery lotteries : lottery) {
             System.out.println(lotteries.getRandomBall());
         }
-
-    // create three balls using class Lottery and print information about them in console
     }
 }
