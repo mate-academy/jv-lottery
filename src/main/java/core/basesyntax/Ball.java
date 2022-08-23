@@ -10,9 +10,10 @@ public class Ball {
 
     public void setNumber(int number) {
         this.number = number;
+
     }
 
     public String toString() {
-        return color + " " + number;
+        return "Ball with color - " + color + " and number - " + number;
     }
 }
