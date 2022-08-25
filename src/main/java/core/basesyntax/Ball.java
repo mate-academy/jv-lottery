@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Ball extends Lottery {
+public class Ball {
 
     private int number;
     private String color;
