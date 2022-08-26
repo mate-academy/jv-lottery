@@ -2,11 +2,11 @@ package core.basesyntax;
 
 public enum DifferentColor {
 
-    RED,
-    BLUE,
-    YELLOW,
-    BLACK,
-    BROWN,
-    GOLD,
+     RED,
+     BLUE,
+     YELLOW,
+     BLACK,
+     BROWN,
+     GOLD,
 
 }
