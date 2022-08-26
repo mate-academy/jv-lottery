@@ -5,28 +5,23 @@ public class Ball {
     private int number;
 
     public Ball(String color, int number) {
-
         this.color = color;
         this.number = number;
     }
 
     public String print() {
-
         return "Color " + color + " number " + number + ".";
     }
 
     public String getColor() {
-
         return color;
     }
 
     public int getNumber() {
-
         return number;
     }
 
     public void setColor(String color) {
-
         this.color = color;
     }
 
