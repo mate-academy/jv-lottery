@@ -1,9 +1,5 @@
 package core.basesyntax;
 
-/**
- * @author dogmax296
- * @link https://github.com/dogmax296
- */
 public class Ball {
     private final String color;
     private final int number;
