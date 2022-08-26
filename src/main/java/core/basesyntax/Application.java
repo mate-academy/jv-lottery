@@ -7,7 +7,7 @@ public class Application {
 
         for (int i = 0; i < 3; i++) {
             balls[i] = lottery.getRandomBall();
-            System.out.println("Ball #" + i + " was created : " + balls[i].print());
+            System.out.println("Ball #" + i + " was created : " + balls[i]);
 
         }
 

@@ -12,6 +12,10 @@ public class Ball {
     public String print() {
         return "Color " + color + " number " + number + ".";
     }
+    @Override
+    public String toString() {
+        return "Color " + color + " number " + number + ".";
+    }
 
     public String getColor() {
         return color;
