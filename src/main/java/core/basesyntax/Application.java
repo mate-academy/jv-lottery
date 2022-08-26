@@ -8,6 +8,5 @@ public class Application {
          System.out.println(lottery.getRandomBall());
          System.out.println(lottery.getRandomBall());
          System.out.println(lottery.getRandomBall());
-
     }
 }
