@@ -16,4 +16,3 @@ To test the program, in main() method, create three balls using `getRandomBall()
 And print information about them in the console.
 
 #### [Try to avoid these common mistakes, while solving task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/oop/lottery)
-j
