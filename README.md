@@ -5,7 +5,7 @@ Let's create a simple lottery that will return balls with a random color and ran
 Your tasks are:
 - create `Ball` class with the following fields: `color` and `number` and override `toString()` method
 - create enum with different colors
-- implement method `String getRandomColor()` in class `ColorSupplier`. 
+- implement method `getRandomColor()` in class `ColorSupplier`. 
 This method should return a random color, based on the enum values (use `Random` class for this) 
 
 Then create a `Lottery` class with `getRandomBall()` method, which will return the ball.
@@ -16,3 +16,4 @@ To test the program, in main() method, create three balls using `getRandomBall()
 And print information about them in the console.
 
 #### [Try to avoid these common mistakes, while solving task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/oop/lottery)
+j
