@@ -9,7 +9,7 @@ public class Application {
         Lottery ballwin = new Lottery();
         String win = ballwin.getRandomBall();
         for (int i = 0; i < balls.length; i++) {
-            balls[i] = new Ball(ballcolor.getRandomColor(),new Random().nextInt(100));
+            balls[i] = new Ball(ballcolor.getRandomColor(), new Random().nextInt(100));
             if ((balls[i].getColor() + " " + balls[i].getNumber()).equals(win)) {
                 System.out.println("You are win!");
             } else {
