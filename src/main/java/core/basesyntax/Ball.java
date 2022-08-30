@@ -4,14 +4,14 @@ public class Ball {
     private String color;
     private int number;
     
-    @Override
-    public String toString() {
-        return "";
-    }
-    
     public Ball(String color, int num) {
         this.number = num;
         this.color = color;
+    }
+    
+    @Override
+    public String toString() {
+        return "";
     }
     
     public String getColor() {
