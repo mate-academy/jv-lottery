@@ -8,7 +8,7 @@ public class Ball {
     public String toString() {
    		return "";
 	}
-
+ 
 	public Ball(String color, int num) {
 		this.number = num;
 		this.color = color;
