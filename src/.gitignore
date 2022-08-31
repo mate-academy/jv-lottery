@@ -1,2 +1,3 @@
 .idea
-jv-lottery.iml
+*.iml
+target/*
