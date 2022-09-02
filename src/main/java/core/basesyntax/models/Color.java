@@ -1,6 +1,6 @@
-package models;
+package core.basesyntax.models;
 
-public enum Colour {
+public enum Color {
     BLUE,
     RED,
     YELLOW,

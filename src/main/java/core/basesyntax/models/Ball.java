@@ -1,4 +1,4 @@
-package models;
+package core.basesyntax.models;
 
 public class Ball {
     private String color;

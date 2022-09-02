@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-import models.Ball;
+import core.basesyntax.models.Ball;
 
 import java.util.Random;
 
