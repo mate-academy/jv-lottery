@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import core.basesyntax.models.Ball;
-
 import java.util.Random;
 
 public class Lottery {
