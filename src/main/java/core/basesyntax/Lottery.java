@@ -8,5 +8,4 @@ public class Lottery {
         String color = new ColorSupplier().getRandomColor();
         return new Ball(color, number);
     }
-
 }
