@@ -7,6 +7,7 @@ public class Lottery {
     public void getRandomBall() {
 
         for (int i = 0; i < 3; i++) {
+
             Ball ball = new Ball();
             Random random = new Random();
             ColorSupplier supplier = new ColorSupplier();
