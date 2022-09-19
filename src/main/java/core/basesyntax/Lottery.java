@@ -7,7 +7,7 @@ public class Lottery {
     private static final ColorSupplier colorSupplier = new ColorSupplier();
 
     public static void getRandomBall() {
-        int value = random.nextInt(100);
+        final int value = random.nextInt(100);
         System.out.println(colorSupplier.getRandomColor() + " " + value);
     }
 }
