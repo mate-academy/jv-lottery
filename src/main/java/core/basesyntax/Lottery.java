@@ -11,5 +11,4 @@ public class Lottery {
         ball.setNumber(number.nextInt(100));
         return "Color is: " + ball.getColor() + "\n" + "Number is: " + ball.getNumber();
     }
-
 }
