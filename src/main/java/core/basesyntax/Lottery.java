@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lottery {
     private static final Random random = new Random();
     private static final ColorSupplier colorSupplier = new ColorSupplier();
-    public static final int RANDOM_CONSTANT = 100;
+    private static final int RANDOM_CONSTANT = 100;
 
     public Ball getRandomBall() {
         int value = random.nextInt(RANDOM_CONSTANT);
