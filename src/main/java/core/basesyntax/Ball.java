@@ -18,7 +18,12 @@ public int getNumber(){
 }
 public String printBall(){
   String out = "Ball : " + getColor() + (" ") + getNumber();
+  System.out.println(out);
  return out;
+}
+public String toString(){
+
+  return null;
 }
 
 

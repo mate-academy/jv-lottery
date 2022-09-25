@@ -12,7 +12,7 @@ public class Lottery {
 
     Random random = new Random();
     int num = random.nextInt(100);
-    System.out.println(num);
+   // System.out.println(num);
     ball.setNumber(num);
 
     return ball;
