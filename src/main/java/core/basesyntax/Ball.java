@@ -26,10 +26,4 @@ public class Ball {
         return out;
     }
 
-    public String toString() {
-        return null;
-    }
-
-
-
 }
