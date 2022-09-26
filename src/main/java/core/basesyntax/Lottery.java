@@ -16,7 +16,9 @@ public class Lottery {
     }
 
     public void setMaxNumber(int maxNumber) {
-        if (maxNumber < 1) throw new NumberFormatException();
+        if (maxNumber < 1) {
+            throw new NumberFormatException();
+        }
         this.maxNumber = maxNumber;
     }
 }
