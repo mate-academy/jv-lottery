@@ -15,6 +15,6 @@ public class Lottery {
 
         ball.setNumber(num);
 
-    return ball;
+        return ball;
    }
 }

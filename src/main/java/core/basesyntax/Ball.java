@@ -12,22 +12,21 @@ public class Ball {
         this.number = number;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color.toString();
     }
 
-    public int getNumber(){
+    public int getNumber() {
         return number;
     }
 
-    public String printBall(){
+    public String printBall() {
         String out = "Ball : " + getColor() + (" ") + getNumber();
         System.out.println(out);
         return out;
     }
 
-    public String toString(){
-
+    public String toString() {
         return null;
     }
 
