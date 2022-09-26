@@ -11,11 +11,11 @@ public class Lottery {
         return new Ball(randomizer.nextInt(maxNumber + 1), supplier.getRandomColor(randomizer));
     }
 
-    public int getMAX_NUMBER() {
+    public int getMaxNumber() {
         return maxNumber;
     }
 
-    public void setMAX_NUMBER(int maxNumber) {
+    public void setMaxNumber(int maxNumber) {
         if (maxNumber < 1) throw new NumberFormatException();
         this.maxNumber = maxNumber;
     }
