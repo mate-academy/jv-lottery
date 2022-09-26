@@ -14,6 +14,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return this.color + " , " + this.number;
+        return "Ball color = " + this.color + ", number = " + this.number;
     }
 }
