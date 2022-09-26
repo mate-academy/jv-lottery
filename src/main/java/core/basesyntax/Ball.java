@@ -3,7 +3,6 @@ package core.basesyntax;
 public class Ball {
 
     private String color;
-
     private int number;
 
     public void setColor(String color) {
@@ -16,6 +15,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "color: " + color + ", number: " + number;
+        return "It's " + color + " ball with number " + number;
     }
 }
