@@ -1,4 +1,4 @@
-package core.basesyntax.models;
+package core.basesyntax.model;
 
 public enum Color {
     BLUE,

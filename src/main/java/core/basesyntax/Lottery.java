@@ -1,14 +1,19 @@
 package core.basesyntax;
 
-import core.basesyntax.models.Ball;
+import core.basesyntax.model.Ball;
 import java.util.Random;
 
 public class Lottery {
-    public static Ball getRandomBall() {
-        Ball ball = new Ball();
-        ColorSupplier colorSupplier = new ColorSupplier();
-        ball.setColor(colorSupplier.getRandomColor());
-        ball.setNumber(new Random().nextInt(100));
-        return ball;
+    private static final int MAX_BALL_NUMBER = 100;
+    private final Random random;
+    private final ColorSupplier supplier;
+
+    public Lottery(Random random, ColorSupplier supplier) {
+        this.random = random;
+        this.supplier = supplier;
+    }
+
+    public Ball getRandomBall() {
+        return new Ball(supplier.getRandomColor(), random.nextInt(MAX_BALL_NUMBER));
     }
 }
