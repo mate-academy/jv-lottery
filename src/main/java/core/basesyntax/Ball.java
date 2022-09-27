@@ -20,10 +20,7 @@ public class Ball {
         return number;
     }
 
-    public String printBall() {
-        String out = "Ball : " + getColor() + (" ") + getNumber();
-        System.out.println(out);
-        return out;
+    public String toString() {
+        return "Ball : " + getColor() + (" ") + getNumber();
     }
-
 }
