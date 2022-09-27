@@ -12,10 +12,10 @@ public class Lottery {
         colorSupplier = new ColorSupplier();
     }
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.setColor(colorSupplier.getRandomColor());
         ball.setNumber(random.nextInt(BOUND));
-        return "Color is: " + ball.getColor() + "\n" + "Number is: " + ball.getNumber();
+        return ball;
     }
 }
