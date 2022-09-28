@@ -8,16 +8,13 @@ public class Ball {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public int getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setColorAndNumber(String color,int number) {
         this.number = number;
+        this.color = color;
     }
 
     @Override
