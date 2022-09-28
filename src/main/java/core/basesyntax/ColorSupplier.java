@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class ColorSupplier {
     public String getRandomColor(Random random) {
-        int randomInt = random.nextInt(BallColors.values().length); // random integer in length of number of BallColor
-                                                                    // values
+        // random integer in length of number of BallColor
+        // values
+        int randomInt = random.nextInt(BallColors.values().length);
         return BallColors.values()[randomInt].name();
     }
 }
