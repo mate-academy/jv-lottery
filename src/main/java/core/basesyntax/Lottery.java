@@ -15,6 +15,6 @@ public class Lottery {
 
     public Ball getRandomBall() {
         return new Ball(randomGenerator.nextInt(MAX_POSSIBLE_NUMBER),
-                colorSupplier.getRandomColor());
+                colorSupplier.getRandomColor(randomGenerator));
     }
 }
