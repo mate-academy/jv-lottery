@@ -6,11 +6,11 @@ public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
         Ball[] balls = new Ball[BALL_AMOUNT];
-        for (int ball = 0; ball < BALL_AMOUNT; ball++) {
-            balls[ball] = lottery.getRandomBall();
+        for (int ballIndex = 0; ballIndex < BALL_AMOUNT; ballIndex++) {
+            balls[ballIndex] = lottery.getRandomBall();
         }
         for (Ball ball : balls) {
-            System.out.println(ball.toString());
+            System.out.println(ball);
         }
     }
 }
