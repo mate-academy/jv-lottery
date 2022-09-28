@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private static final int MAX_BALL_NUMBER = 100;
     private final Random random;
     private final ColorSupplier colorSupplier;
-    private final static int MAX_BALL_NUMBER = 100;
 
     public Lottery(Random random, ColorSupplier colorSupplier) {
         this.random = random;
