@@ -6,11 +6,11 @@ public class ColorSupplier {
     private static Random random;
 
     public ColorSupplier(Random random) {
-        ColorSupplier.random = random;
+        this.random = random;
     }
 
     public String getRandomColor() {
-        int indexEnum = random.nextInt(Colors.values().length);
-        return (Colors.values()[indexEnum]).name();
+        int indexEnum = random.nextInt(Color.values().length);
+        return (Color.values()[indexEnum]).name();
     }
 }
