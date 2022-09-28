@@ -13,4 +13,3 @@ public class Lottery {
         return new Ball(color, randomColor);
     }
 }
-
