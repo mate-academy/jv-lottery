@@ -1,8 +1,9 @@
 package core.basesyntax;
 
 public class Application {
+    private static final int numberOfObjectsToCreate = 3;
+
     public static void main(String[] args) {
-        int numberOfObjectsToCreate = 3;
         Lottery lottery = new Lottery();
         for (int i = 0; i < numberOfObjectsToCreate; i++) {
             System.out.println(lottery.getRandomBall());
