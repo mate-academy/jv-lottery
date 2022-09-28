@@ -1,11 +1,15 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Application {
-    public static final int numberOfBall = 3;
+    public static final int NUMBEROFBALL = 3;
 
     public static void main(String[] args) {
-        Lottery lottery = new Lottery();
-        for (int i = 0; i < numberOfBall; i++) {
+        Random randomNum = new Random();
+        ColorSupplier randomColor = new ColorSupplier();
+        Lottery lottery = new Lottery(randomNum, randomColor);
+        for (int i = 0; i < NUMBEROFBALL; i++) {
             System.out.println(lottery.getRandomBall());
         }
     }
