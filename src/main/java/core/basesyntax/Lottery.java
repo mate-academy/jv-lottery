@@ -3,8 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
+    private final int LIMITER = 100;
+    Random randomNumber = new Random();
     public Ball getRandomBall() {
-        Random randomNumber = new Random();
-        return new Ball(getRandomColor(), randomNumber.nextInt(100));
+        return new Ball(getRandomColor(), randomNumber.nextInt(LIMITER));
     }
 }
