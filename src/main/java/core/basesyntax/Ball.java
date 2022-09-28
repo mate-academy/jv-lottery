@@ -9,13 +9,11 @@ public class Ball {
         this.number = number;
     }
 
-    public String getBallInfo() {
-        return new StringBuilder()
-                .append("Ball color = ")
-                .append(color)
-                .append(", ")
-                .append("number = ")
-                .append(number)
-                .toString();
+    @Override
+    public String toString() {
+        return "Ball{"
+                + "color=" + color.name()
+                + ", number=" + number
+                + '}';
     }
 }
