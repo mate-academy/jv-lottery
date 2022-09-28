@@ -3,8 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Application {
+    public static final int SIZE = 3;
+
     public static void main(String[] args) {
-        final int SIZE = 3;
         Random random = new Random();
         ColorSupplier supplier = new ColorSupplier();
         Lottery lottery = new Lottery(random, supplier);
