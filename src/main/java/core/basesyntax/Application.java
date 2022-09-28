@@ -12,9 +12,7 @@ public class Application {
         Ball[] balls = new Ball[NUMBER_OF_BALLS];
         for (int i = 0; i < balls.length; i++) {
             balls[i] = lottery.getRandomBall();
-        }
-        for (Ball ball : balls) {
-            System.out.println(ball);
+            System.out.println(balls[i]);
         }
     }
 }
