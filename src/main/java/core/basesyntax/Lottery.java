@@ -11,6 +11,7 @@ public class Lottery {
         this.random = random;
         this.supplier = supplier;
     }
+
     public Ball getRandomBall() {
         return new Ball(supplier.getRandomColor(), random.nextInt(MAX_BALL_NUMBER));
     }
