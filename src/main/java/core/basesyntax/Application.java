@@ -1,10 +1,13 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Application {
     public static void main(String[] args) {
-        Ball ball1 = new Lottery().getRandomBall();
-        Ball ball2 = new Lottery().getRandomBall();
-        Ball ball3 = new Lottery().getRandomBall();
+        Lottery lottery = new Lottery(new Random(), new ColorSupplier());
+        Ball ball1 = lottery.getRandomBall();
+        Ball ball2 = lottery.getRandomBall();
+        Ball ball3 = lottery.getRandomBall();
         System.out.println(ball1.toString());
         System.out.println(ball2.toString());
         System.out.println(ball3.toString());
