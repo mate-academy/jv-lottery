@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Application {
-    public static final int BALLS_COUNT = 3;
+    private static final int BALLS_COUNT = 3;
 
     public static void main(String[] args) {
         Random random = new Random();
