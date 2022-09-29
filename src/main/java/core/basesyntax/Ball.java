@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-public class Ball {
-    String color;
-    int number;
+public class Ball extends ColorSupplier {
+    private String color;
+    private int number;
 
     @Override
     public String toString() {
