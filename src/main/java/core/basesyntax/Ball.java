@@ -26,6 +26,6 @@ public class Ball {
     }
 
     public String toString() {
-        return "The ball number is " + getNumber() + " and color is " + getColor();
+        return "The ball number is " + getNumber() + " and color is " + getColor().name();
     }
 }
