@@ -22,9 +22,13 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball" +
-                "Color= '" + color + "' " +
-                "number= '" + number + "' " +
-                "}";
+        return "Ball"
+                + "Color= '"
+                + color
+                + "' "
+                + "number= '"
+                + number
+                + "' "
+                + "}";
     }
 }
