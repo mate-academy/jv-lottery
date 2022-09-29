@@ -12,6 +12,8 @@ public class Lottery {
     }
 
     public Ball getRandomBall() {
-        return new Ball(colorSupplier.getRandomColor(), random.nextInt(100));
+        final String randomColor = colorSupplier.getRandomColor();
+        final int randomNumber = random.nextInt(100);
+        return new Ball(randomColor, randomNumber);
     }
 }
