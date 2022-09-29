@@ -2,14 +2,16 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery extends Ball {
+public class Lottery {
     private static final int FIGURE_COUNT = 100;
-    private Random random = new Random();
+    private final Random random = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         Ball ball = new Ball();
         int number = random.nextInt(FIGURE_COUNT);
-        String color = String.valueOf(ball.getRandomColor());
-        return color + number;
+        ball.setNumber(number);
+        ball.setColor(colorSupplier.getRandomColor());
+        return ball;
     }
 }
