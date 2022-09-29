@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Application {
-    public static final int COUNT = 3;
-    private static Lottery lottery = new Lottery();
+    private static final int COUNT = 3;
+    private static final Lottery lottery = new Lottery();
 
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
