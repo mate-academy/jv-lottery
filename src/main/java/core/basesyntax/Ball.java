@@ -26,19 +26,13 @@ public class Ball {
     }
 
     enum Colors {
-        RED("red"), ORANGE("orange"), YELLOW("yellow"),
-        GREEN("green"), BLUE("blue"), VIOLET("violet");
-        private String color;
-
-        Colors(String color) {
-            this.color = color;
-        }
-
+        RED, ORANGE, YELLOW,
+        GREEN, BLUE, VIOLET
     }
 
     @Override
     public String toString() {
-        return new StringBuilder("color: ").append(colors.color).append(" & number: ")
+        return new StringBuilder("color: ").append(colors.name()).append(" & number: ")
         .append(number).append(" ").toString();
     }
 }
