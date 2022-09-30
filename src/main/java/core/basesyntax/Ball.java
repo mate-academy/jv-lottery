@@ -8,17 +8,8 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
+    
 
-    public Ball() {
-    }
-
-    public enum Color {
-        BLACK,
-        BLUE,
-        YELLOW,
-        WHITE,
-        RED
-    }
 
     @Override
     public String toString() {
