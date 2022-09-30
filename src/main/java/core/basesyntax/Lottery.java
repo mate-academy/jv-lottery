@@ -13,7 +13,8 @@ public class Lottery {
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        int number = random.nextInt(100);
+        int numberOfBalls = 100;
+        int number = this.random.nextInt(numberOfBalls);
         ball.setNumber(number);
         ball.setColor(supplier.getRandomColor());
         return ball;
