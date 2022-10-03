@@ -6,6 +6,12 @@ public class Ball {
     private Color color = ColorSupplier.getRandomColor();
     private int number = new Random().nextInt(100);
 
+    public Ball(){
+    }
+
+    public Ball(Color color, int number){
+    }
+
     public int getNumber() {
         return number;
     }
