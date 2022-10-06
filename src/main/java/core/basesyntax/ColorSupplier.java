@@ -8,12 +8,7 @@ public class ColorSupplier {
 
     public Color getRandomColor() {
         int colorNumber = random.nextInt(COLOR_NUMBER);
-        if (colorNumber == 1) {
-            return Color.BLACK;
-        } else if (colorNumber == 2) {
-            return Color.BLUE;
-        } else {
-            return Color.RED;
-        }
+        Color[] color = Color.values();
+        return color[colorNumber];
     }
 }
