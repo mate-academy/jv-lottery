@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public enum differentColor {
+public enum DifferentColor {
     WHITE,
     RED,
     BLACK,
