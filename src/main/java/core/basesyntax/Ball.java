@@ -6,14 +6,12 @@ public class Ball {
         this.number = number;
     }
 
-    private final DifferentColor color;
     private final int number;
+    private final DifferentColor color;
+
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Ball{" + "color='" + color + '\'' + ", number=" + number + '}';
     }
 }
