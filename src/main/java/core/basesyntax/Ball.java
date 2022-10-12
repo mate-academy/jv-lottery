@@ -1,11 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    public enum COLOR {
+    public enum Color {
         RED,
         GREEN,
         BLUE
     }
-
 
 }
