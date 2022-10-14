@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class Application {
 
-    public static final int BALL = 3;
+    public static final int BALL_NUMBER = 3;
 
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
