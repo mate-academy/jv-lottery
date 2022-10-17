@@ -8,8 +8,15 @@ public class Ball {
         this.number = number;
         this.color = color;
     }
-
-    public static String toString(int number, Color color) {
+    public String toString(int number, Color color) {
         return String.valueOf(number) + " " + color.name();
+    }
+
+    @Override
+    public String toString() {
+        return "Ball{" +
+                "number=" + number +
+                ", color=" + color +
+                '}';
     }
 }
