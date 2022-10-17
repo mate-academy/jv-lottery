@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
     private final Random random;
+
     public ColorSupplier() {
         random = new Random();
     }
