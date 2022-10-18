@@ -13,7 +13,6 @@ public class Lottery {
     }
 
     public Ball getRandomBall() {
-        //Create variables for rand.nextInt(100) and colorSupplier.getRandomColor()
         int value = random.nextInt(MAX);
         String color = colorSupplier.getRandomColor();
         return new Ball(value, color);
