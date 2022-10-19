@@ -9,10 +9,6 @@ public class Ball {
         this.color = color;
     }
 
-    public String toString(int number, Color color) {
-        return String.valueOf(number) + " " + color.name();
-    }
-
     @Override
     public String toString() {
         return "Ball{" + "number=" + number + ", color=" + color + '}';
