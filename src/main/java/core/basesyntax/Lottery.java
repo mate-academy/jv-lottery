@@ -8,16 +8,15 @@ public class Lottery {
         Ball ball = new Ball();
 
         Random random = new Random();
-        int v = random.nextInt(100);
+        int nextInt = random.nextInt(100);
 
-        ball.setNumber(v);
+        ball.setNumber(nextInt);
 
         ColorSupplier colorSupplier = new ColorSupplier();
         String randomColor = colorSupplier.getRandomColor();
         ball.setColour(randomColor);
 
         return ball;
-
 
     }
 }
