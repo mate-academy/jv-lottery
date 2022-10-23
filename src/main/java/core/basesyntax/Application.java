@@ -7,5 +7,7 @@ public class Application {
             String result = "Ball number " + ball.getNumber() + " " + ball.getColor();
             System.out.println(result);
         }
+
     }
+
 }
