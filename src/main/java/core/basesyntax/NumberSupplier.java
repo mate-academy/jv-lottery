@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class NumberSupplier {
-    public static int getRandomNumber() {
+    public int getRandomNumber() {
         return (int) ((Math.random() * 100));
     }
 }
