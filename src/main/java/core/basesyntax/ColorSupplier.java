@@ -8,8 +8,4 @@ public class ColorSupplier {
         return Colors.values()[index];
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }
