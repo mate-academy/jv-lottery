@@ -7,10 +7,10 @@ public class Lottery extends ColorSupplier {
     private Random newBall = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         int indexBall = newBall.nextInt(DEFAULT_NUMBER);
         Ball ball = new Ball(colorSupplier.getRandomColor(), indexBall);
-        return String.valueOf(ball);
+        return ball;
 
     }
 }
