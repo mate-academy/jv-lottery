@@ -3,10 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    final int MAX_VALUE = 100;
-
     private int getRandomNumber() {
-        return new Random().nextInt(MAX_VALUE);
+        return new Random().nextInt(100);
     }
 
     private String getRundomColor() {
