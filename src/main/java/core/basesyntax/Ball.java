@@ -4,9 +4,6 @@ public class Ball {
     private String colour;
     private int number;
 
-    public Ball(String colour, int number) {
-    }
-
     public Ball() {
     }
 
