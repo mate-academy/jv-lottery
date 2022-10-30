@@ -1,9 +1,11 @@
 package core.basesyntax;
 
-public class Lottery {
+public class Lottery extends ColorSupplier {
+    private static final int NUMBER_UPPER = 100;
+    private final ColorSupplier color = new ColorSupplier();
+
     public Ball getRandomBall() {
-        String color = new ColorSupplier().getRandomColor().name();
-        int number = new NumberSupplier().getRandomNumber();
-        return new Ball(color, number);
+        int number = (int) ((Math.random() * NUMBER_UPPER));
+        return new Ball(color.getRandomColor().name(), number);
     }
 }
