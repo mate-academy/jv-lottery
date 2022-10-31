@@ -1,17 +1,18 @@
+package core.basesyntax;
+
 import java.util.Random;
 
 public class Ball {
     String color;
-    int number;
+    int number = new Random().nextInt(100);
 
     public Ball () {
         this.color = new ColorSupplier().getRandomColor().toString();
-        this.number = new Random().nextInt(100);
     }
 
     @Override
     public String toString() {
-        return "Ball{" +
+        return "core.basesyntax.Ball{" +
                 "color='" + color + '\'' +
                 ", number=" + number +
                 '}';
