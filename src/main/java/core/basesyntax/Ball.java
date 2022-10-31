@@ -4,6 +4,11 @@ public class Ball {
     private int number;
     private String color;
 
+    public Ball(int number, String color) {
+        this.number = number;
+        this.color = color;
+    }
+
     public int getNumber() {
         return this.number = number;
     }
@@ -17,11 +22,6 @@ public class Ball {
     }
 
     public void setColor(String color) {
-        this.color = color;
-    }
-
-    public Ball(int number, String color) {
-        this.number = number;
         this.color = color;
     }
 
