@@ -10,6 +10,5 @@ public class Application {
         for (Ball ball : balls) {
             System.out.println(ball.toString());
         }
-        // create three balls using class Lottery and print information about them in console
     }
 }
