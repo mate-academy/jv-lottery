@@ -14,3 +14,4 @@ public class Lottery {
         return anyBall;
     }
 }
+

@@ -11,3 +11,4 @@ public class Application {
         System.out.println(thirdBall.getRandomBall());
     }
 }
+
