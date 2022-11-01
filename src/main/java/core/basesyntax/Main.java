@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Your balls are:");
         Lottery lottery = new Lottery();
         for (int i = 1; i < 4; i++) {
-            System.out.println(i + ")" + lottery.getRandomBall());
+            System.out.println(lottery.getRandomBall());
         }
         System.out.println("Hope you win!");
     }
