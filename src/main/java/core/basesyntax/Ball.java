@@ -27,7 +27,6 @@ public class Ball {
 
         ColorSupplier newColor = new ColorSupplier();
         color = newColor.getRandomColor();
-
         return number + " " + color;
     }
 }
