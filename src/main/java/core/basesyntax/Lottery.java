@@ -2,16 +2,12 @@ package core.basesyntax;
 
 public class Lottery {
     public Ball getRandomBall() {
-        return new Ball();
-    }
+        Ball ball = new Ball();
+        ball.setColor();
+        ball.setNumber();
 
-    public static void main(String[] args) {
-        System.out.println("Let's begin our lottery!");
-        System.out.println("Your balls are:");
-        for (int i = 1; i < 4; i++) {
-            Lottery lottery = new Lottery();
-            System.out.println(lottery.getRandomBall());
-        }
-        System.out.println("Hope you win!");
+        return ball;
     }
 }
+
+
