@@ -9,7 +9,6 @@ public class Ball {
     }
 
     public int getNumber() {
-
         return number;
     }
 
