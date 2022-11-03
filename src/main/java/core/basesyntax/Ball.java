@@ -19,10 +19,12 @@ public class Ball {
     public void setColor(String color) {
         this.color = color;
     }
-    public Ball(int number, String color){
-        this.number = number;
-        this.color = color;
+
+    public Ball(int numberBall, String colorBall) {
+        number = numberBall;
+        color = colorBall;
     }
+
     @Override
     public String toString() {
         return "number " + number + " " + "color " + color;
