@@ -1,9 +1,9 @@
 package core.basesyntax;
 
 public class Ball extends Lottery {
-     private String color;
+    private String color;
     private int number;
-    public Ball(String color, int number) {
+     public Ball(String color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -14,6 +14,6 @@ public class Ball extends Lottery {
 
     @Override
     public String toString() {
-        return "Ball{" + "color='" + color + '\'' + ", number=" + number+'}';
+        return "Ball{" + "color='" + color + '\'' + ", number=" + number +'}';
     }
 }
