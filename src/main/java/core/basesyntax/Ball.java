@@ -9,10 +9,6 @@ public class Ball extends Lottery {
         this.number = number;
     }
 
-    public Ball(){
-
-    }
-
     @Override
     public String toString() {
         return "Ball{" + "color='" + color + '\'' + ", number=" + number + '}';
