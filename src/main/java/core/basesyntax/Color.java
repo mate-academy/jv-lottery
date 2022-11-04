@@ -10,5 +10,4 @@ public enum Color {
     PINK,
     BROWN,
     GREY,
-    ORANGE
 }
