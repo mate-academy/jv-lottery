@@ -19,5 +19,6 @@ public class ColorSupplier {
         Random random = new Random();
         colorRandomBall = colors[random.nextInt(colors.length)].name();
         return colorRandomBall;
+
     }
 }

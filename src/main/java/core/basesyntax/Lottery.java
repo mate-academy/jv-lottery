@@ -19,5 +19,6 @@ public class Lottery {
         Random random = new Random();
         Ball ball = new Ball(random.nextInt(numberBall), colorSupplier.getRandomColor());
         return ball;
+
     }
 }
