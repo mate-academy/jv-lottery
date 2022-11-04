@@ -8,7 +8,8 @@ public class Lottery {
     public int getNumberBall() {
         return numberBall;
     }
-    public void setNumberBall(int numberBall){
+
+    public void setNumberBall(int numberBall) {
         this.numberBall = numberBall;
     }
 
