@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Ball {
-    private String colour;
+    private String color;
     private int number;
 
     public Ball() {
@@ -11,7 +11,7 @@ public class Ball {
     public String toString() {
         return "Ball{"
                 + "colour='"
-                + colour
+                + color
                 + '\''
                 + ", number="
                 + number
@@ -19,11 +19,11 @@ public class Ball {
     }
 
     public String getColour() {
-        return colour;
+        return color;
     }
 
     public void setColour(String colour) {
-        this.colour = colour;
+        this.color = colour;
     }
 
     public int getNumber() {
