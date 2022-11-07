@@ -7,14 +7,6 @@ public class Lottery {
     private Random random;
     private ColorSupplier colorSupplier;
 
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
-
     public ColorSupplier getColorSupplier() {
         return colorSupplier;
     }
@@ -26,7 +18,6 @@ public class Lottery {
     public Ball getRandomBall() {
         colorSupplier = new ColorSupplier();
         random = new Random();
-        Ball ball = new Ball(random.nextInt(numberBall), colorSupplier.getRandomColor());
-        return ball;
+        return new Ball(random.nextInt(numberBall), colorSupplier.getRandomColor());
     }
 }
