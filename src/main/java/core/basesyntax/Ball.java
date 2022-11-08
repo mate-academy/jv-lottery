@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Ball {
+public class Ball extends ColorSupplier {
     private String color;
     private int number;
 
@@ -21,7 +21,7 @@ public class Ball {
     }
     @Override
     public String toString() {
-        return getColor() + getNumber();
+        return "The ball with " + getColor() + " color and " + getNumber() + " number";
     }
 
 }
