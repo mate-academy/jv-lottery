@@ -19,6 +19,7 @@ public class Ball extends ColorSupplier {
     public int getNumber() {
         return number;
     }
+
     @Override
     public String toString() {
         return "The ball with " + getColor() + " color and " + getNumber() + " number";
