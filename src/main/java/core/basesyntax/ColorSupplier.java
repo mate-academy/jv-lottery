@@ -1,9 +1,11 @@
 package core.basesyntax;
 
-public class ColorSupplier extends Lottery {
-    public String getRandomColor() {
+import java.util.Random;
 
-        int randomIndex = random.nextInt(Color.values().length);
+public class ColorSupplier extends Lottery {
+    Random random = new Random();
+    int randomIndex = random.nextInt(Color.values().length);
+    public String getRandomColor() {
 
         return String.valueOf(Color.values()[randomIndex]);
     }
