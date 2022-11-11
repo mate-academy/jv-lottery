@@ -4,29 +4,19 @@ import java.util.Random;
 
 public class Lottery {
 
-    private final Random random = new Random();
+    private static final int NUMBER = 100;
 
-    public Random getRandom() {
-        return random;
-    }
+    private Random randomBall = new Random();
 
-    public String getRandomBall() {
+    private ColorSupplier randomColor = new ColorSupplier();
 
-        int maxPossibleNumber = 100;
+    public Ball getRandomBall() {
 
-        int randomValue = random.nextInt(maxPossibleNumber);
+        int randomValue = randomBall.nextInt(NUMBER);
 
-        Ball ball = new Ball();
+        Ball ball = new Ball(randomColor.getRandomColor().name(), randomValue);
 
-        ball.setNumber(randomValue);
-
-        ColorSupplier randomColor = new ColorSupplier();
-
-        String rndClr = randomColor.getRandomColor();
-
-        ball.setColor(rndClr);
-
-        return ball.toString();
+        return ball;
     }
 
 }
