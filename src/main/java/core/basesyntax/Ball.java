@@ -1,8 +1,11 @@
 package core.basesyntax;
 
 public class Ball {
-    private final String color;
-    private final int number;
+    private String color;
+    private int number;
+
+    public Ball() {
+    }
 
     public Ball(String color, int number) {
         this.color = color;
