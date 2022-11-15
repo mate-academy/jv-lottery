@@ -4,16 +4,8 @@ public class Ball {
     private String color;
     private int number;
 
-    private String getColor() {
-        return color;
-    }
-
     public void setColor(String color) {
         this.color = color;
-    }
-
-    private int getNumber() {
-        return number;
     }
 
     public void setNumber(int number) {
@@ -22,6 +14,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return getColor() + " : " + getNumber();
+        return "Ball: color = " + color
+                + ", its number = " + number;
     }
 }
