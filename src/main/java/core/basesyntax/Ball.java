@@ -3,6 +3,7 @@ package core.basesyntax;
 class Ball {
     private int number = 0;
     private Colors color;
+
     public void setNumber(int number) {
         this.number = number;
     }
@@ -10,7 +11,8 @@ class Ball {
     public int getNumber() {
         return number;
     }
-    public void setColor (Colors color) {
+
+    public void setColor(Colors color) {
         this.color = color;
     }
 
@@ -18,6 +20,7 @@ class Ball {
         return color;
     }
 }
+
 
 
 
