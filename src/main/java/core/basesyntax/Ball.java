@@ -22,6 +22,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return getColor().toUpperCase() + " : " + getNumber();
+        return getColor() + " : " + getNumber();
     }
 }
