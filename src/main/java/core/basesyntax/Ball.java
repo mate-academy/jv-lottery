@@ -11,13 +11,13 @@ public class Ball {
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder().
-                append("Color: ")
-                        .append(this.color)
-                        .append(", ")
-                        .append("Number: ")
-                        .append(this.number)
-                        .append(".");
+        StringBuilder stringBuilder = new StringBuilder()
+                .append("Color: ")
+                .append(this.color)
+                .append(", ")
+                .append("Number: ")
+                .append(this.number)
+                .append(".");
         return String.valueOf(stringBuilder);
     }
 }
