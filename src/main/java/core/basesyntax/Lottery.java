@@ -6,9 +6,9 @@ public class Lottery {
 
     private static int random;
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
         final int number = 100;
         random = new Random().nextInt(number);
-        return new Ball(new ColorSupplier().getRandomColor(), random).toString();
+        return new Ball(new ColorSupplier().getRandomColor(), random);
     }
 }
