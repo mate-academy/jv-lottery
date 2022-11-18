@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class Lottery {
 
-    static int random;
+    private static int random;
+
     public String getRandomBall() {
         final int number = 100;
         random = new Random().nextInt(number);
