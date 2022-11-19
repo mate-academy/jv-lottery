@@ -1,8 +1,9 @@
 package core.basesyntax;
 
 class Ball {
+    Lottery lottery = new Lottery();
     private int number = 0;
-    private Colors color;
+    private Color color;
 
     public void setNumber(int number) {
         this.number = number;
@@ -12,14 +13,16 @@ class Ball {
         return number;
     }
 
-    public void setColor(Colors color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public Colors getColor() {
+    public Color getColor() {
         return color;
     }
+
+    @Override
+    public String toString() {
+        return "Ball " + getNumber() + " color " + getColor();
+    }
 }
-
-
-
