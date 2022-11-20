@@ -1,8 +1,7 @@
 package core.basesyntax;
 
-class Ball {
-    private Lottery lottery = new Lottery();
-    private int number = 0;
+public class Ball {
+    private int number;
     private Color color;
 
     public void setNumber(int number) {
