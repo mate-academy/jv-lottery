@@ -7,5 +7,3 @@ public enum Colors {
     WHITE,
     BLACK
 }
-
-//create enum with different colors

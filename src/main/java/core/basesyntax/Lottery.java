@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {

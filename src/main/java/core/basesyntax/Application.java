@@ -1,8 +1,5 @@
 package core.basesyntax;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
@@ -11,6 +8,3 @@ public class Application {
         }
     }
 }
-
-//To test the program, in main() method, create three balls using getRandomBall() method
-// from Lottery class. And print information about them in the console.
