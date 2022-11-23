@@ -10,7 +10,7 @@ public class Lottery {
         int number = rand.nextInt(NUMBER_COUNT) + 1;
         ColorSupplier colorSupplier = new ColorSupplier();
         String color = colorSupplier.getRandomColor();
-        return new Ball(color, number);
+        return new Ball(number, color);
     }
 
 }
