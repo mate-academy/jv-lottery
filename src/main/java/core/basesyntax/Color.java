@@ -8,7 +8,11 @@ public enum Color {
     PURPLE(4),
     GREEN(5);
 
-    int number;
+    private int number;
+
+    public int getNumber() {
+        return number;
+    }
 
     Color(int number) {
         this.number = number;

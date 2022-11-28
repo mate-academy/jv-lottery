@@ -8,7 +8,7 @@ public class ColorSupplier {
         int value = new Random().nextInt(6);
 
         for (Color color : Color.values()) {
-            if(color.number == value) {
+            if (color.getNumber() == value) {
                 return color;
             }
         }
