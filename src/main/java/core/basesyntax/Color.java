@@ -10,11 +10,11 @@ public enum Color {
 
     private int number;
 
-    public int getNumber() {
-        return number;
-    }
-
     Color(int number) {
         this.number = number;
+    }
+
+    public int getNumber() {
+        return number;
     }
 }

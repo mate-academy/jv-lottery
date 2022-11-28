@@ -4,7 +4,8 @@ public class Ball {
     private int number;
     private Color color;
 
-    Ball(){}
+    Ball(){
+    }
 
     public Ball(int number, Color color) {
         this.color = color;
