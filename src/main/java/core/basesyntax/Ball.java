@@ -4,6 +4,13 @@ public class Ball {
     private int number;
     private Color color;
 
+    Ball(){}
+
+    public Ball(int number, Color color) {
+        this.color = color;
+        this.number = number;
+    }
+
     public Color getColor() {
         return color;
     }
@@ -17,13 +24,6 @@ public class Ball {
     }
 
     public void setNumber(int number) {
-        this.number = number;
-    }
-
-    Ball(){}
-
-    public Ball(int number, Color color) {
-        this.color = color;
         this.number = number;
     }
 
