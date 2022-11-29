@@ -11,7 +11,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return this.color + " ball, number - " + this.number;
+        return color + " ball, number - " + number;
     }
 }
 
