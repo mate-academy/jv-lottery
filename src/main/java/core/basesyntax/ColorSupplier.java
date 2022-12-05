@@ -9,8 +9,4 @@ public class ColorSupplier {
         Color[] colors = Color.values();
         return colors[random.nextInt(colors.length)].name();
     }
-
-    public Random getRandom() {
-        return random;
-    }
 }
