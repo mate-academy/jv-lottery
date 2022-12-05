@@ -21,6 +21,6 @@ public class Ball {
     }
 
     public String toString(Ball ball) {
-        return "Color: " + ball.color + ". Number: " + ball.number + ".";
+        return "Color: " + ball.color.toLowerCase() + ". Number: " + ball.number + ".";
     }
 }
