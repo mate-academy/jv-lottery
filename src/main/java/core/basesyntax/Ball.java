@@ -6,7 +6,6 @@ public class Ball {
 
     public Ball(int number, String color) {
         this.number = number;
-
         this.color = color;
     }
 
