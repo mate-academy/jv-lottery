@@ -2,21 +2,21 @@ package core.basesyntax;
 
 public class Ball {
     private int number;
-    private Color color;
+    private String color;
 
     Ball(){
     }
 
-    public Ball(int number, Color color) {
+    public Ball(int number, String color) {
         this.color = color;
         this.number = number;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
