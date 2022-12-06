@@ -20,7 +20,8 @@ public class Ball {
         return number;
     }
 
+    @Override
     public String toString() {
-        return "Color: " + this.getColor().toLowerCase() + ". Number: " + this.getNumber() + ".";
+        return "Color: " + this.color.toLowerCase() + ". Number: " + this.number + ".";
     }
 }
