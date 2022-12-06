@@ -4,7 +4,7 @@ public class Ball {
     private int number;
     private String color;
 
-    Ball(){
+    Ball() {
     }
 
     public Ball(int number, String color) {
