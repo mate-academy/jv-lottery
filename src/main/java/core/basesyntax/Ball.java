@@ -20,7 +20,7 @@ public class Ball {
         return number;
     }
 
-    public String toString(Ball ball) {
-        return "Color: " + ball.getColor().toLowerCase() + ". Number: " + ball.getNumber() + ".";
+    public String toString() {
+        return "Color: " + this.getColor().toLowerCase() + ". Number: " + this.getNumber() + ".";
     }
 }
