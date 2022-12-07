@@ -6,8 +6,8 @@ public class ColorSupplier {
     private Random random = new Random();
 
     public String getRandomColor() {
-        ColorsEnum [] colors = ColorsEnum.values();
-        ColorsEnum randomColor = colors[random.nextInt(colors.length)];
+        Color[] colors = Color.values();
+        Color randomColor = colors[random.nextInt(colors.length)];
         return randomColor.toString();
     }
 }
