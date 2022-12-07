@@ -14,4 +14,3 @@ public class Ball {
         return "Number: " + number + "\n" + "Color: " + color;
     }
 }
-
