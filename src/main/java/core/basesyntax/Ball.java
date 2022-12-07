@@ -4,9 +4,6 @@ public class Ball {
     private int number;
     private String color;
 
-    Ball() {
-    }
-
     public Ball(int number, String color) {
         this.color = color;
         this.number = number;
