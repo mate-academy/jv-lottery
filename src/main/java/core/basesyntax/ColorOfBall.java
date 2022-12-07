@@ -1,4 +1,4 @@
-package mate.academy;
+package core.basesyntax;
 
 public enum ColorOfBall {
     BLUE,

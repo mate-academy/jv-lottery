@@ -1,4 +1,4 @@
-package mate.academy;
+package core.basesyntax;
 
 public class Ball {
     private ColorOfBall color;

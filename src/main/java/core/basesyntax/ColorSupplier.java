@@ -1,4 +1,4 @@
-package mate.academy;
+package core.basesyntax;
 
 import java.util.Random;
 
