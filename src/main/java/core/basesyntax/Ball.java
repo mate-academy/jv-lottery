@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Ball extends ColorSupplier {
+public class Ball extends Lottery {
     private String color;
     private int number;
 
@@ -17,9 +17,3 @@ public class Ball extends ColorSupplier {
         return color + " " + number;
     }
 }
-
-
-
-
-
-
