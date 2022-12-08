@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import static core.basesyntax.Lottery.getRandomBall;
+
 public class Ball {
     private String color;
     private int number;
@@ -22,6 +24,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Lottery{color = " + getRandomBall().getColor()
+                + ", number = " + getRandomBall().getNumber() + "}";
     }
 }
