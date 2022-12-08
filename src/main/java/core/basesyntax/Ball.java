@@ -1,16 +1,14 @@
 package core.basesyntax;
 
-import static core.basesyntax.Lottery.getRandomBall;
-
 public class Ball {
-    private String color;
+    private Color color;
     private int number;
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -24,7 +22,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Lottery{color = " + getRandomBall().getColor()
-                + ", number = " + getRandomBall().getNumber() + "}";
+        return "Ball{color = " + getColor()
+                + ", number = " + getNumber() + "}";
     }
 }
