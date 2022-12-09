@@ -19,6 +19,7 @@ public class Ball {
     public int getNum() {
         return number;
     }
+
     @Override
     public String toString() {
         return "Ball{color = " + getColor()
