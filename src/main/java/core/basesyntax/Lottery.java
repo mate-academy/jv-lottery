@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
-
+1
 public class Lottery {
     private final ColorSupplier supplier = new ColorSupplier();
     private final Random random = new Random();
