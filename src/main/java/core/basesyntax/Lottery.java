@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lottery {
     private final ColorSupplier supplier = new ColorSupplier();
     private final Random random = new Random();
-    final int maxValue = 100;
+    private final int maxValue = 100;
 
     public Ball getRandomBall() {
         Ball randomBall = new Ball();
@@ -13,4 +13,5 @@ public class Lottery {
         randomBall.setNumber(random.nextInt(maxValue));
         return randomBall;
     }
+
 }
