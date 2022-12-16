@@ -12,7 +12,7 @@ public class Lottery {
         Ball ball = new Ball();
 
         ball.setColor(colorSupplier.getRandomColor());
-        ball.setNumber(random.nextInt(RANDOM_LIMIT));
+        ball.setNumber(random.nextInt(LIMIT));
 
         return ball;
     }
