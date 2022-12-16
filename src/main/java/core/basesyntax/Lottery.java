@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lottery {
     private ColorSupplier colorSupplier = new ColorSupplier();
     private Random random = new Random();
-    private final int RANDOM_LIMIT = 100;
+    private final int LIMIT = 100;
 
     public Ball getRandomBall() {
 
