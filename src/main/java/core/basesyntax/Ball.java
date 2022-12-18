@@ -6,6 +6,14 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "color: " + color + " number: " + number;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
