@@ -1,11 +1,11 @@
 package core.basesyntax;
 
 public class Ball {
-    private ColorDiff color;
+    private Color color;
 
     private Integer number;
 
-    public void setColor(ColorDiff color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -15,6 +15,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "number = " + number.toString() + " color = " + color;
+        return "Ball{" + "color='" + color + '\'' + ", number=" + number + '}';
     }
 }
