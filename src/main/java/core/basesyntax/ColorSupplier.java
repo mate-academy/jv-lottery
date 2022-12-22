@@ -1,7 +1,11 @@
 package core.basesyntax;
 
-public class ColorSupplier {
+import java.util.Random;
+
+class ColorSupplier {
+    private final Random random = new Random();
+
     public String getRandomColor() {
-        return null;
+        return Colors.values()[random.nextInt(Colors.values().length)].name();
     }
 }
