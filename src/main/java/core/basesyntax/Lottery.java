@@ -3,6 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends Ball {
+    private final Random random = new Random();
+
     public Lottery(int number, String color) {
         super(number, color);
     }
@@ -11,7 +13,6 @@ public class Lottery extends Ball {
     public String toString() {
         return super.toString();
     }
-    private final Random random = new Random();
 
     public Ball getRandomBall() {
         int number = random.nextInt(100);
