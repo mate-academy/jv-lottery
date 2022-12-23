@@ -6,7 +6,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return " = " + "color is "+ color + " , " + "number " + number;
+        return " = " + "color is " + color + " , " + "number " + number;
     }
 
     public void setColor(String color) {
