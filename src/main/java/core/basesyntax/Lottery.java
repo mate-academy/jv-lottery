@@ -15,6 +15,6 @@ public class Lottery extends Ball {
     public Ball getRandomBall() {
         Random random = new Random();
         int number = random.nextInt(100);
-        return new Ball( "" + getRandomColor(),number);
+        return new Ball("" + getRandomColor(),number);
     }
 }
