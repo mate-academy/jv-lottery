@@ -21,16 +21,16 @@ public class Ball extends ColorSupplier {
         this.color = color;
     }
 
-    public Ball(int number, String color) {
-        setNumber(number);
-        setColor(color);
-    }
-
     @Override
     public String toString() {
         return "Ball{"
                 + "number="
                 + getNumber() + ", color='"
                 + getColor() + '\'' + '}';
+    }
+
+    public Ball(int number, String color) {
+        setNumber(number);
+        setColor(color);
     }
 }
