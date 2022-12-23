@@ -1,9 +1,13 @@
 package core.basesyntax;
 
 public class Ball extends ColorSupplier {
-
     private int number;
     private String color;
+
+    public Ball(int number, String color) {
+        setNumber(number);
+        setColor(color);
+    }
 
     public int getNumber() {
         return number;
@@ -27,10 +31,5 @@ public class Ball extends ColorSupplier {
                 + "number="
                 + getNumber() + ", color='"
                 + getColor() + '\'' + '}';
-    }
-
-    public Ball(int number, String color) {
-        setNumber(number);
-        setColor(color);
     }
 }
