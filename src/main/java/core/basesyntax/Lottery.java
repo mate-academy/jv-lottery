@@ -11,9 +11,9 @@ public class Lottery extends Ball {
     public String toString() {
         return super.toString();
     }
+    private final Random random = new Random();
 
     public Ball getRandomBall() {
-        Random random = new Random();
         int number = random.nextInt(100);
         return new Ball(number,"" + getRandomColor());
     }
