@@ -4,9 +4,9 @@ public class Ball extends ColorSupplier {
     private int number;
     private String color;
 
-    public Ball(int number, String color) {
+    public Ball(int number, Color color) {
         setNumber(number);
-        setColor(color);
+        setColor(String.valueOf(color));
     }
 
     public int getNumber() {
