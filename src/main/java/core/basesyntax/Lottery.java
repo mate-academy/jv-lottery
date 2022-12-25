@@ -5,9 +5,9 @@ import java.util.Random;
 public class Lottery {
     private Random random = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
-    static final int LIMITNUMBER = 100;
+    public static final int LIMIT_NUMBER = 100;
     public Ball getRandomBall() {
-        final int NUMBER = random.nextInt(LIMITNUMBER);
+        int NUMBER = random.nextInt(LIMIT_NUMBER);
         String color = colorSupplier.getRandomColor();
         Ball ball = new Ball();
         ball.setColor(color);
