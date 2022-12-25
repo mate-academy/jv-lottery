@@ -7,11 +7,12 @@ public class Lottery {
     private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        int random1 = random.nextInt(100);
+        final int limitnumber = 100;
+        int number = random.nextInt(limitnumber);
         String color = colorSupplier.getRandomColor();
         Ball ball = new Ball();
         ball.setColor(color);
-        ball.setNumber(random1);
+        ball.setNumber(number);
 
         return ball;
     }
