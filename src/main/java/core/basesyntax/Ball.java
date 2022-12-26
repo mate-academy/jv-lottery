@@ -1,12 +1,12 @@
 package core.basesyntax;
 
-public class Ball extends ColorSupplier {
+public class Ball {
     private int number;
     private String color;
 
-    public Ball(int number, Color color) {
+    public Ball(int number, String color) {
         setNumber(number);
-        setColor(String.valueOf(color));
+        setColor(color);
     }
 
     public int getNumber() {
