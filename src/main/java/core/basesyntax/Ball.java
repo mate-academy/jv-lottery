@@ -5,9 +5,6 @@ public class Ball {
 
     private int number;
 
-    public Ball() {
-        super();
-    }
 
     public Ball(String color, int number) {
         this.color = color;
