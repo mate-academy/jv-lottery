@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public enum RandomColor {
+public enum Color {
     RED,
     ORANGE,
     YELLOW,
@@ -8,5 +8,4 @@ public enum RandomColor {
     BLUE,
     INDIGO,
     VIOLET
-
 }
