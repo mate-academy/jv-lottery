@@ -8,7 +8,7 @@ public class Application {
         Ball ball3 = lottery.getRandomBall();
         System.out.println(
                 "ball1: " + ball1 + "\n"
-                 +"ball2: " + ball2 + "\n"
+                 + "ball2: " + ball2 + "\n"
                  + "ball3: " + ball3
         );
     }
