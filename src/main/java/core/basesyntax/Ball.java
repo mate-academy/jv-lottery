@@ -4,9 +4,9 @@ public class Ball {
     private final Colors color;
     private final int number;
 
-    public Ball() {
-        this.color = new ColorSupplier().getRandomColor();
-        this.number = new NumberSupplier().getRandomNumber();
+    public Ball(Colors color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
