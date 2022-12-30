@@ -11,11 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return (new StringBuilder("{color: "))
-                .append(color)
-                .append("; number: ")
-                .append(number)
-                .append("}")
-                .toString();
+        return "{color: " + color + "; number: " + number + "}";
     }
 }
