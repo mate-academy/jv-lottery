@@ -7,12 +7,12 @@ public enum Color {
     YELLOW("\033[1;93m"),// YELLOW
     BLUE("\033[1;94m"),  // BLUE
     PURPLE("\033[1;95m"),// PURPLE
-    CYAN("\033[1;96m"),  // CYAN
+    CYAN("\033[1;96m"), // CYAN
     WHITE("\033[1;97m"); // WHITE
 
-    public final String color;
+    public final String value;
 
     private Color(String color) {
-        this.color = color;
+        this.value = color;
     }
 }
