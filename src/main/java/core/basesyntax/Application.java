@@ -5,8 +5,9 @@ public class Application {
         Lottery lt1 = new Lottery();
         Lottery lt2 = new Lottery();
         Lottery lt3 = new Lottery();
-        System.out.println(lt1.getRandomBall());
-        System.out.println(lt2.getRandomBall());
-        System.out.println(lt3.getRandomBall());
+        Lottery[] lotteries = new Lottery[] { lt1,lt2,lt3 };
+        for (Lottery lottery : lotteries) {
+            System.out.println(lottery.getRandomBall());
+        }
     }
 }
