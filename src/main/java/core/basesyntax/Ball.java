@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Ball {
-    String color;
-    int number;
+    protected String color;
+    protected int number;
 
     //@Override
     //public String toString() {
