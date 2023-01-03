@@ -1,10 +1,13 @@
 package core.basesyntax;
 
-public class Application extends Lottery {
+public class Application {
     public static void main(String[] args) {
-        Ball firstBall = getRandomBall();
-        Ball secondBall = getRandomBall();
-        System.out.println(firstBall);
-        System.out.println(secondBall);
+        Lottery firstBall = new Lottery();
+        Lottery secondBall = new Lottery();
+        Lottery thirdBall = new Lottery();
+        Lottery[] array = new Lottery[]{firstBall, secondBall, thirdBall};
+        for (Lottery i: array) {
+            System.out.println(i.getRandomBall().toString());
+        }
     }
 }

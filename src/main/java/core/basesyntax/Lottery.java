@@ -3,8 +3,10 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
-    public static Ball getRandomBall() {
-        Random random = new Random();
-        return new Ball(getRandomColor(), random.nextInt(101));
+    private static final int MAX_NUMBER = 101;
+    private static final Random random = new Random();
+
+    public Ball getRandomBall() {
+        return new Ball(getRandomColor(), random.nextInt(MAX_NUMBER));
     }
 }
