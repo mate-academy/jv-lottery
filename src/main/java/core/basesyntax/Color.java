@@ -4,9 +4,9 @@ public enum Color {
     BLACK("\033[1;90m"),
     RED("\033[1;91m"),
     GREEN("\033[1;92m"),
-    YELLOW("\033[1;93m"),// YELLOW
+    YELLOW("\033[1;93m"),
     BLUE("\033[1;94m"),
-    PURPLE("\033[1;95m"),// PURPLE
+    PURPLE("\033[1;95m"),
     CYAN("\033[1;96m"),
     WHITE("\033[1;97m");
 
