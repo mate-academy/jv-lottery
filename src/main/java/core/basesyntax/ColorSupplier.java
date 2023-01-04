@@ -5,7 +5,7 @@ import java.util.Random;
 public class ColorSupplier {
     public static final String RESET = "\033[0m";
 
-    public static Color getRandomColor() {
+    public Color getRandomColor() {
         return Color.values()[new Random().nextInt(Color.values().length)];
     }
 }
