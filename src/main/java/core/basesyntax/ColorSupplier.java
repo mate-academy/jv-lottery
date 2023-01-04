@@ -1,11 +1,15 @@
 package core.basesyntax;
 
-import core.basesyntax.Ball.Color;
 import java.util.Random;
 
 public class ColorSupplier {
+    private final Random random;
+
+    public ColorSupplier() {
+        random = new Random();
+    }
+
     public String getRandomColor() {
-        Random random = new Random();
         Color[] values = Color.values();
         int size = values.length;
         return String.valueOf(values[random.nextInt(size)]);
