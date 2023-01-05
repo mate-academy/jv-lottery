@@ -7,7 +7,6 @@ public class Lottery {
     private ColorSupplier colorSupplier;
     private final int maxNumber = 100;
 
-
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor();
         int MAX_NUMBER = 100;
