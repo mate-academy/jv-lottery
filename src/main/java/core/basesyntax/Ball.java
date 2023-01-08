@@ -11,15 +11,14 @@ public class Ball {
         this.color = colorSupplier.getRandomColor();
     }
 
-    public void setNumber() {
+    public void setNumber(int num) {
         Random random = new Random();
-        this.number = random.nextInt(100);
+        this.number = random.nextInt(num);
     }
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName()
-                + "color: "
+        return  "color: "
                 + this.color
                 + ", number: "
                 + this.number;
