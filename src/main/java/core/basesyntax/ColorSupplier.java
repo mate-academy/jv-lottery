@@ -2,7 +2,7 @@ package core.colors;
 
 import java.util.Random;
 
-class ColorSupplier {
+public class ColorSupplier {
     enum Colors {
         Aquamarine,
         Azure,
