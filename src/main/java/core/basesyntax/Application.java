@@ -1,4 +1,5 @@
 package core.basesyntax;
+import java.util.Random;
 import core.colors.ColorSupplier;
     
 public class Application {
