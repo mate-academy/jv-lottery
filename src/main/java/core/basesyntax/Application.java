@@ -1,5 +1,5 @@
 package core.basesyntax;
-import core.colors.ColorSupplier;
+import package.ColorSupplier;
     
 public class Application {
 
