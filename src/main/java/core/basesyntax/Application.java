@@ -36,13 +36,13 @@ public class Application {
         
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Application ap = new Application();
         Application.Lottery lot = ap.new Lottery();
-        for (int i = 0; i < 3; i++)  {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Got " + lot.getRandomBall().toString());
-            }
+        }
     }
 
 }
