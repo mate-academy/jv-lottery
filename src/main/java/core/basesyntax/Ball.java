@@ -4,9 +4,9 @@ public class Ball {
     private int number;
     private String color;
 
-    protected Ball(int numberRandom, String colorRandom) {
-        number = numberRandom;
-        color = colorRandom;
+    protected Ball(int number, String color) {
+        this.number = number;
+        this.color = color;
     }
 
     public int getNumber() {
