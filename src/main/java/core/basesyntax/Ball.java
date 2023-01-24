@@ -4,20 +4,17 @@ public class Ball {
     private int number;
     private String color;
 
+    protected Ball(int num, String col) {
+        number = num;
+        color = col;
+    }
+
     public int getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override
