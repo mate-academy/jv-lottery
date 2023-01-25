@@ -10,5 +10,4 @@ public class Application {
                     + lottery.getRandomBall().getNumber());
         }
     }
-
 }
