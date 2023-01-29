@@ -8,6 +8,7 @@ public enum Colors {
         WHITE,
         BLACK,
         SILVER,
-        GOLD
+        GOLD,
+        ORANGE
 }
 
