@@ -8,6 +8,7 @@ public class Loterry {
     public static final int UPPER_BOUND = 100;
 
     public Ball getRandomBall() {
-        return new Ball(String.valueOf(colorSupplier.getRandomColor()),random.nextInt(UPPER_BOUND));
+        String color = String.valueOf(colorSupplier.getRandomColor());
+        return new Ball(color, random.nextInt(UPPER_BOUND));
     }
 }
