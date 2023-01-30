@@ -1,13 +1,17 @@
 package core.basesyntax;
 
 public class Ball {
-
     private String color;
     private int number;
-    private Loterry lottery = new Loterry();
+
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 
     public String getColor() {
         return color;
+
     }
 
     public void setColor(String color) {
@@ -23,6 +27,16 @@ public class Ball {
     }
 
     public String toString() {
-        return "Number and color: " + lottery.getRandomBall();
+        return "Ball { Color: " + color + ", Number: " + number + " }";
     }
 }
+
+
+
+
+
+
+
+
+
+
