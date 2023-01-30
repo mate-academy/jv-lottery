@@ -11,7 +11,6 @@ public class Ball {
 
     public String getColor() {
         return color;
-
     }
 
     public void setColor(String color) {
@@ -26,17 +25,8 @@ public class Ball {
         this.number = number;
     }
 
+    @Override
     public String toString() {
-        return "Ball { Color: " + color + ", Number: " + number + " }";
+        return "Ball { Color: " + color + ", " + "Number: " + number + " }";
     }
 }
-
-
-
-
-
-
-
-
-
-
