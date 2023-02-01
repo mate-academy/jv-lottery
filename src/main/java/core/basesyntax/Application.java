@@ -1,8 +1,7 @@
 package core.basesyntax;
 
 public class Application {
-
-    static final int NUMBER_LOTTERY = 3;
+    public static final int NUMBER_LOTTERY = 3;
 
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
