@@ -1,8 +1,9 @@
 package core.basesyntax;
 
 public class ColorSupplier {
-    public static String getRandomColor() {
-        int index = Random.getRandomColorIndex();
+    private final Random random = new Random();
+    public String getRandomColor() {
+        int index = random.getRandomColorIndex();
         return Color.values()[index].name();
     }
 }
