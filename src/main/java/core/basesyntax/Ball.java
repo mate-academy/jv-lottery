@@ -4,16 +4,13 @@ public class Ball {
     private String color;
     private int number;
 
-    public int getNumber() {
-        return number;
+    public Ball(int number, String color) {
+        this.setNumber(number);
+        this.setColor(color);
     }
 
     public void setNumber(int number) {
         this.number = number;
-    }
-
-    public String getColor() {
-        return color;
     }
 
     public void setColor(String color) {
