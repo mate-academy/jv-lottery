@@ -1,10 +1,11 @@
 package core.basesyntax;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class ColorSupplier {
+    private static final SecureRandom COLOR = new SecureRandom();
+
     public Color getRandomColor() {
-        Random randColor = new Random();
-        return Color.values()[randColor.nextInt(Color.values().length)];
+        return Color.values()[COLOR.nextInt(Color.values().length)];
     }
 }

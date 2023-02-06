@@ -1,9 +1,9 @@
 package core.basesyntax;
 
 public class Ball {
-    private Color color = null;
+    private final Color color;
 
-    private int number = 0;
+    private final int number;
 
     public Ball(Color color, int number) {
         this.color = color;

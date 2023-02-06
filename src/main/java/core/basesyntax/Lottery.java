@@ -1,13 +1,15 @@
 package core.basesyntax;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Lottery {
-    private final int maxBallNumber = 100;
+    private static final int MAX_BALL_NUMBER = 100;
+
+    private static final SecureRandom NUMBER = new SecureRandom();
+    
+    private static final ColorSupplier COLOR_SUPPLIER = new ColorSupplier();
 
     public Ball getRandomBall() {
-        ColorSupplier colorSupplier = new ColorSupplier();
-        Random number = new Random();
-        return new Ball(colorSupplier.getRandomColor(),number.nextInt(maxBallNumber));
+        return new Ball(COLOR_SUPPLIER.getRandomColor(), NUMBER.nextInt(MAX_BALL_NUMBER));
     }
 }
