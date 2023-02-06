@@ -1,14 +1,13 @@
 package core.basesyntax;
 
 import core.basesyntax.constructors.Lottery;
+
 public class Application {
     public static void main(String[] args) {
-        Lottery ballOne = new Lottery();
-        Lottery ballTwo = new Lottery();
-        Lottery ballThree = new Lottery();
-
-        System.out.println(ballOne.getRandomBall());
-        System.out.println(ballTwo.getRandomBall());
-        System.out.println(ballThree.getRandomBall());
+        Lottery[] ball = new Lottery[3];
+        for (int i = 0; i < ball.length; i++) {
+            ball[i] = new Lottery();
+            System.out.println(ball[i].getRandomBall());
+        }
     }
 }
