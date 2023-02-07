@@ -5,6 +5,7 @@ import java.util.Random;
 public class Ball {
     private String color;
     private int number;
+
     private final Random random = new Random();
 
     public String getColor() {
