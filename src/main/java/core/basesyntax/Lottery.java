@@ -1,5 +1,7 @@
 package core.lottery;
 
+import core.balls.Ball;
+import core.colors.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
