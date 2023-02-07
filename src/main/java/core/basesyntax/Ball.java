@@ -23,7 +23,8 @@ public class Ball {
     @Override
     public String toString() {
         StringBuilder build = new StringBuilder();
-        build.append("[Color: ").append(this.color).append(", number: ").append(this.number).append("]");
+        build.append("[Color: ").append(this.color)
+                .append(", number: ").append(this.number).append("]");
         return build.toString();
     }
 }
