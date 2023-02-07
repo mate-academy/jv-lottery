@@ -7,7 +7,7 @@ public enum Color {
     blue,
     purple;
 
-    public static Color getValueByInt(int index) {
+    public Color getValueByInt(int index) {
         Color result = null;
         switch (index) {
             case 0 :
