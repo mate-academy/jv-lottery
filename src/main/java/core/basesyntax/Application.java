@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import core.balls.Ball;
-import core.colors.ColorSupplier;
 import core.lottery.Lottery;
     
 public class Application {
