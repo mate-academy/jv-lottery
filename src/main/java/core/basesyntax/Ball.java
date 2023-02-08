@@ -10,7 +10,6 @@ public class Ball {
     }
 
     public Ball() {
-        this(null, 0);
     }
 
     public Color getColor() {
