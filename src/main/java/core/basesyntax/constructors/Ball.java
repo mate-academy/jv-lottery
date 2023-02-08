@@ -2,7 +2,6 @@ package core.basesyntax.constructors;
 
 public class Ball {
     private String color;
-
     private int number;
 
     public Ball(String color, int number) {
@@ -12,6 +11,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return color.concat(" ") + number;
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
