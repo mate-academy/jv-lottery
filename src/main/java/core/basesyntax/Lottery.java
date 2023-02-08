@@ -4,21 +4,18 @@ import java.util.Random;
 
 public class Lottery {
     private static final int NUMBER_OF_RANGE = 100;
-    private Ball ball;
+    private Random random;
+    private ColorSupplier color;
 
     public Lottery() {
-        this.ball = new Ball();
+        this.random = new Random();
+        this.color = new ColorSupplier();
     }
 
     public Ball getRandomBall() {
-        Random random = new Random();
-        ColorSupplier color = new ColorSupplier();
+        Ball ball = new Ball();
         ball.setNumber(random.nextInt(NUMBER_OF_RANGE));
         ball.setColor(color.getRandomColor());
-        return ball;
-    }
-
-    public Ball getBall() {
         return ball;
     }
 }
