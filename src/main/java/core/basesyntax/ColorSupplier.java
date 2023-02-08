@@ -1,9 +1,10 @@
 package core.colors;
 
+//import core.enumcolors.Color;
 import java.util.Random;
 
 public class ColorSupplier {
-    enum Colors {
+    enum Color {
         Aquamarine,
         Azure,
         BurlyWood,
@@ -36,7 +37,7 @@ public class ColorSupplier {
 
     public String getRandomColor() {
         Random random = new Random();
-        Colors[] colors = Colors.values();
-        return colors[random.nextInt(colors.length)].toString();
+        Color[] color = Color.values();
+        return color[random.nextInt(color.length)].toString();
     }
 }
