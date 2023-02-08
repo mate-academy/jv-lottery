@@ -1,18 +1,16 @@
 package core.balls;
 
 public class Ball {
-    private String namecolor;
+    private String color;
     private int number;
 
-    public Ball(int number, String namecolor) {
+    public Ball(int number, String color) {
         this.number = number;
-        this.namecolor = namecolor;
+        this.color = color;
     }
 
     @Override
     public String toString() {
-        Integer num = this.number;
-        return "Ball with number " + num.toString() + " witn " + this.namecolor + " color";
+        return "Ball with number " + number + " and " + color + " color";
     }
-  
 }
