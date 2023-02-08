@@ -1,0 +1,32 @@
+package core.enumcolors;
+
+public enum Color {
+        AQUAMARINE,
+        AZURE,
+        BURLY_WOOD,
+        CADET_BLUE,
+        GAINSBORO,
+        GOLD,
+        GRAY,
+        KHAKI,
+        LAWNG_REEN,
+        LIGHT_GREEN,
+        LIGHT_SKYBLUE,
+        LINEN,
+        MEDIUM_ORCHID,
+        MEDIUM_PURPLE,
+        MISTY_ROSE,
+        OLIVE,
+        OLIVE_DRAB,
+        ORANGE,
+        ORANGE_RED,
+        ORCHID,
+        PALETUR_QUOISE,
+        PERU,
+        PINK,
+        PLUM,
+        ROYAL_BLUE,
+        SANDY_BROWN,
+        SEA_GREEN,
+        STEEL_BLUE;
+}
