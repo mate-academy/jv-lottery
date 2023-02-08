@@ -1,9 +1,11 @@
 package core.basesyntax;
 
 public class Application {
+    private static final int BALLS_NUMBER = 3;
+
     public static void main(String[] args) {
         Lottery loterry = new Lottery();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < BALLS_NUMBER; i++) {
             System.out.println(loterry.getRandomBall().toString());
         }
     }
