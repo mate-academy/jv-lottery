@@ -1,8 +1,8 @@
 package core.basesyntax;
 import java.util.Random;
 
-public class Lottery {  
-    static final int max = 101;
+public class Lottery {
+    private static final int MAX = 101;
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
