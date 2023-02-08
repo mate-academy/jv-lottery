@@ -5,7 +5,7 @@ import core.colors.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
-    final private int MAGIC_NUMBER = 100;
+    private final int MAGICNUMBER = 100;
     private ColorSupplier colorSupplier;
         
     public Lottery() {
@@ -18,6 +18,6 @@ public class Lottery {
         
     private int generateNumber() {
         Random random = new Random();
-        return random.nextInt(MAGIC_NUMBER);
+        return random.nextInt(MAGICNUMBER);
     }
 }
