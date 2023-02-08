@@ -13,7 +13,7 @@ public class Ball {
     public String toString() {
         return "Ball color is: "
                 + color
-                + " and number is: "
+                + " number is: "
                 + number;
     }
 
