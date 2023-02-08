@@ -1,4 +1,4 @@
-package core.enumcolors;
+package core.basesyntax;
 
 public enum Color {
         AQUAMARINE,
