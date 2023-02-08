@@ -1,12 +1,11 @@
-package core.colors;
+package core.basesyntax;
 
-import core.enumcolors.Color;
 import java.util.Random;
 
 public class ColorSupplier {
     public String getRandomColor() {
         Random random = new Random();
-        Color[] color = Color.values();
-        return color[random.nextInt(color.length)].toString();
+        Color[] colors = Color.values();
+        return colors[random.nextInt(colors.length)].toString();
     }
 }
