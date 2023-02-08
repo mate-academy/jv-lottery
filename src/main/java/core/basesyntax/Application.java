@@ -1,6 +1,4 @@
 package core.basesyntax;
-
-import core.lottery.Lottery;
     
 public class Application {
     public static void main(String[] args) {
