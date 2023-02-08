@@ -3,10 +3,13 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private static final int MAX_VALUE = 100;
+
+    private ColorSupplier color = new ColorSupplier();
+    private Random random = new Random();
+
     public Ball getRandomBall() {
-        ColorSupplier color = new ColorSupplier();
-        int number = new Random().nextInt(100);
-        Ball ball = new Ball(color.getRandomColor(), number);
-        return ball;
+        int number = random.nextInt(MAX_VALUE);
+        return new Ball(color.getRandomColor(), number);
     }
 }
