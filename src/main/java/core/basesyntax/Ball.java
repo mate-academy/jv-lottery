@@ -1,4 +1,4 @@
-package core.balls;
+package core.basesyntax;
 
 public class Ball {
     private String color;
