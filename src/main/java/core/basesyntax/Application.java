@@ -17,7 +17,7 @@ public class Application {
         balls.add(ball3);
 
         for (Ball ball : balls) {
-            System.out.println(ball.toString());
+            System.out.println(ball);
         }
     }
 }
