@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Ball {
-    String color;
-    int num;
+    private String color;
+    private int num;
 
     public Ball(String color,int num) {
         this.color = color;
@@ -11,6 +11,14 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Color: " + color + " \n" + "Number: " + num + "\n";
+        return "Color: " + getColor() + " \n" + "Number: " + getNum() + "\n";
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getNum() {
+        return num;
     }
 }
