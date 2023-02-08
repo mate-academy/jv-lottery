@@ -5,20 +5,19 @@ import core.colors.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
+    final private int MAGIC_NUMBER = 100;
     private ColorSupplier colorSupplier;
-    private int number;
         
     public Lottery() {
         colorSupplier = new ColorSupplier();
     }
      
     public Ball getRandomBall() {
-        generateNumber();
-        return new Ball(number + 1, colorSupplier.getRandomColor());
+        return new Ball(generateNumber() + 1, colorSupplier.getRandomColor());
     }
         
-    private void generateNumber() {
+    private int generateNumber() {
         Random random = new Random();
-        this.number = random.nextInt(100);
+        return random.nextInt(MAGIC_NUMBER);
     }
 }
