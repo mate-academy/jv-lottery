@@ -21,11 +21,11 @@ public class Ball {
 	}
 
     public int getNumber() {
-		return number;
+        return number;
 	}
 
     public String getColor() {
-		return color;
+        return color;
 	}
 
     @Override
