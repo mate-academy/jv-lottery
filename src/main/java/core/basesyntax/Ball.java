@@ -4,6 +4,11 @@ public class Ball {
     private Color ballColor;
     private int number;
 
+    public Ball(Color ballColor, int number) {
+        this.ballColor = ballColor;
+        this.number = number;
+    }
+
     public Color getBallColor() {
         return ballColor;
     }
@@ -23,11 +28,8 @@ public class Ball {
     @Override
     public String toString() {
         return "Ball{"
-                +
-                "ballColor=" + ballColor
-                +
-                ", number=" + number
-                +
-                '}';
+                + "ballColor=" + ballColor
+                + ", number=" + number
+                + '}';
     }
 }
