@@ -9,5 +9,6 @@ public class Application {
             balls[i] = lottery1.getRandomBall();
             System.out.println(balls[i]);
         }
-    }
+	}
 }
+
