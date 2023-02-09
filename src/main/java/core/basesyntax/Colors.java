@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public enum BollColors {
+public enum Colors {
     RED,
     BLACK,
     WHITE,

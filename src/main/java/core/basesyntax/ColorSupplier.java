@@ -3,8 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
+    int index = new Random().nextInt(Colors.values().length);
     public String getRandomColor() {
-        int index = new Random().nextInt(BollColors.values().length);
-        return BollColors.values()[index].toString();
+        return Colors.values()[index].toString();
     }
 }
