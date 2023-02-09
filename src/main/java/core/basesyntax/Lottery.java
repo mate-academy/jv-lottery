@@ -3,14 +3,19 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    private final Ball ball = new Ball();
-    private final Random random = new Random();
+    private static final int MAX_RANDOM = 101;
+    private final Random random;
+    private final ColorSupplier colorSupplier;
+
+    public Lottery() {
+        random = new Random();
+        colorSupplier = new ColorSupplier();
+    }
 
     public Ball getRandomBall() {
-        ColorSupplier colorSupplier = new ColorSupplier();
+        Ball ball = new Ball();
         ball.setColor(colorSupplier.getRandomColor());
-        ball.setNumber(random.nextInt(101)); // random.nextInt() generate numbers in the range [x;x)
-
+        ball.setNumber(random.nextInt(MAX_RANDOM));
         return ball;
     }
 }
