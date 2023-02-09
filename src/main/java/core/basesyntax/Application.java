@@ -3,13 +3,15 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Application {
+    private static final int NUMBER_OF_BALLS = 3;
+
     public static void main(String[] args) {
-        final Random random = new Random();
-        final ColorSupplier colorSupplier = new ColorSupplier(random);
+        Random random = new Random();
+        ColorSupplier colorSupplier = new ColorSupplier(random);
         Lottery lottery = new Lottery(random, colorSupplier);
 
-        System.out.println(lottery.getRandomBall());
-        System.out.println(lottery.getRandomBall());
-        System.out.println(lottery.getRandomBall());
+        for (int i = 0; i < NUMBER_OF_BALLS; i++) {
+            System.out.println(lottery.getRandomBall());
+        }
     }
 }
