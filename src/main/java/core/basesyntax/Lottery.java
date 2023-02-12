@@ -4,10 +4,20 @@ import java.util.Random;
 
 public class Lottery {
 
-    static ColorSupplier ballColor = new ColorSupplier();
-    static Random ballNumber = new Random();
+    private ColorSupplier ballColor;
+    private Random ballNumber;
+
+    public ColorSupplier getBallColor() {
+        return ballColor;
+    }
+
+    public Random getBallNumber() {
+        return ballNumber;
+    }
 
     public Ball getRandomBall() {
+        ballColor = new ColorSupplier();
+        ballNumber = new Random();
         Ball ball = new Ball();
         ball.setColor(ballColor.getRandomColor().name());
         ball.setNumber(ballNumber.nextInt(100));
