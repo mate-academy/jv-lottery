@@ -9,5 +9,4 @@ public enum Color {
     INDIGO,
     VIOLET,
     PURPLE
-
 }
