@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-    private Random randomColor;
+    private Random random = new Random();
     private int index;
 
     public int getIndex() {
@@ -16,12 +16,11 @@ public class ColorSupplier {
     }
 
     public void setRandomColor(Random randomColor) {
-        this.randomColor = randomColor;
+        this.random = randomColor;
     }
 
-    public Colors getRandomColor() {
-        randomColor = new Random();
-        index = randomColor.nextInt(Colors.values().length);
-        return Colors.values()[index];
+    public Color getRandomColor() {
+        int index = random.nextInt(Color.values().length);
+        return Color.values()[index];
     }
 }
