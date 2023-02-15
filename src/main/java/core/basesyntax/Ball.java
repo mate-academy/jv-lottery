@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-
 public class Ball {
     private final String color;
 
