@@ -4,7 +4,7 @@ public class Ball {
     private Color color;
     private int number;
 
-    public Ball(int number, Color color){
+    public Ball(int number, Color color) {
         this.number = number;
         this.color = color;
     }
@@ -15,7 +15,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball with color "+ color + " and number "+ number;
+        return "Ball with color " + color + " and number " + number;
     }
 
     public void setColor(Color color) {
