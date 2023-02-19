@@ -11,6 +11,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Color is " + this.color + ";\n Number is " + this.number + ".";
+        return "Color is " + this.color + ";"
+                + System.lineSeparator() + " Number is " + this.number + ".";
     }
 }
