@@ -4,17 +4,16 @@ public class Ball {
     private String color;
     private int number;
 
-    public String getColor() {
-        return new ColorSupplier().getRandomColor();
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public int getNumber() {
-        return new Number().randomNumberForBall();
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        String ball = "Color is: " + color + ", Number: " + number;
-        return ball;
+        return "Color is: " + color + ", Number: " + number;
     }
 }

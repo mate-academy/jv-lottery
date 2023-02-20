@@ -1,10 +1,13 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery {
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        ball.getColor();
-        ball.getNumber();
+        ColorSupplier colorSupplier = new ColorSupplier();
+        ball.setColor(colorSupplier.getRandomColor());
+        ball.setNumber(new Random().nextInt(100));
         return ball;
     }
 }
