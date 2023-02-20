@@ -8,7 +8,7 @@ public class Ball {
         return color;
     }
 
-    public void setColora(Color color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -25,5 +25,3 @@ public class Ball {
         return "Ball{" + "color='" + color + '\'' + ", number=" + number + '}';
     }
 }
-
-
