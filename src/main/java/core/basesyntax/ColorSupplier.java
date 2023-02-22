@@ -11,4 +11,3 @@ public class ColorSupplier {
         return color[index].name();
     }
 }
-
