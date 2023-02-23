@@ -13,8 +13,8 @@ public class Ball {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = Color.valueOf(color);
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     public int getNumber() {
