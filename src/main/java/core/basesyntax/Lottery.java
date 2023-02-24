@@ -11,10 +11,9 @@ public class Lottery {
     }
 
     private int getRandomNumber() {
-        double r = Math.random();        // [0, 1)
-        double r1 = r * (100 + 1); // [0, to - from)
-        double r2 = r1 + 0;           // [from .. to + 1)
+        double r = Math.random();
+        double r1 = r * (100 + 1);
+        double r2 = r1 + 0;
         return (int) r2;
     }
-
 }
