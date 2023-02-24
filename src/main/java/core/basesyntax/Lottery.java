@@ -1,19 +1,16 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery {
-    private final ColorSupplier cs = new ColorSupplier();
+    private final int TOP_BOUND_NUMBER = 100;
+    Random random = new Random();
+    private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        ball.setColor(cs.getRandomColor());
-        ball.setNumber(getRandomNumber());
+        ball.setColor(colorSupplier.getRandomColor());
+        ball.setNumber(random.nextInt(TOP_BOUND_NUMBER));
         return ball;
-    }
-
-    private int getRandomNumber() {
-        double r = Math.random();
-        double r1 = r * (100 + 1);
-        double r2 = r1 + 0;
-        return (int) r2;
     }
 }
