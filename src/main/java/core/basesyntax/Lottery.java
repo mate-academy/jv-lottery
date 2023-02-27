@@ -9,6 +9,6 @@ public class Lottery {
         int index = random.nextInt(ColorBol.values().length);
         ColorBol color = ColorSupplier.getRandomColor();
         int number = random.nextInt(100);
-        return new Ball(color.name(), number);
+        return new Ball(color.name(),number);
     }
 }
