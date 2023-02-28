@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Lottery {
     private static final int COUNT_NUMBER = 100;
-    private static final Random random = new Random();
-    private static final ColorSupplier colorSupplier = new ColorSupplier();
+    private Random random = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
         Color color = colorSupplier.getRandomColor();
