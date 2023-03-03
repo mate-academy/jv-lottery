@@ -19,10 +19,6 @@ public class Ball {
   
     @Override
     public String toString() {
-        StringBuilder ballString = new StringBuilder();
-      
-        ballString.append("The " + getColour() + " ball with number: " + getNumber());
-      
-        return ballString.toString();
+        return "The " + getColour() + " ball with number: " + getNumber();
     }
 }
