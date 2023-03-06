@@ -5,7 +5,7 @@ public class Application {
         Lottery lottery = new Lottery();
         
         for (int i = 0; i < 3; i++) {
-            System.out.println(lottery.getRundomBall().toString());
+            System.out.println(lottery.getRundomBall());
         }
     }
 }
