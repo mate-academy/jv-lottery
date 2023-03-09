@@ -7,7 +7,7 @@ public class Lottery {
     private Random random = new Random();
     private static final int MAX_NUMBER = 100;
     
-    public Ball getRundomBall() {
+    public Ball getRandomBall() {
         return new Ball(colorSupplier.getRandomColor().toString(),
             random.nextInt(bound));
     }
