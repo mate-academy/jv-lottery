@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Maximum number of " + color + " balls " + number;
+        return "Ball with color: " + color + " and  number: " + number;
     }
 }
