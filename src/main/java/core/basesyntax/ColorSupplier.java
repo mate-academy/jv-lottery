@@ -18,4 +18,3 @@ public class ColorSupplier {
         this.random = random;
     }
 }
-

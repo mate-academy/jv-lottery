@@ -13,20 +13,4 @@ public class Lottery {
     public Ball getRandomBall() {
         return new Ball(colorSupplier.getRandomColor(), random.nextInt(RANDOM_BOUND));
     }
-
-    public ColorSupplier getColorSupplier() {
-        return colorSupplier;
-    }
-
-    public void setColorSupplier(ColorSupplier colorSupplier) {
-        this.colorSupplier = colorSupplier;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
 }
