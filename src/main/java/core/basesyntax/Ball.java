@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    private Color color;
+    private Colors color;
     private int number;
 
-    public Ball(Color color, int number) {
+    public Ball(Colors color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -14,7 +14,3 @@ public class Ball {
         return "Color:" + color + ", number:" + number;
     }
 }
-
-    enum Color {
-    WHITE, GREEN, GOLD, SILVER, ORANGE, PURPLE;
-    }
