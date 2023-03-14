@@ -7,7 +7,7 @@ public class ColorSupplier {
     private int positionOfColor;
 
     public String getRandomColor() {
-        positionOfColor = randomValue.nextInt(RainbowColors.values().length);
-        return RainbowColors.values()[positionOfColor].toString();
+        positionOfColor = randomValue.nextInt(Color.values().length);
+        return Color.values()[positionOfColor].name();
     }
 }
