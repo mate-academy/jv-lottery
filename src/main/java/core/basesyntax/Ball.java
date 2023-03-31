@@ -4,13 +4,13 @@ public class Ball {
     private final String color;
     private final int number;
 
-    public Ball(String color, int number) {
-        this.color = color;
+    public Ball(Color color, int number) {
+        this.color = String.valueOf(color);
         this.number = number;
     }
 
     @Override
     public String toString() {
-        return this.color + " " + this.number;
+        return "Ball color: " + color + " and number: " + number;
     }
 }
