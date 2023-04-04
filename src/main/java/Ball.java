@@ -5,9 +5,6 @@ public class Ball{
         this.color = color;
         this.number = number;
     }
-
-    public Ball(Colors color, int number) {
-    }
     public String getColor(){
         return color;
     }
