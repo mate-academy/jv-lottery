@@ -1,9 +1,10 @@
 import java.util.Random;
 public class Lottery {
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public Ball getRandomBall() {
-        Color color = ColorSupplier.getRandomColor();
+        ColorSupplier colorSupplier = new ColorSupplier();
+        Color color = colorSupplier.getRandomColor();
         int number = random.nextInt(100) + 1;
         return new Ball(color.name(), number);
     }
