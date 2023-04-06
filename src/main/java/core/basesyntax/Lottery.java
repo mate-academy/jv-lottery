@@ -1,16 +1,17 @@
 package core.basesyntax;
 
-import  java.util.Random;
+import java.util.Random;
 
-public class Lottery extends Ball{
+public class Lottery {
+    private Random randNumber = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
-    public String getRandomBall() {
-        String color = new ColorSupplier().getRandomColor();
-        Random randNumber = new Random();
+    public Ball getRandomBall() {
+        String color = colorSupplier.getRandomColor();
         int number = randNumber.nextInt(100) + 1;
         Ball ball = new Ball();
         ball.setColor(color);
         ball.setNumber(number);
-        return ball.toString();
+        return ball;
     }
 }
