@@ -15,10 +15,3 @@ public class Ball {
     }
 }
 
-enum Color {
-    RED,
-    BLUE,
-    GREEN,
-    YELLOW,
-    ORANGE,
-}
