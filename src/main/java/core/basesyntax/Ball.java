@@ -2,19 +2,11 @@ package core.basesyntax;
 
 public class Ball {
     private final String color;
-    private final int numbers;
+    private final int number;
 
     public Ball(String color, int numbers) {
         this.color = color;
-        this.numbers = numbers;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getNumbers() {
-        return numbers;
+        this.number = numbers;
     }
 
     @Override
@@ -24,7 +16,7 @@ public class Ball {
                 "color='"
                 + color + '\''
                 +
-                ", numbers=" + numbers
+                ", numbers=" + number
                 +
                 '}';
     }
