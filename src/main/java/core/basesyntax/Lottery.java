@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Lottery {
     public static final int NUM_BOUND = 100;
-    public final ColorSupplier colorSupplier;
-    public final Random random;
+    private final ColorSupplier colorSupplier;
+    private final Random random;
 
     public Lottery() {
         this.colorSupplier = new ColorSupplier();
