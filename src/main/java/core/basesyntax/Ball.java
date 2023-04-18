@@ -16,10 +16,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "This ball is "
-                + color
-                + " color and "
-                + number
-                + " number.";
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
