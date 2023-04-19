@@ -6,7 +6,8 @@ import core.basesyntax.suppliers.BallSupplier;
 public class Application {
     public static void main(String[] args) {
         BallSupplier ballSupplier = new BallSupplier();
-        Ball[] balls = ballSupplier.createBalls(3);
+        int numberOfBalls = 3;
+        Ball[] balls = ballSupplier.createBalls(numberOfBalls);
         ballSupplier.printBalls(balls);
     }
 }

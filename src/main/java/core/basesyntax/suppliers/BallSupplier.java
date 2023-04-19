@@ -3,7 +3,7 @@ package core.basesyntax.suppliers;
 import core.basesyntax.model.Ball;
 
 public class BallSupplier {
-    private final Lottery lottery = new Lottery();
+    private final Lottery lottery = new Lottery(new ColorSupplier(), 100);
 
     public Ball[] createBalls(int numberOfBalls) {
         Ball[] balls = new Ball[numberOfBalls];
