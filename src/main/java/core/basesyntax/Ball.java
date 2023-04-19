@@ -4,7 +4,12 @@ public class Ball {
     private String color;
     private int number;
 
-    public void setColour(String colour) {
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
+
+    public void setColor(String colour) {
         this.color = colour;
     }
 
