@@ -7,4 +7,3 @@ public enum Color {
     YELLOW,
     DARK
 }
-
