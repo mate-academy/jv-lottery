@@ -22,6 +22,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return ("Color: " + getColor() + ", Number: " + getNumber());
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
