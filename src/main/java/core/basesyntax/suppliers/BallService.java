@@ -2,7 +2,7 @@ package core.basesyntax.suppliers;
 
 import core.basesyntax.model.Ball;
 
-public class BallSupplier {
+public class BallService {
     private final int maxNumber = 100;
     private final Lottery lottery = new Lottery(new ColorSupplier(), maxNumber);
 
