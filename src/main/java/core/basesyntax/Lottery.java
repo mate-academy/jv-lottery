@@ -6,13 +6,9 @@ public class Lottery {
     private static final int RANDOM_MAX = 100;
     private static final int RANDOM_MIN = 1;
     private ColorSupplier colorSupplier = new ColorSupplier();
-    private Random random;
+    private Random random = new Random();
 
-    public Lottery() {
-        this.random = new Random();
-    }
-
-    public int getRandomNumber() {
+    private int getRandomNumber() {
         return random.nextInt(RANDOM_MAX - RANDOM_MIN + 1) + RANDOM_MIN;
     }
 
