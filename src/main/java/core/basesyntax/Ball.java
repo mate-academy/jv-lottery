@@ -16,5 +16,4 @@ public class Ball {
                 + ", number = " + number
                 + '}';
     }
-
 }
