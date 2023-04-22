@@ -4,7 +4,7 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball(core.basesyntax.Colors color, int number) {
+    public Ball(Color color, int number) {
         this.color = String.valueOf(color);
         this.number = number;
     }
@@ -25,10 +25,17 @@ public class Ball {
         this.number = number;
     }
 
+    @Override
     public String toString() {
-        return "Ball: "
-                + "color = "
+        return "Ball{"
+                +
+                "color='"
                 + color
-                + ", number = " + number;
+                + '\''
+                +
+                ", number="
+                + number
+                +
+                '}';
     }
 }
