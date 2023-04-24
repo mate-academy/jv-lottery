@@ -1,9 +1,9 @@
 package core.basesyntax;
 
 import java.util.Random;
-
 public class Lottery {
     private final ColorSupplier color;
+    private static final int MAX_NUMBER = 100;
     private final Random random;
 
     public Lottery(ColorSupplier colorSupplier, Random random) {
@@ -13,6 +13,6 @@ public class Lottery {
 
     public Ball getRandomBall() {
         Random random = new Random();
-        return new Ball(color.getRandomColor(), random.nextInt(100) + 1);
+        return new Ball(color.getRandomColor(), random.nextInt(MAX_NUMBER) + 1);
     }
 }
