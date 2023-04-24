@@ -1,11 +1,13 @@
 package core.basesyntax;
 
-public class Lottery extends ColorSupplier {
-    private static final int MAX_BOLL_FOR_RANDOM = 100;
+import java.util.Random;
+
+public class Lottery {
+    private static final int MAX_VALUE_OF_RANDOM_NUMBER = 100;
     private ColorSupplier colorSupplier = new ColorSupplier();
+    private Random random = new Random();
 
     public Ball getRandomBall() {
-        return new Ball(colorSupplier.getRandomColor(),random.nextInt(MAX_BOLL_FOR_RANDOM));
+        return new Ball(colorSupplier.getRandomColor(),random.nextInt(MAX_VALUE_OF_RANDOM_NUMBER));
     }
 }
-
