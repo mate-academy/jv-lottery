@@ -13,8 +13,8 @@ public class Lottery {
     }
 
     public Ball getRandomBall() {
-        String color = colorSupplier.getRandomColor().toString();
+        Color color = colorSupplier.getRandomColor();
         int value = random.nextInt(MAX_RANDOM_NUMBER);
-        return new Ball(color, value);
+        return new Ball(color.name(), value);
     }
 }

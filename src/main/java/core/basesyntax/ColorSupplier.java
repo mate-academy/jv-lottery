@@ -9,7 +9,7 @@ public class ColorSupplier {
         this.random = new Random();
     }
 
-    public Colors getRandomColor() {
-        return Colors.values()[random.nextInt(Colors.values().length)];
+    public Color getRandomColor() {
+        return Color.values()[random.nextInt(Color.values().length)];
     }
 }
