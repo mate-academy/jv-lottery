@@ -1,12 +1,12 @@
 package core.basesyntax;
 
 public class Application {
+    private static final byte MAX_AMOUNT_OF_BALLS = 3;
+
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
-        for (int i = 0; i < 3; i++) {
-            Ball randBall = lottery.getRandomBall();
-            System.out.println(randBall);
+        for (int i = 0; i < MAX_AMOUNT_OF_BALLS; i++) {
+            System.out.println(lottery.getRandomBall());
         }
-        // create three balls using class Lottery and print information about them in console
     }
 }
