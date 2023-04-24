@@ -7,7 +7,8 @@ public class Ball {
     Random numberRandom = new Random();
     int number = numberRandom.nextInt(100);
 
-    public String toString () {
-       return color + " " + number;
+    @Override
+    public String toString() {
+        return (color + " " + number);
     }
 }
