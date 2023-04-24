@@ -1,9 +1,10 @@
 package core.basesyntax;
 
 import java.util.Random;
+
 public class Lottery {
-    private final ColorSupplier color;
     private static final int MAX_NUMBER = 100;
+    private final ColorSupplier color;
     private final Random random;
 
     public Lottery(ColorSupplier colorSupplier, Random random) {

@@ -1,8 +1,11 @@
 package core.basesyntax;
 
 import java.util.Random;
+
 public class Application {
+
     private static final int MAX_NUMBER_OF_BALLS = 3;
+
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
         ColorSupplier colorSupplier = new ColorSupplier();
