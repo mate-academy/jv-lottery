@@ -1,6 +1,6 @@
 public class Ball {
-    String color;
-    int number;
+    public String color;
+    public int number;
 
     @Override
     public String toString() {

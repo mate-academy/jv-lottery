@@ -1,10 +1,10 @@
 import java.util.Random;
 
 public class Lottery {
-    public Ball getRandomBall() {
+    public Ball getRandomBall(int index, int value) {
         Ball ball = new Ball();
-        int index = new Random().nextInt(Colors.values().length);
-        int value = new Random().nextInt(100);
+        index = new Random().nextInt(Color.values().length);
+        value = new Random().nextInt(100);
         return ball;
     }
 }
