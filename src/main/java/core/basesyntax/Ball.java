@@ -22,6 +22,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return String.format("Winner ball: %d %s", number, color);
+        return "Ball{" +
+                "color='" + color + '\'' +
+                ", number=" + number +
+                '}';
     }
 }
