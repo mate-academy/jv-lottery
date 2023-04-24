@@ -1,12 +1,10 @@
 package core.basesyntax;
 
 public enum Colors {
-    Black,
-    White,
-    Green,
-    Blue,
-    Red,
-    Yellow;
-
-
+    BLACK,
+    WHITE,
+    GREEN,
+    BLUE,
+    RED,
+    YELLOW;
 }
