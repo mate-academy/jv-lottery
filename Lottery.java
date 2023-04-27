@@ -1,11 +1,13 @@
 import java.util.Random;
 
 public class Lottery {
-    private static final int LOTTERY_MAX_COUNT = 100;
-    public Ball getRandomBall(int index, int value) {
+   private static final int LOTTERY_MAX_COUNT = 100;
+    public Ball getRandomBall() {
         Ball ball = new Ball();
-        index = new Random().nextInt(Color.values().length);
-        value = new Random().nextInt(LOTTERY_MAX_COUNT);
+        int number = new Random().nextInt(LOTTERY_MAX_COUNT);
+        ball.setNumber(number);
+        ColorSupplier supplier = new ColorSupplier();
+        ball.setColor(String.valueOf(supplier.getRandomColor()));
         return ball;
     }
 }

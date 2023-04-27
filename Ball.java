@@ -2,7 +2,7 @@ public class Ball {
     private String color;
     private int number;
 
-    public int getNumber() {
+   public int getNumber() {
         return number;
     }
 
