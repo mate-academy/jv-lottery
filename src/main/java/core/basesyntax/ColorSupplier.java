@@ -8,7 +8,7 @@ public class ColorSupplier {
 
     public String getRandomColor() {
         int index = random.nextInt(ColorsEnum.Colors.values().length);
-        return  ColorsEnum.Colors.values()[index].name();
+        return ColorsEnum.Colors.values()[index].name();
     }
 }
 
