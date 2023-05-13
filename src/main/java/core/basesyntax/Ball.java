@@ -14,9 +14,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
+        return "Ball {"
+                + "color = '" + color + '\''
+                + ", number = " + number +
                 '}';
     }
 }
