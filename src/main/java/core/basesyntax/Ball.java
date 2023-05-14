@@ -5,11 +5,13 @@ public class Ball {
     private int number;
 
     //constructors
-    public Ball(String color, int number){
+    public Ball(String color, int number) {
         this.number = number;
         this.color = color;
     }
-    public Ball(){}
+
+    public Ball() {
+    }
 
     //getters and setters
     public int getNumber() {
