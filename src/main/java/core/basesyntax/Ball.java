@@ -4,7 +4,6 @@ public class Ball {
     private String color;
     private int number;
 
-    //constructors
     public Ball(String color, int number) {
         this.number = number;
         this.color = color;
@@ -13,7 +12,6 @@ public class Ball {
     public Ball() {
     }
 
-    //getters and setters
     public int getNumber() {
         return number;
     }
@@ -32,6 +30,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "";
+        return "Ball has a number: " + getNumber() + " and color: " + getColor();
     }
 }
