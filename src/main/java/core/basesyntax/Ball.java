@@ -22,9 +22,12 @@ public class Ball extends ColorSupplier {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
+        return "Ball{"
+                +
+                "color='" + color + '\''
+                +
+                ", number=" + number
+                +
                 '}';
     }
 }
