@@ -4,6 +4,7 @@ public class Ball {
     private Colors color;
     private int number;
     private String result;
+
     public String toString(Colors color, int number) {
         return result;
     }
