@@ -9,6 +9,6 @@ public class Lottery {
     private final Random random = new Random();
 
     public Ball getRandomBall() {
-        return new Ball(supplier.getRandomColor().name(),random.nextInt(LOTTERY_MAX_COUNT));
+        return new Ball(supplier.getRandomColor().name(), random.nextInt(LOTTERY_MAX_COUNT));
     }
 }
