@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Ball  {
+public class Ball {
     private Color color;
     private int number;
 
