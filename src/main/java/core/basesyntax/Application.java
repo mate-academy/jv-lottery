@@ -1,7 +1,20 @@
 package core.basesyntax;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        List<Ball> ballList = new ArrayList<>();
+        Lottery lottery = new Lottery();
+        int numberOfBalls = 3;
+
+        while (ballList.size() != numberOfBalls) {
+            ballList.add(lottery.getRandomBall());
+        }
+
+        for (int i = 0; i < numberOfBalls; i++) {
+            System.out.println(i + 1 + ". " + ballList.get(i));
+        }
     }
 }
