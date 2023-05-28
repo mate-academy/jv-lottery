@@ -4,9 +4,7 @@ import java.util.Random;
 
 public class Ball {
     private String color;
-    Random random = new Random();
-
-    private int number = random.nextInt(100);
+    private int number;
 
     public Ball(String color, int number) {
         this.color = color;
