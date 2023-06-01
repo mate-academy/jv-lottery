@@ -9,7 +9,7 @@ public class Application {
         }
 
         for (Ball ball : balls) {
-            System.out.println(ball.toString());
+            System.out.println(ball);
         }
     }
 }
