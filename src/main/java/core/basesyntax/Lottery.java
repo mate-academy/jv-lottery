@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Lottery {
-    ColorSupplier colorSupplier;
+    private final ColorSupplier colorSupplier;
 
     public Lottery() {
         this.colorSupplier = new ColorSupplier();
