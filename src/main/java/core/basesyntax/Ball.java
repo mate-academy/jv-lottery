@@ -1,9 +1,6 @@
 package core.basesyntax;
 
 public class Ball {
-    enum Color {
-            RED, GREEN, BLUE, YELLOW, ORANGE
-    }
 
     private Color color;
     private int number;
