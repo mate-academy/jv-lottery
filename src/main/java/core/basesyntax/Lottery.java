@@ -1,7 +1,8 @@
 package core.basesyntax;
 
 public class Lottery extends Ball {
-    public Ball getRandomBall() {
+
+    public static Ball getRandomBall() {
         Ball ball = new Ball();
         ball.getRandomNumber();
         ball.getRandomColor();
