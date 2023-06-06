@@ -9,14 +9,6 @@ public class Ball {
         number = randomNumber;
     }
 
-    @Override
-    public String toString() {
-        return "Ball{"
-                + "color='" + color + '\''
-                + ", number=" + number
-                + '}';
-    }
-
     public String getColor() {
         return color;
     }
@@ -31,5 +23,13 @@ public class Ball {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
