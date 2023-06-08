@@ -6,7 +6,7 @@ public class Application {
         Ball ballTwo = new Ball();
         Ball ballThree = new Ball();
         Ball[] ballWin = {ballOne, ballTwo, ballThree};
-        for (ColorSupplier ball: ballWin) {
+        for (Ball ball: ballWin) {
             System.out.println(ball);
         }
     }
