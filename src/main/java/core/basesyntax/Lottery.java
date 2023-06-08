@@ -8,7 +8,6 @@ public class Lottery {
     private final int limit = 100;
 
     public Ball getRandomBall() {
-
         String newColor = colorSupplier.getRandomColor();
         int newNumber = random.nextInt(limit);
 
