@@ -1,10 +1,18 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery extends Ball {
-    public static Ball getRandomBall() {
+    private static int MAX_NUMBER = 100;
+
+    public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.getRandomNumber();
         ball.getRandomColor();
         return ball;
+    }
+
+    public int getRandomNumber() {
+        return new Random().nextInt(MAX_NUMBER);
     }
 }

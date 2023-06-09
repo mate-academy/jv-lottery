@@ -9,4 +9,3 @@ public class Ball extends ColorSupplier {
         return "Ball has color " + getRandomColor() + " and number " + getRandomNumber();
     }
 }
-
