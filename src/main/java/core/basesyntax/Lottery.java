@@ -16,4 +16,5 @@ public class Lottery {
         int randomNumber = random.nextInt(MAX_NUMBER) + 1;
         return new Ball(randomColor, randomNumber);
     }
+
 }
