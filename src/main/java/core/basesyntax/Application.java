@@ -7,10 +7,10 @@ public class Application {
         // not sure if you wanted to see static method in the Lottery class
         Lottery lottery = new Lottery();
 
-        for(int i=0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
             // technically I created three balls :-)
             // not sure if you wanted to see an array with the Ball objects
-            System.out.println("Ball[" +i + "] = " + lottery.getRandomBall());
+            System.out.println("Ball[" + i + "] = " + lottery.getRandomBall());
         }
     }
 }
