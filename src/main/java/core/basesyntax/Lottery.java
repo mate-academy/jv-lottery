@@ -9,7 +9,7 @@ public class Lottery extends Ball {
 
     public Ball getRandomBall(String color, int number) {
         number = random.nextInt(FIGURE_COUNT);
-        color = String.valueOf(Colors.values()[number]);
+        color = String.valueOf(Color.values()[number]);
         return new Ball();
     }
 }
