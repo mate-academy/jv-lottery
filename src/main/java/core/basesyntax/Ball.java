@@ -11,11 +11,13 @@ class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
+        return "Ball{"
+                +
                 "color='"
                 + color
                 + '\''
-                + ", number=" + number +
+                + ", number=" + number
+                +
                 '}';
     }
 }
