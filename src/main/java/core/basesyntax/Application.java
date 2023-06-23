@@ -1,7 +1,15 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+
+        ColorSupplier randColor = new ColorSupplier();
+        Random randInt = new Random();
+
+        System.out.println(Lottery.getRandomBall(randColor.getRandomColor(), randInt.nextInt(100)));
+        System.out.println(Lottery.getRandomBall(randColor.getRandomColor(), randInt.nextInt(100)));
+        System.out.println(Lottery.getRandomBall(randColor.getRandomColor(), randInt.nextInt(100)));
     }
 }
