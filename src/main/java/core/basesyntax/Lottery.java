@@ -1,7 +1,9 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery {
-    public Ball getRandomBall(String color, int number) {
-        return new Ball(color, number);
+    public Ball getRandomBall() {
+        return new Ball(new ColorSupplier().getRandomColor(), new Random().nextInt(100));
     }
 }
