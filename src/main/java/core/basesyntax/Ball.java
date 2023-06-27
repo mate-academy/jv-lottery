@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Enumeration;
-
 public class Ball {
     private String color;
     private int num;
@@ -13,9 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + color +
-                ", number=" + num +
-                '}';
+        return "Ball{color = " + color + ", number = " + num + '}';
     }
 }
