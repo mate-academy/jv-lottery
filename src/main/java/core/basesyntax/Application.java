@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Arrays;
-
 public class Application {
     private static final int NUMBER_OF_BALLS = 3;
 
