@@ -6,10 +6,8 @@ public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
         // create three balls using class Lottery and print information about them in console
-        Ball[] balls = new Ball[BALL_NUMBER];
         for (int i = 0; i < BALL_NUMBER; i++) {
-            balls[i] = lottery.getRandomBall();
-            System.out.println(balls[i]);
+            System.out.println(lottery.getRandomBall());
         }
     }
 }

@@ -1,17 +1,20 @@
 package core.basesyntax;
 
 public class Ball {
-    private final String color;
-    private final int number;
+    public final String color;
+    public final int number;
 
-    Ball(String color, int number) {
-        this.color = color;
+    Ball(int number) {
+        ColorSupplier colorSupply = new ColorSupplier();
+        this.color = colorSupply.getRandomColor().toString();
         this.number = number;
     }
 
     @Override
     public String toString() {
-        return "Ball color: " + color + "\n"
-                + "Ball number: " + number;
+        return "Ball{" +
+                "color='" + color + '\'' +
+                ", number=" + number +
+                '}';
     }
 }
