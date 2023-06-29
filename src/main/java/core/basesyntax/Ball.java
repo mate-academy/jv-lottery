@@ -1,12 +1,12 @@
 package core.basesyntax;
 
 public class Ball {
-    public final String color;
+    public final Colors color;
     public final int number;
+    private final ColorSupplier colorSupply = new ColorSupplier();
 
     Ball(int number) {
-        ColorSupplier colorSupply = new ColorSupplier();
-        this.color = colorSupply.getRandomColor().toString();
+        this.color = colorSupply.getRandomColor();
         this.number = number;
     }
 
