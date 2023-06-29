@@ -1,7 +1,15 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        Ball[] winners = new Ball[3];
+
+        for (int i = 0; i < 3; i++) {
+            Ball winner = Lottery.getRandomBall();
+            winners[i] = winner;
+        }
+        System.out.println("Lucky balls today is: \n" + Arrays.toString(winners));
     }
 }
