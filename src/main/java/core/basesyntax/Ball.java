@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    private Enum color;
-    private int number;
+    public Colors color;
+    public int number;
 
-    Ball(Enum color, int number) {
+    Ball(Colors color, int number) {
         this.color = color;
         this.number = number;
     }
