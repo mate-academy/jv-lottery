@@ -1,11 +1,11 @@
 package core.basesyntax;
 
 public class Ball {
-    private final Colors COLORS;
+    private final Colors colors;
     private int number;
 
     public Ball(Colors color, int number) {
-        this.COLORS = color;
+        this.colors = color;
         this.number = number;
     }
 
@@ -21,7 +21,7 @@ public class Ball {
     public String toString() {
         return "Ball{"
                 + "color='"
-                + COLORS + '\''
+                + colors + '\''
                 + ", number=" + number + '}';
     }
 }
