@@ -7,7 +7,8 @@ public class ColorSupplier {
     private final Random random = new Random();
 
     public Colors getRandomColor() {
-        return Colors.values()[random.nextInt(COLORS_COUNT)];
+        int color = random.nextInt(COLORS_COUNT);
+        return Colors.values()[color];
     }
 
 }
