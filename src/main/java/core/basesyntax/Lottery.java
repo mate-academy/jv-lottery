@@ -4,13 +4,13 @@ import java.util.Random;
 
 public class Lottery {
     private static final int MAX_BALL_NUMBER = 100;
-    private String randomColor = new ColorSupplier().getRandomColor();
-    private int randomNumber = new Random().nextInt(MAX_BALL_NUMBER);
+    private ColorSupplier color = new ColorSupplier();
+    private Random random = new Random();
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        ball.setColor(randomColor);
-        ball.setNumber(randomNumber);
+        ball.setColor(color.getRandomColor());
+        ball.setNumber(random.nextInt(MAX_BALL_NUMBER));
         return ball;
     }
 }
