@@ -1,10 +1,10 @@
 package lottery;
 
 public enum Colors {
-    Red,
-    Green,
-    Blue,
-    Grey,
-    Black,
-    White
+    RED,
+    GREEN,
+    BLUE,
+    GREY,
+    BLACK,
+    WHITE
 }
