@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery {
     private static int getRandomNumber() {
-        return new Random().nextInt(100);
+        return new Random().nextInt(101);
     }
 
     public static Ball getRandomBall() {
