@@ -1,17 +1,8 @@
 package core.basesyntax;
 
 public class Ball {
-
     private String color;
     private int number;
-
-    enum Color {
-        RED,
-        GREEN,
-        BLUE,
-        YELLOW,
-        ORANGE
-    }
 
     public String getColor() {
         return color;
