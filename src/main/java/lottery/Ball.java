@@ -1,8 +1,6 @@
 package lottery;
 
 public class Ball {
-    //fields: color and number and override toString() method
-
     private String color;
     private int number;
 
