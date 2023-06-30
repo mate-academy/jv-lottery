@@ -1,6 +1,6 @@
 package lottery;
 
-public enum Colors {
+public enum Color {
     RED,
     GREEN,
     BLUE,
