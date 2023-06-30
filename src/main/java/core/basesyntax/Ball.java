@@ -9,14 +9,6 @@ public class Ball {
         this.number = number;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
     @Override
     public String toString() {
         return "Ball: color = " + color + ", number = " + number;
