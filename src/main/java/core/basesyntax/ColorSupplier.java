@@ -5,8 +5,8 @@ import java.util.Random;
 public class ColorSupplier {
     private final Random randomIndexGenerator = new Random();
 
-    public Colors getRandomColor() {
-        int enumColorIndex = randomIndexGenerator.nextInt(Colors.values().length);
-        return Colors.values()[enumColorIndex];
+    public Color getRandomColor() {
+        int enumColorIndex = randomIndexGenerator.nextInt(Color.values().length);
+        return Color.values()[enumColorIndex];
     }
 }
