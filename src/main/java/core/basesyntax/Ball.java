@@ -4,7 +4,7 @@ public class Ball {
     private final Color color;
     private final int number;
 
-    Ball(Color color, int number) {
+    protected Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }
