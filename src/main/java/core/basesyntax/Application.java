@@ -10,7 +10,7 @@ public class Application {
 
         for (Ball ball : ballsList) {
             ball = newLottery.getRandomBall();
-            System.out.println(ball);
+            System.out.print(ball);
         }
     }
 }
