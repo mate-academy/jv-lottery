@@ -17,8 +17,8 @@ public class Ball {
         return number;
     }
 
-   private String color;
-   private int number;
+    private String color;
+    private int number;
 
     @Override
     public String toString() {
