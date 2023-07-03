@@ -8,8 +8,6 @@ public class Lottery {
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        String color = colorSupplier.getRandomColor();
-        int number = random.nextInt(MAXIMUM_BALL_NUMBER);
-        return new Ball(color, number);
+        return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAXIMUM_BALL_NUMBER));
     }
 }
