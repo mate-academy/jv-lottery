@@ -4,9 +4,9 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball(String color, int number) {
-        this.color = color;
+    public Ball(int number, String color) {
         this.number = number;
+        this.color = color;
     }
 
     @Override
