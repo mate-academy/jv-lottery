@@ -12,6 +12,6 @@ public class Application {
             Ball winner = lottery.getRandomBall();
             winners[i] = winner;
         }
-        System.out.println("\n Lucky balls today is: \n" + Arrays.toString(winners));
+        System.out.println("\n Lucky balls today are: \n" + Arrays.toString(winners));
     }
 }
