@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Application {
     public static void main(String[] args) {
-        int BALLS_COUNT = 3;
-        Ball[] winners = new Ball[BALLS_COUNT];
+        int ballsCount = 3;
+        Ball[] winners = new Ball[ballsCount];
         Lottery lottery = new Lottery();
 
-        for (int i = 0; i < BALLS_COUNT; i++) {
+        for (int i = 0; i < ballsCount; i++) {
             Ball winner = lottery.getRandomBall();
             winners[i] = winner;
         }
