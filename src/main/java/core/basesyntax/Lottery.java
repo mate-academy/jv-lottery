@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    ColorSupplier colorSupplier;
+    private ColorSupplier colorSupplier;
 
     public Lottery(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;

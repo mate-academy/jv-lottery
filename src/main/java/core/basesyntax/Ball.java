@@ -1,10 +1,10 @@
 package core.basesyntax;
 
-import java.util.Random;
+
 
 public class Ball {
-    String color;
-    int number;
+    private String color;
+    private int number;
 
     public Ball(String color, int number) {
         this.color = color;
