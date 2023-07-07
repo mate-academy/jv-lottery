@@ -1,17 +1,17 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
         ColorSupplier colorSupplier = new ColorSupplier();
         Lottery lottery = new Lottery(colorSupplier);
 
-        Ball ball1 = lottery.getRandomBall();
-        Ball ball2 = lottery.getRandomBall();
-        Ball ball3 = lottery.getRandomBall();
+        String[] answer = new String[3];
 
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
-
+        for (int i = 0; i < 3; i++) {
+            answer[i] = String.valueOf(lottery.getRandomBall());
+        }
+        System.out.println(Arrays.toString(answer));
     }
 }
