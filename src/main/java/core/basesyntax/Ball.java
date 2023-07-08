@@ -8,6 +8,7 @@ class Ball {
         this.color = color;
         this.number = number;
     }
+
     public String toString() {
         return "Ball " + color + " , number " + number;
     }
