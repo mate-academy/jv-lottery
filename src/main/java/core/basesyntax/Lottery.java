@@ -4,10 +4,12 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private static final int BAAL_COUNT = 100;
+    private Random random = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        int randomNumber = new Random().nextInt(100) + 1;
+        int randomNumber = random.nextInt(BAAL_COUNT);
         return new Ball(colorSupplier.getRandomColor(), randomNumber);
     }
 }
