@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
     private Random random = new Random();
-    private static final int FIGURE_COUNT = 8;
+    static private final int FIGURE_COUNT = 8;
 
     public Color getRandomColor() {
         Color[] colors = Color.values();
