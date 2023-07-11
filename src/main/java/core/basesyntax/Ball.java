@@ -1,11 +1,12 @@
 package core.basesyntax;
 
-public class Ball {
-    private String color;
-    private int number;
+import java.util.Random;
 
+public class Ball {
     @Override
     public String toString() {
-        return super.toString();
+        String color = (new ColorSupplier()).getRandomColor();
+        int number = new Random().nextInt(100);
+        return color + " " + number;
     }
 }
