@@ -10,11 +10,13 @@ public class Lottery {
         this.colorSupplier = colorSupplier;
         this.magicNumbers = new Random();
     }
-    final int max_Number = 100;
-    final int min_Number = 1;
+    final int MaxNumber = 100;
+
+    final int MinNumber = 1;
+
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor().name();
-        int number = magicNumbers.nextInt(max_Number) + min_Number;
+        int number = magicNumbers.nextInt(MaxNumber) + MinNumber;
         return new Ball(color, number);
     }
 }
