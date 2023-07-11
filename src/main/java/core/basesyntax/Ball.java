@@ -12,7 +12,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "№ " + number + " - " + color;
+        return "Ball: number - " + number + ", color - " + color;
     }
 
 }
