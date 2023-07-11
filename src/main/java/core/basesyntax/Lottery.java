@@ -11,9 +11,9 @@ public class Lottery {
         this.magicNumbers = new Random();
     }
 
-    final private int maxNumber = 100;
+    private final  int maxNumber = 100;
 
-    final private int minNumber = 1;
+    private final int minNumber = 1;
 
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor().name();
