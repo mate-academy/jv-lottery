@@ -10,9 +10,10 @@ public class Lottery {
         this.colorSupplier = colorSupplier;
         this.magicNumbers = new Random();
     }
-    private final static int maxNumber = 100;
 
-    private final static int minNumber = 1;
+    private final int maxNumber = 100;
+
+    private final int minNumber = 1;
 
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor().name();
