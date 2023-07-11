@@ -11,7 +11,6 @@ public class Lottery {
 
     private final int minNumber = 1;
 
-
     public Lottery(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
         this.magicNumbers = new Random();
