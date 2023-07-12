@@ -1,14 +1,13 @@
 package core.basesyntax;
 
-public class Ball extends Lottery {
+import java.util.Random;
 
-    @Override
-    public String getRandomBall() {
-        return super.getRandomBall();
-    }
+public class Ball {
+    private Colors color = new ColorSupplier().getRandomColor();
+    private int number = new Random().nextInt(100);
 
     @Override
     public String toString() {
-        return getRandomBall();
+        return color.toString() + " " + number;
     }
 }
