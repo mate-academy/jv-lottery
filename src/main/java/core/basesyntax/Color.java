@@ -1,5 +1,5 @@
 package core.basesyntax;
 
-public enum Colors {
+public enum Color {
     WHITE, BLACK, BLUE, YELLOW, RED, GREEN, BROWN, GREY
 }
