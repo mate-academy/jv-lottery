@@ -15,8 +15,9 @@ public class ColorSupplier {
         ORANGE
     }
 
-    public static String getRandomColor() {
-        Random random = new Random();
-        return String.valueOf(Color.values()[random.nextInt(9)]);
+    private static final int COLOR_COUNT = 9;
+
+    public String getRandomColor() {
+        return Color.values()[new Random().nextInt(COLOR_COUNT)].name();
     }
 }
