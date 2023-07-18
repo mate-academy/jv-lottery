@@ -9,16 +9,8 @@ public class Ball {
         number = 0;
     }
 
-    public String getColor() {
-        return color;
-    }
-
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public int getNumber() {
-        return number;
     }
 
     public void setNumber(int number) {
