@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery extends ColorSupplier {
     private static final int numberCount = 100;
-    private Ball ball = new Ball();
+    private final Ball ball = new Ball();
 
     public Ball getRandomBall() {
         ball.setColor(String.valueOf(getRandomColor()));
