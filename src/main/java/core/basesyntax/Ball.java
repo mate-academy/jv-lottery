@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Objects;
-
 public class Ball {
     private String color;
     private int number;
@@ -20,24 +18,6 @@ public class Ball {
 
     public void setNumber(int number) {
         this.number = number;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        Ball ball = (Ball) o;
-        return number == ball.number && Objects.equals(color, ball.color);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(color, number);
     }
 
     @Override
