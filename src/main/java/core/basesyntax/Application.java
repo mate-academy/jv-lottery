@@ -4,11 +4,11 @@ public class Application {
     private static final int BALL_NUMBER = 3;
 
     public static void main(String[] args) {
-        Lottery[] lottery = new Lottery[BALL_NUMBER];
-        for (int i = 0; i < lottery.length; i++) {
-            lottery[i] = new Lottery();
-            Ball randomBall = lottery[i].getRandomBall();
-            System.out.println(randomBall);
+        Ball[] balls = new Ball[BALL_NUMBER];
+        Lottery lottery = new Lottery();
+        for (int i = 0; i < BALL_NUMBER; i++) {
+            balls[i] = lottery.getRandomBall();
+            System.out.println(balls[i]);
         }
     }
 }
