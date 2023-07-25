@@ -1,8 +1,8 @@
 public class Ball {
-    private String color;
+    private Color color;
     private int number;
 
-    public Ball(String color, int number) {
+    public Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -10,9 +10,8 @@ public class Ball {
     @Override
     public String toString() {
         return "Ball{" +
-                "color='" + color + '\'' +
+                "color=" + color +
                 ", number=" + number +
                 '}';
     }
-
 }
