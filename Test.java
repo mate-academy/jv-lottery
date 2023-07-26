@@ -4,8 +4,7 @@ public class Test {
         int numberOfBalls = 5;
 
         for (int i = 0; i < numberOfBalls; i++) {
-            Ball ball = lottery.getRandomBall();
-            System.out.println("Ball " + (i + 1) + ": " + ball);
+            System.out.println("Ball " + (i + 1) + ": " + lottery.getRandomBall());
         }
     }
 }
