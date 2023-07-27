@@ -14,4 +14,3 @@ public class Ball {
         return "Ball" + '(' + color + " " + number + ')';
     }
 }
-
