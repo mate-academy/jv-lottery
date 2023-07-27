@@ -1,15 +1,16 @@
 package core.basesyntax;
 
 public class Ball {
-    private Enum color;
-    private int number;
+    private final Color color;
+    private final int number;
+    private static int counter = 1;
 
     @Override
     public String toString() {
-        return "color: " + color + "\n" + "number: " + number;
+        return "Ball №" + counter++ + ":" + "\n" + "color: " + color + "\n" + "number: " + number;
     }
 
-    public Ball(Enum color, int number) {
+    public Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }

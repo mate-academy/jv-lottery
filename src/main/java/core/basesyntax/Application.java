@@ -1,9 +1,10 @@
 package core.basesyntax;
 
-public class Application extends Lottery {
+public class Application {
     public static void main(String[] args) {
+        Lottery lottery = new Lottery();
         for (int i = 1; i <= 3; i++) {
-            System.out.println("Ball №" + i + ":" + "\n" + getRandomBall());
+            System.out.println(lottery.getRandomBall());
         }
     }
 }
