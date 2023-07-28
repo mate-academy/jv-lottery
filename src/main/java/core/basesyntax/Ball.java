@@ -9,14 +9,19 @@ public class Ball {
     }
 
     public String getColor() {
-        return color;
+        return "Your ball is " + color;
     }
 
     public void setNumber(int number) {
         this.number = number;
     }
 
-    public int getNumber() {
-        return number;
+    public String getNumber() {
+        return " and has number " + number;
+    }
+
+    @Override
+    public String toString() {
+        return "default";
     }
 }
