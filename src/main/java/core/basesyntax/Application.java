@@ -10,6 +10,5 @@ public class Application {
         System.out.println("First ball: " + ball1);
         System.out.println("Second ball: " + ball2);
         System.out.println("Third ball: " + ball3);
-        // create three balls using class Lottery and print information about them in console
     }
 }
