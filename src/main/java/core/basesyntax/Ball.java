@@ -4,7 +4,7 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball(Colors randomColor, int i) {
+    public Ball(String color, int number) {
         this.color = color;
         this.number = number;
     }
