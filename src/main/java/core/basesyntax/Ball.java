@@ -1,11 +1,5 @@
 package core.basesyntax;
 
-enum Colors {
-    RED,
-    GREEN,
-    BLUE
-}
-
 public class Ball {
     private String color;
     private int number;
@@ -17,9 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + color +
-                ", number=" + number +
-                '}';
+        return "Ball{" + "color=" + color + ", number=" + number + '}';
     }
 }
