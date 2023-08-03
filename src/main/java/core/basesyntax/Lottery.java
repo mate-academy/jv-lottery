@@ -15,12 +15,24 @@ public class Lottery {
         return colorSupplier;
     }
 
+    public void setColorSupplier(ColorSupplier colorSupplier) {
+        this.colorSupplier = colorSupplier;
+    }
+
     public String getColor() {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public int getNumber() {
         return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     private int number = new Random().nextInt(MAX_RANDOM_NUMBER) + 1;

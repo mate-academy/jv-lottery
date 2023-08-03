@@ -7,8 +7,16 @@ public class ColorSupplier {
         return colors;
     }
 
+    public void setColors(Color[] colors) {
+        this.colors = colors;
+    }
+
     public int getRandomIndex() {
         return randomIndex;
+    }
+
+    public void setRandomIndex(int randomIndex) {
+        this.randomIndex = randomIndex;
     }
 
     private Color[] colors = Color.values();
