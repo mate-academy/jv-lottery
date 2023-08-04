@@ -13,7 +13,8 @@ public class Lottery {
 
     public String info() {
         ColorSupplier color = new ColorSupplier();
-        return "Color of the ball - " + color.getRandomColor() + "\n" + "Ball number - " + getRandomBall();
+        return "Color of the ball - " + color.getRandomColor() + "\n" + "Ball number - "
+                + getRandomBall();
 
     }
 }
