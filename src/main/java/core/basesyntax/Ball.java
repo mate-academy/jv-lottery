@@ -9,8 +9,12 @@ public class Ball {
         this.number = number;
     }
 
-    public Ball() {
+    public String getColor() {
+        return color;
+    }
 
+    public int getNumber() {
+        return number;
     }
 
     public enum ColorEnum {
@@ -19,10 +23,6 @@ public class Ball {
         GREEN,
         YELLOW,
         BLUE,
-        BLACK
-    }
-
-    public String toString() {
-        return color + " " + number;
+        BLACK;
     }
 }
