@@ -6,9 +6,4 @@ public enum Colors {
     YELLOW,
     GREEN,
     PURPLE;
-
-    @Override
-    public String toString() {
-        return name();
-    }
 }
