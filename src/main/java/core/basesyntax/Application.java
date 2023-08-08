@@ -11,6 +11,5 @@ public class Application {
             ball = lottery.getRandomBall();
             System.out.println(ball);
         }
-
     }
 }
