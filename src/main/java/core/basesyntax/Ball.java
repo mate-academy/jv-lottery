@@ -17,7 +17,7 @@ public class Ball {
         return number;
     }
 
-    public enum ColorEnum {
+    public enum Color {
         RED,
         WHITE,
         GREEN,
