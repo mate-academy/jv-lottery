@@ -8,9 +8,7 @@ public class Application {
         Lottery lottery = new Lottery();
         for (int i = 0; i < balls.length; i++) {
             balls[i] = lottery.getRandomBall();
-        }
-        for (Ball ball : balls) {
-            System.out.println(ball);
+            System.out.println(balls[i]);
         }
     }
 }

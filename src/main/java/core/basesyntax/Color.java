@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public enum Colors {
+public enum Color {
     BLUE("blue"),
     YELLOW("yellow"),
     GREEN("green"),
@@ -8,7 +8,7 @@ public enum Colors {
 
     private String color;
 
-    Colors(String color) {
+    Color(String color) {
         this.color = color;
     }
 
