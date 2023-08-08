@@ -3,20 +3,20 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
-    private static final Random RANDOM = new Random();
-
-    private enum Color {
-        Red,
-        Blue,
-        Green,
-        White,
-        Black,
-        Orange,
-        Purple
-    }
+    private final Random random = new Random();
 
     public String getRandomColor() {
-        int randColorNumber = RANDOM.nextInt(Color.values().length);
+        int randColorNumber = random.nextInt(Color.values().length);
         return Color.values()[randColorNumber].name();
+    }
+
+    private enum Color {
+        RED,
+        BLUE,
+        GREEN,
+        WHITE,
+        BLACK,
+        ORANGE,
+        PURPLE
     }
 }
