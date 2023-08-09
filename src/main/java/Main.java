@@ -1,12 +1,10 @@
 public class Main {
+    private static final int COUNT_OF_BALLS = 3;
+
     public static void main(String[] args) {
-        Lottery firstRandomBall = new Lottery();
-        Lottery secondRandomBall = new Lottery();
-        Lottery thirdRandomBall = new Lottery();
-
-        System.out.println(firstRandomBall.getRandomBall());
-        System.out.println(secondRandomBall.getRandomBall());
-        System.out.println(thirdRandomBall.getRandomBall());
-
+        Lottery lottery = new Lottery();
+        for (int i = 0; i <= COUNT_OF_BALLS; i++) {
+            System.out.println(lottery.getRandomBall());
+        }
     }
 }
