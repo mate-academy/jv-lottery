@@ -6,6 +6,7 @@ public class Lottery {
     private final int maxNumber = 100;
 
     public String getRandomBall() {
+
         int randomNumber = random.nextInt(maxNumber);
         return "We have such a ball: " + colorSupplier.getRandomColor() + " " + randomNumber;
     }

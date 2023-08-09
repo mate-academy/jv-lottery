@@ -6,5 +6,6 @@ public class Main {
         for (int i = 0; i <= COUNT_OF_BALLS; i++) {
             System.out.println(lottery.getRandomBall());
         }
+
     }
 }
