@@ -1,7 +1,14 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Application {
+    private static final int BALL_COUNT = 3;
+    private static Lottery lottery = new Lottery();
+
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        for(int i = 1; i <= BALL_COUNT; i++) {
+            System.out.println(lottery.getRandomBall().toString());
+        }
     }
 }
