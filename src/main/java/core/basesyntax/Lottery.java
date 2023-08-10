@@ -6,6 +6,7 @@ public class Lottery {
     private static final int FIGURE_COUNT = 100;
     private Random random = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
+
     public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.setColor((colorSupplier.getRandomColor()).name());
