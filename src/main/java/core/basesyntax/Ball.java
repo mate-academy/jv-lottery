@@ -9,6 +9,7 @@ public class Ball {
         this.number = number;
     }
 
+    @Override
     public String toString() {
         return "Ball info:"
                 + "\n 1. Color: " + color
