@@ -8,5 +8,6 @@ public class Lottery {
     public String getRandomBall() {
         int randomNumber = random.nextInt(MAX_NUMBER);
         return "We have such a ball: " + colorSupplier.getRandomColor() + " " + randomNumber;
+
     }
 }
