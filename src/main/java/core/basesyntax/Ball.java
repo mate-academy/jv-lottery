@@ -8,6 +8,7 @@ public class Ball {
         setColor(color);
         setNumber(number);
     }
+
     public int getNumber() {
         return number;
     }
@@ -26,9 +27,12 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + getColor() + '\'' +
-                ", number=" + getNumber() +
-                '}';
+        return "Ball{"
+                + "color='"
+                + getColor()
+                + '\''
+                + ", number="
+                + getNumber()
+                + '}';
     }
 }
