@@ -13,24 +13,8 @@ public class Ball {
         this.number = number;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public String toString(Colors color) {
-        return "Color of the ball - " + color;
-    }
-
-    public String toString(int number) {
-        return "Ball number - " + number;
+    public String toString(Ball ball) {
+        return ball.color + " " + ball.number;
     }
 
 }
