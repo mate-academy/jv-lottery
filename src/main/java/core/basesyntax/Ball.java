@@ -7,6 +7,7 @@ public class Ball {
     public void setColour(String colour) {
         this.colour = colour;
     }
+
     public void setNumber(int number) {
         this.number = number;
     }
