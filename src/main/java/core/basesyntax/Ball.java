@@ -1,8 +1,6 @@
 package core.basesyntax;
 
 public class Ball {
-
-    private static int counter = 1;
     private final Color color;
     private final int number;
 
@@ -13,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball №" + counter++ + ":" + "\n" + "color: " + color + "\n" + "number: " + number;
+        return "color: " + color + System.lineSeparator() + "number: " + number;
     }
 }
