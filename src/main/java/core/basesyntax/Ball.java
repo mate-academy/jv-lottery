@@ -5,24 +5,11 @@ public class Ball {
     private int number;
 
     public String toString() {
-        return "Ball number: " + getNumber() + "\nBall color: " + getColor();
+        return "Ball number: " + number + "\nBall color: " + color;
     }
 
-    public void setBall(int number, String color) {
+    public Ball(int number, String color) {
         this.color = color;
-        this.number = number;
-    }
-
-    public void setBall(String color, int number) {
-        this.color = color;
-        this.number = number;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getNumber() {
-        return number;
+        this. number = number;
     }
 }
