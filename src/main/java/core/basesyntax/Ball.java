@@ -1,10 +1,8 @@
 package core.basesyntax;
 
-import java.util.Random;
-
-public class Ball extends ColorSupplier{
-    public Colors color = getRandomColor();
-    public int number = new Random().nextInt(100);
+public class Ball{
+    public Color color;
+    public int number;
 
     @Override
     public String toString() {
