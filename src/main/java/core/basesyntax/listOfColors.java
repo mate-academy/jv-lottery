@@ -10,7 +10,5 @@ public enum listOfColors {
     PINK,
     WHITE,
     GRAY,
-    BLACK,
-
-
+    BLACK
 }
