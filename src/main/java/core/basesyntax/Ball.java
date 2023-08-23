@@ -11,10 +11,16 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ",\nnumOfColor=" + numOfColor +
+        return "Ball{"
+                +
+                "\ncolor='" + color
+                + '\''
+                +
+                ",\nnumOfColor="
+                + numOfColor
+                + "\n"
+                +
                 '}';
-
     }
+
 }
