@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.font.TextHitInfo;
-
 public class Ball {
     private String color;
     private int number;
