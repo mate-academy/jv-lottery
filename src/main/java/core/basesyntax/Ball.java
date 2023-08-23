@@ -1,12 +1,14 @@
 package core.basesyntax;
 
+import java.awt.font.TextHitInfo;
+
 public class Ball {
     private String color;
     private int number;
 
     public Ball(String color, int number) {
-        setColor(color);
-        setNumber(number);
+        this.color = color;
+        this.number = number;
     }
 
     public int getNumber() {
