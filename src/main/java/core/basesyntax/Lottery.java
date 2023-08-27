@@ -6,12 +6,9 @@ public class Lottery {
 
     private final Random random = new Random();
     private final ColorSupplier color = new ColorSupplier();
-    private final Ball ball = new Ball();
 
-    public String getRandomBall() {
-        int number = random.nextInt(100);
-        ball.setColor(color.getRandomColor());
-        ball.setNumber(number);
-        return ball.getColor() + ball.getNumber();
+    public Ball getRandomBall() {
+        return new Ball(color.getRandomColor(), random.nextInt(100));
     }
+
 }

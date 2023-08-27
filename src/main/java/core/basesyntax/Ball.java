@@ -4,24 +4,21 @@ public class Ball {
     private String color;
     private int number;
 
-    public void setColor(String color) {
+    public Ball(String color, int number) {
         this.color = color;
-    }
-
-    public String getColor() {
-        return "Your ball is " + color;
-    }
-
-    public void setNumber(int number) {
         this.number = number;
     }
 
-    public String getNumber() {
-        return " and has number " + number;
+    public String getColor() {
+        return color;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
     public String toString() {
-        return "default";
+        return "Your ball is " + getColor() + " and has number " + getNumber();
     }
 }
