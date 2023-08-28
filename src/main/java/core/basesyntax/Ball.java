@@ -6,11 +6,6 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball() {
-        setNumber(new Random().nextInt(100));
-        setColor(new ColorSupplier().getRandomColor());
-    }
-
     public String getColor() {
         return color;
     }
