@@ -1,13 +1,8 @@
 package core.basesyntax;
 
-public class Ball {
+public class Ball extends Lottery {
     private String color;
     private int number;
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
     public String getColor() {
         return color;
@@ -24,4 +19,10 @@ public class Ball {
     public void setNumber(int number) {
         this.number = number;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }
