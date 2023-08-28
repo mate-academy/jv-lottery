@@ -8,11 +8,8 @@ public class Application {
         for (int i = 0;i < COUNT_OF_BALL;i++) {
             lotteries[i] = new Lottery();
         }
-        for(Lottery index: lotteries) {
+        for (Lottery index: lotteries) {
             System.out.println(index.getRandomBall());
         }
-
-
-
     }
 }
