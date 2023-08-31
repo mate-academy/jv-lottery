@@ -13,8 +13,8 @@ public class Application {
         lottery.getRandomBall(ballB);
         lottery.getRandomBall(ballC);
 
-        System.out.println(ballA.toString());
-        System.out.println(ballB.toString());
-        System.out.println(ballC.toString());
+        System.out.println(ballA);
+        System.out.println(ballB);
+        System.out.println(ballC);
     }
 }
