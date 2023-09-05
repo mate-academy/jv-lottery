@@ -1,13 +1,11 @@
 package core.basesyntax;
 
-import javax.swing.text.rtf.RTFEditorKit;
-
 public class Ball {
-    private Colors color;
+    private String color;
     private int number;
 
-    public Ball(Colors color, int number) {
-        this.color = color;
+    public void setBall(Colors color, int number) {
+        this.color = color.name();
         this.number = number;
     }
 
@@ -19,6 +17,4 @@ public class Ball {
     public enum Colors {
         WHITE, BLACK, YELLOW, BLUE, RED, GREEN, BROWN
     }
-
-
 }
