@@ -5,8 +5,7 @@ public class Application {
         Lottery lottery = new Lottery();
         // create three balls using class Lottery and print information about them in console
         for (int i = 0; i < 3; i++) {
-            Ball ball = lottery.getRandomBall();
-            System.out.println("Ball " + (i + 1) + ": " + ball);
+            System.out.println("Ball " + (i + 1) + ": " + lottery.getRandomBall());
         }
     }
 }
