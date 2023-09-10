@@ -4,8 +4,10 @@ import core.basesyntax.model.Color;
 import java.util.Random;
 
 public class ColorSupplier {
-    public static Color getRandomColor() {
+    private final Random magic = new Random();
+
+    public Color getRandomColor() {
         Color[] colors = Color.values();
-        return colors[new Random().nextInt(colors.length)];
+        return colors[magic.nextInt(colors.length)];
     }
 }
