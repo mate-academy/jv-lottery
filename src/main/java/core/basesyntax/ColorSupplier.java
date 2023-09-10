@@ -4,7 +4,7 @@ import core.basesyntax.model.Color;
 import java.util.Random;
 
 public class ColorSupplier {
-    private final Random magic = new Random();
+    private Random magic = new Random();
 
     public Color getRandomColor() {
         Color[] colors = Color.values();
