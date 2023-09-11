@@ -9,4 +9,3 @@ public class Lottery {
         return new Ball(randomColor, randomNumber);
     }
 }
-
