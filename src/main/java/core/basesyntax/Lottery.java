@@ -3,8 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    ColorSupplier colorSupplier = new ColorSupplier();
-    public final Random random = new Random();
+    private final ColorSupplier colorSupplier = new ColorSupplier();
+    private final Random random = new Random();
+
     public Ball getRandomBall() {
         String color1 = colorSupplier.getRandomColor().toString();
         int number1 = getRandomNumber();
