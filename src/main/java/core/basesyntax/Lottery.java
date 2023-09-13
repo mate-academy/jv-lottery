@@ -7,11 +7,7 @@ public class Lottery {
     private static final Random random = new Random();
     private static final ColorSupplier colorSupplier = new ColorSupplier();
 
-    private Lottery() {
-        // Private constructor to prevent instantiation
-    }
-
-    public static Ball getRandomBall() {
+    public Ball getRandomBall() {
         Color randomColor = colorSupplier.getRandomColor();
         int randomNumber = random.nextInt(MAXNUMBER) + 1;
         return new Ball(randomColor, randomNumber);
