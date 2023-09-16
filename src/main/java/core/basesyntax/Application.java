@@ -2,6 +2,14 @@ package core.basesyntax;
 
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        ColorSupplier colorSupplier = new ColorSupplier();
+        
+        Lottery lottery = new Lottery(colorSupplier);
+
+        Ball randomBall = lottery.getRandomBall();
+        System.out.println("Random Ball: " + randomBall);
+
     }
 }
+// lottery created with full functianality  eval "$(ssh-agent -s)"
+//
