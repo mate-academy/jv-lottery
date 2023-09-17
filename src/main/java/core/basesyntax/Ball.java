@@ -30,7 +30,7 @@ public class Ball extends ColorSupplier {
         return number;
     }
 
-    public int getRandomNumber(){
+    public int getRandomNumber() {
         Random random = new Random();
         return random.nextInt(100);
     }
