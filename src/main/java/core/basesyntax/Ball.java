@@ -5,7 +5,6 @@ import java.util.Random;
 public class Ball {
     private String color;
     private int number;
-    private Random random = new Random();
 
     public Ball(String color, int number) {
         this.color = color;
@@ -22,7 +21,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "This is random color: " + color + "\n"
-               + "This is randoom number: " + number;
+        return "Ball color: " + color
+                + ", number: " + number;
     }
 }
