@@ -5,12 +5,10 @@ import java.util.Random;
 public class Ball {
     private String color;
     private int number;
+    private Random random = new Random();
 
-    public void setColor(String color) {
+    public Ball(String color, int number) {
         this.color = color;
-    }
-
-    public void setNumber(int number) {
         this.number = number;
     }
 
@@ -24,15 +22,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "This is random color: " + getRandomColor() + "\n"
-               + "This is randoom number: " + getRandomNumber();
-    }
-
-    private String getRandomColor() {
-        return new ColorSupplier().getRandomColor();
-    }
-
-    public int getRandomNumber() {
-        return new Random().nextInt(101);
+        return "This is random color: " + color + "\n"
+               + "This is randoom number: " + number;
     }
 }
