@@ -9,9 +9,7 @@ public class Lottery {
     public Ball getRandomBall() {
         String randomColor = getRandomColor();
         int randomNumber = getRandomNumber();
-
-        Ball ball = new Ball(randomColor, randomNumber);
-        return ball;
+        return new Ball(randomColor, randomNumber);
     }
 
     private int getRandomNumber() {
