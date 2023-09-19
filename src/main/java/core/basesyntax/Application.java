@@ -7,7 +7,8 @@ public class Application {
 
         for (int j = 0; j < 3; j++) {
             Ball ball = lottery.getRandomBall();
-            System.out.println("Random Ball :" + ball);
+            System.out.println("Random Ball : " + ball);
         }
     }
 }
+
