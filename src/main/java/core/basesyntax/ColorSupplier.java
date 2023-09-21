@@ -1,7 +1,14 @@
 package core.basesyntax;
 
 public class ColorSupplier {
-    public String getRandomColor() {
+    public static String getRandomColor() {
         return null;
     }
+
+    enum Color {
+        BLACK, BLUE, RED, YELLOW, GREEN, PURPLE;
+    }
 }
+
+
+
