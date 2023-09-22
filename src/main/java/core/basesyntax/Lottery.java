@@ -7,3 +7,4 @@ public class Lottery {
         return new Ball(ColorSupplier.getRandomColor(), new Random().nextInt(100));
     }
 }
+
