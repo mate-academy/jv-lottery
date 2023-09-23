@@ -17,9 +17,3 @@ public class Ball {
         }
     }
 }
-
-
-
-
-
-
