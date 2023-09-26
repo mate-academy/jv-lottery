@@ -1,16 +1,19 @@
 package core.basesyntax;
 
 public class Ball {
-    private String color;
+    private Color color;
     private int number;
 
-    public Ball(String color, int number) {
+    public void setColor(Color color) {
         this.color = color;
+    }
+
+    public void setNumber(int number) {
         this.number = number;
     }
 
     public String getColor() {
-        return color;
+        return color.name();
     }
 
     public int getNumber() {
