@@ -1,7 +1,10 @@
 package core.basesyntax;
 
-public class ColorSupplier {
+import java.util.Random;
+
+public class ColorSupplier extends Lottery {
     public String getRandomColor() {
-        return null;
+        int index = new Random().nextInt(Colors.values().length);
+        return Colors.values()[index].toString();
     }
 }
