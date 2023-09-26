@@ -2,9 +2,10 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery extends ColorSupplier {
-    public int getRandomBall() {
+public class Lottery {
+    public static Ball getRandomBall() {
         Random random = new Random();
-        return random.nextInt(100);
+        int randNumber = random.nextInt(101);
+        return new Ball(randNumber, ColorSupplier.getRandomColor());
     }
 }

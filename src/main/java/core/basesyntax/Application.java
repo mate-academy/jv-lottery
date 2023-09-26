@@ -3,12 +3,11 @@ package core.basesyntax;
 import java.util.Arrays;
 
 public class Application {
-    public static void main(String[] args) {
-        Ball[] balls = new Ball[3];
-        for (int i = 0; i < balls.length; i++) {
-            balls[i] = new Ball();
-        }
-        System.out.println(Arrays.toString(balls));
+    private static final Lottery lottery = new Lottery();
 
+    public static void main(String[] args) {
+        Ball[] balls = new Ball[]{lottery.getRandomBall(),
+                lottery.getRandomBall(), lottery.getRandomBall()};
+        System.out.println(Arrays.toString(balls));
     }
 }

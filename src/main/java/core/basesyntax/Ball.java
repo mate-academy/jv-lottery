@@ -1,8 +1,13 @@
 package core.basesyntax;
 
-public class Ball extends Lottery {
-    private int number = getRandomBall();
-    private String color = getRandomColor();
+public class Ball {
+    private int number;
+    private String color;
+
+    public Ball(int number, String color) {
+        this.number = number;
+        this.color = color;
+    }
 
     @Override
     public String toString() {
