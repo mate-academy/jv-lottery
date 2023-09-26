@@ -8,8 +8,3 @@ public class ColorSupplier {
         return ColorEnum.values()[index].name();
     }
 }
-//
-//    Random random = new Random();
-//    int index = random.nextInt(Colors.values().length);
-//    String color = String.valueOf(Colors.values()[index]);
-//         return color;
