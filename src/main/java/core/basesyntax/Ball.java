@@ -1,23 +1,12 @@
 package core.basesyntax;
 
 public class Ball {
-    private String color;
-    private int number;
+    private final Color color;
+    private final int number;
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getColor(String color) {
-        return color;
-    }
-
-    public void setNumber(int number) {
+    public Ball(String color, int number) {
+        this.color = Color.valueOf(color);
         this.number = number;
-    }
-
-    public int getNumber(int number) {
-        return number;
     }
 
     @Override
