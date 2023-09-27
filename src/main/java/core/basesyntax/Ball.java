@@ -4,11 +4,8 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball(int ballNumber) {
+    public Ball(int ballNumber, String color) {
         this.number = ballNumber;
-    }
-
-    public void setColor(String color) {
         this.color = color;
     }
 
