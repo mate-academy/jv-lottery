@@ -11,6 +11,5 @@ public class Application {
         for (Ball ball : balls) {
             System.out.println(lottery.getRandomBall());
         }
-        System.out.println(Arrays.toString(balls));
     }
 }
