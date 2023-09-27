@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.util.Arrays;
-
 public class Application {
     static final int NUMBER = 3;
     private static final Lottery lottery = new Lottery();
