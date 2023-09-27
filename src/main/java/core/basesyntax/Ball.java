@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-
     private String color;
     private int number;
+    private final Random random = new Random();
 
     public void setColor(String color) {
         this.color = color;
@@ -21,6 +21,6 @@ public class Ball {
     }
 
     public int getRandomNumber() {
-        return number = new Random().nextInt(100);
+        return number = random.nextInt(100);
     }
 }
