@@ -14,6 +14,6 @@ public class Ball {
         StringBuilder builder = new StringBuilder();
         builder.append("Color of ball is ").append(color)
                .append(" and its number is ").append(number);
-        return  builder.toString();
+        return builder.toString();
     }
 }
