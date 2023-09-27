@@ -4,19 +4,13 @@ public class Ball {
     private String color;
     private int number;
 
-    public void setColor(String color) {
+    public Ball(String color, int number) {
         this.color = color;
-    }
-
-    public void setNumber(int number) {
         this.number = number;
     }
 
     @Override
     public String toString() {
-        return "Ball{"
-                + "color='" + color + '\''
-                + ", number=" + number
-                + '}';
+        return "Ball's color is " + color + ", ball's number is " + number;
     }
 }
