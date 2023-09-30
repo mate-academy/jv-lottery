@@ -22,9 +22,6 @@ public class Ball {
     }
 
     public void setNumber(int number) {
-        if (number < 0) {
-            System.out.println("number can`t be negative");
-        }
         this.number = number;
     }
 
