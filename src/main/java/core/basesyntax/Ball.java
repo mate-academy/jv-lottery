@@ -4,7 +4,9 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball() { }
+    public Ball() {
+
+    }
 
     public Ball(String color, int number) {
         this.color = color;
@@ -18,8 +20,5 @@ public class Ball {
                 + color + '\''
                 + ", number="
                 + number;
-
     }
-
-
 }
