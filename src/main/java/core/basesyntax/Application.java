@@ -2,11 +2,13 @@ package core.basesyntax;
 
 public class Application {
     public static void main(String[] args) {
-        Lottery first = new Lottery();
-        Lottery second = new Lottery();
-        Lottery third = new Lottery();
-        System.out.println(first.getRandomBall());
-        System.out.println(second.getRandomBall());
-        System.out.println(third.getRandomBall());
+        Lottery lottery = new Lottery();
+        Ball firstBall = lottery.getRandomBall();
+        Ball secondBall = lottery.getRandomBall();
+        Ball thirdBall = lottery.getRandomBall();
+        Ball[] balls = new Ball[]{firstBall,secondBall,thirdBall};
+        for (Ball ball : balls) {
+            System.out.println(ball.toString());
+        }
     }
 }
