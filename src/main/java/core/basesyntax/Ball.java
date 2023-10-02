@@ -1,9 +1,14 @@
 package core.basesyntax;
 
 public class Ball {
-    Color color;
-    int number;
-
+    private Color color;
+    private int number;
+    public void setColor(Color newColor) {
+        this.color = newColor;
+    }
+    public void setNumber(int newNumber) {
+        this.number = newNumber;
+    }
     @Override
     public String toString() {
         return Integer.toString(this.number) + " " + this.color;
