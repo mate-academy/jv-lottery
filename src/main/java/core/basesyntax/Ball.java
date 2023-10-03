@@ -3,17 +3,13 @@ package core.basesyntax;
 public class Ball {
     private Color color;
     private int number;
-
-    public void setColor(Color newColor) {
-        this.color = newColor;
-    }
-
-    public void setNumber(int newNumber) {
-        this.number = newNumber;
+    Ball(Color color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return this.number + " " + this.color;
+        return number + " " + color;
     }
 }
