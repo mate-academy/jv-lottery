@@ -3,8 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
+    Lotterey lotterey = new Lotterey();
     public String getRandomColor() {
-        Lotterey lotterey = new Lotterey();
         return lotterey.getColor();
     }
 
