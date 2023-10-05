@@ -3,15 +3,14 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
-    private Lotterey lotterey = new Lotterey();
 
     public String getRandomColor() {
+        Lotterey lotterey = new Lotterey();
         return lotterey.getColor();
     }
 
     class Lotterey {
         private Random random = new Random();
-
         private int index = random.nextInt(Colors.values().length);
         private Colors color = Colors.values()[index];
 
