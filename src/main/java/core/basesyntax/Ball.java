@@ -3,13 +3,21 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    String color;
+    private String color;
 
-    int number;
+    private int number;
 
     public Ball() {
         this.color = new ColorSupplier().getRandomColor();
         this.number = new Random().nextInt(100);
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
