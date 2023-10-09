@@ -7,9 +7,9 @@ public class Ball {
 
     private int number;
 
-    public Ball() {
-        this.color = new ColorSupplier().getRandomColor();
-        this.number = new Random().nextInt(100);
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     public String getColor() {
