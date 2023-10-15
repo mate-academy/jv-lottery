@@ -19,13 +19,13 @@ public class ColorSupplier {
         private final int number;
 
         public Ball(Colors color, int number) {
-        this.color = color;
-        this.number = number;
+            this.color = color;
+            this.number = number;
         }
 
         @Override
         public String toString() {
-            return "A " +  color + " Ball, with a number=" + number;
+            return "A " + color + " Ball, with a number=" + number;
         }
     }
 
@@ -34,7 +34,7 @@ public class ColorSupplier {
 
         private final Random random;
 
-        public Lottery(){
+        public Lottery() {
             this.random = new Random();
         }
 
