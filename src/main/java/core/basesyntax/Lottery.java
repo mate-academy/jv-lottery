@@ -9,8 +9,12 @@ public class Lottery {
         return colorSupplier;
     }
 
+    public void setColorSupplier(ColorSupplier colorSupplier) {
+        this.colorSupplier = colorSupplier;
+    }
+
     public Ball getRandomBall() {
-        Ball.setColor(String.valueOf(getColorSupplier().getRandomColor()));
+        Ball.setColor(String.valueOf(colorSupplier.getRandomColor()));
         Ball.setNumber(new Random().nextInt(100));
         return new Ball();
     }
