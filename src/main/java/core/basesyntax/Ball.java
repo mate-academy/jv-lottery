@@ -1,8 +1,7 @@
 package core.basesyntax;
 
 public class Ball {
-    private final ColorSupplier colorSupplier = new ColorSupplier();
-
+    private final ColorSupplier color = new ColorSupplier();
     private int number;
 
     public void setNumber(int number) {
@@ -12,7 +11,7 @@ public class Ball {
     @Override
     public String toString() {
         return "Ball{"
-                + "color='" + colorSupplier.getRandomColor() + '\''
+                + "color='" + color.getRandomColor() + '\''
                 + ", number=" + number
                 + '}';
     }
