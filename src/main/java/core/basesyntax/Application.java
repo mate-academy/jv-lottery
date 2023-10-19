@@ -8,7 +8,7 @@ public class Application {
             arrayOfThreeBalls[i] = ballRandomizer.getRandomBall();
         }
         for (Ball ball : arrayOfThreeBalls) {
-            System.out.println(ball.toString());
+            System.out.println(ball);
         }
         // create three balls using class Lottery and print information about them in console
     }
