@@ -8,9 +8,6 @@ public class Lottery {
     private Random random = new Random();
 
     public Ball getRandomBall() {
-        Ball ball = new Ball();
-        ball.setColor(randomColor.getRandomColor());
-        ball.setNumber(random.nextInt(RANDOM_LIMIT));
-        return ball;
+        return new Ball(randomColor.getRandomColor(),random.nextInt(RANDOM_LIMIT));
     }
 }
