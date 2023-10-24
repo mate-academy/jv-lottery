@@ -15,11 +15,11 @@ public class Ball {
     }
 
     public String getColor() {
-        return this.color;
+        return color;
     }
 
     public int getNumber() {
-        return this.number;
+        return number;
     }
 
 }
