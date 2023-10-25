@@ -12,7 +12,7 @@ public class Application {
 
         for (int i = 0; i < balls.length; i++) {
             balls[i] = lottery.getRandomBall(maxNumberOnTheBall);
-            System.out.printf("%d. %s\n", i+1, balls[i].toString());
+            System.out.printf("%d. %s\n", i + 1, balls[i].toString());
         }
     }
 }

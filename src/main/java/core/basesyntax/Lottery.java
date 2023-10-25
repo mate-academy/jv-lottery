@@ -5,7 +5,7 @@ import core.basesyntax.objects.Ball;
 import java.util.Random;
 
 public class Lottery {
-    private Random random;
+    private final Random random;
 
     public Lottery() {
         // SHOULD I MAKE RANDOM AS CLASS FIELD OR JUST AS SIMPLE LOCAL FUNCTION VARIABLE ?
