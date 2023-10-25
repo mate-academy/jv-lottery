@@ -7,8 +7,10 @@ public class Application {
         Ball ball2 = lottery.getRandomBall();
         Ball ball3 = lottery.getRandomBall();
 
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
+        Ball[] balls = {ball1, ball2, ball3};
+
+        for (Ball ball : balls) {
+            System.out.println(ball);
+        }
     }
 }
