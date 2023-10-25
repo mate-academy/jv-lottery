@@ -125,7 +125,7 @@ public class AccauntService {
 ```
 
 #### Don't forget how to name constants according to style guide (the same with naming of enum values)
-https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names
+https://mate-academy.githu.хb.io/style-guides/java/java.html#s5.2.4-constant-names
 
 #### Pay attention to access modifiers
 Classes, fields, constructors, methods must have access modifiers otherwise default will be used that isn't a good practice.
