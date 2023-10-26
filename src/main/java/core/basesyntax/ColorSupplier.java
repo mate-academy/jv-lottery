@@ -13,8 +13,8 @@ public class ColorSupplier {
     }
 
     public String getRandomColor() {
-        int r = random.nextInt(Color.values().length);
-        Color color = Color.values()[r];
+        int randomColorCode = random.nextInt(Color.values().length);
+        Color color = Color.values()[randomColorCode];
         return color.name();
     }
 }
