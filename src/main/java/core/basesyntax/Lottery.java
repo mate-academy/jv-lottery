@@ -17,7 +17,8 @@ public class Lottery {
 
     public Ball getRandomBall() {
         String ballColor = colorSupplier.getRandomColor();
-        int ballRandomNumber = random.nextInt(maxNumberOnTheBall) + 1; // +1 to include the last number
+        // +1 to include the last number
+        int ballRandomNumber = random.nextInt(maxNumberOnTheBall) + 1;
         return new Ball(ballColor, ballRandomNumber);
     }
 }
