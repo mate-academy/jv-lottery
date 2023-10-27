@@ -5,18 +5,18 @@ import java.util.Random;
 
 public class Lottery {
     private final Random random;
+    private final int maxNumberOnTheBall;
     private final ColorSupplier colorSupplier;
 
-    public Lottery() {
-        // SHOULD I MAKE RANDOM AS CLASS FIELD OR JUST AS SIMPLE LOCAL FUNCTION VARIABLE ?
+    public Lottery(int maxNumberOnTheBall) {
+        this.maxNumberOnTheBall = maxNumberOnTheBall;
         this.random = new Random();
         colorSupplier = new ColorSupplier();
     }
 
-    public Ball getRandomBall(int maxNum) {
-        // SHOULD maxNum be included in the range or not ?
+    public Ball getRandomBall() {
         String ballColor = colorSupplier.getRandomColor();
-        int ballRandomNumber = random.nextInt(maxNum);
+        int ballRandomNumber = random.nextInt(maxNumberOnTheBall)+1; // +1 to include the last number
         return new Ball(ballColor, ballRandomNumber);
     }
 }
