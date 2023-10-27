@@ -9,8 +9,8 @@ public class Ball {
         this.number = number;
 
     }
-    @Override
 
+    @Override
     public String toString() {
         return "Ball{"
                 + "number=" + number
