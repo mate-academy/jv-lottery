@@ -4,6 +4,7 @@ import core.basesyntax.objects.Ball;
 
 public class Application {
     private static final int numberOfBalls = 3;
+
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
         Lottery lottery = new Lottery(100);

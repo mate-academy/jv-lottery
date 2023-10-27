@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 import core.basesyntax.objects.Color;
+
 import java.util.Random;
 
 public class ColorSupplier {
