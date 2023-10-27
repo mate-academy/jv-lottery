@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Ball ballfirst = Lottery.getRandomBall();
-        Ball ballsecond = Lottery.getRandomBall();
-        Ball ballthird = Lottery.getRandomBall();
-
-        System.out.println(ballfirst);
-        System.out.println(ballsecond);
-        System.out.println(ballthird);
+        Lottery lottery = new Lottery();
+        Ball ball;
+        for (int i = 1; i <= 3 ; i++) {
+            ball = lottery.getRandomBall();
+            System.out.println(ball);
+        }
     }
 }
