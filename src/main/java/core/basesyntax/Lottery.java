@@ -4,8 +4,8 @@ import core.basesyntax.objects.Ball;
 import java.util.Random;
 
 public class Lottery {
-    private final Random random;
     private static final int maxNumberOnTheBall = 100;
+    private final Random random;
     private final ColorSupplier colorSupplier;
 
     public Lottery() {
