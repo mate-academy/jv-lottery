@@ -8,8 +8,8 @@ public class Lottery {
     private final int maxNumberOnTheBall;
     private final ColorSupplier colorSupplier;
 
-    public Lottery(int MAX_NUMBER_ON_BALL) {
-        this.maxNumberOnTheBall = MAX_NUMBER_ON_BALL;
+    public Lottery(int maxNumberOnTheBall) {
+        this.maxNumberOnTheBall = maxNumberOnTheBall;
         this.random = new Random();
         colorSupplier = new ColorSupplier(random);
     }
