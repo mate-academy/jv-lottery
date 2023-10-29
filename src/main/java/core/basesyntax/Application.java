@@ -4,7 +4,7 @@ import core.basesyntax.objects.Ball;
 
 public class Application {
     public static void main(String[] args) {
-        Lottery lottery = new Lottery(100);
+        Lottery lottery = new Lottery();
 
         final int numberOfBalls = 3;
         Ball[] balls = new Ball[numberOfBalls];

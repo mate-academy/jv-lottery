@@ -5,11 +5,10 @@ import java.util.Random;
 
 public class Lottery {
     private final Random random;
-    private final int maxNumberOnTheBall;
+    private static final int maxNumberOnTheBall = 100;
     private final ColorSupplier colorSupplier;
 
-    public Lottery(int maxNumberOnTheBall) {
-        this.maxNumberOnTheBall = maxNumberOnTheBall;
+    public Lottery() {
         this.random = new Random();
         colorSupplier = new ColorSupplier(random);
     }
