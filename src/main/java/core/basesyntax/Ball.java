@@ -9,22 +9,6 @@ public class Ball {
         this.number = number;
     }
 
-    public Colors getColors() {
-        return colors;
-    }
-
-    public void setColors(Colors colors) {
-        this.colors = colors;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     @Override
     public String toString() {
         return "Ball{"
