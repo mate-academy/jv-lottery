@@ -1,26 +1,21 @@
 package core.basesyntax.model;
 
-import core.basesyntax.ColorSupplier;
+import core.basesyntax.enums.Color;
 
-public class Ball extends ColorSupplier {
+public class Ball {
 
-    private static Integer COUNT;
-    private String color;
+    private Color color;
     private Integer number;
 
-    public Ball(Integer number) {
-        this.color = getRandomColor();
+    public Ball(Integer number, Color color) {
+        this.color = color;
         this.number = number;
-        if (COUNT == null) {
-            COUNT = 0;
-        }
-        COUNT++;
     }
 
     @Override
     public String toString() {
-        return COUNT + ". Ball {"
-                + color + '\''
+        return "Ball {"
+                + color
                 + ", " + number
                 + '}';
     }
