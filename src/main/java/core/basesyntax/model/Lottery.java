@@ -7,7 +7,7 @@ import java.util.Random;
 public class Lottery {
 
     public Ball getRandomBall() {
-        return new Ball(new Random().nextInt(101)
-                        , Color.valueOf(new ColorSupplier().getRandomColor()));
+        return new Ball(new Random().nextInt(101),
+                        Color.valueOf(new ColorSupplier().getRandomColor()));
     }
 }
