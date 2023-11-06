@@ -6,8 +6,10 @@ import java.util.Random;
 
 public class Lottery {
 
+    public static final int MAX_NUMBER = 101;
+
     public Ball getRandomBall() {
-        return new Ball(new Random().nextInt(101),
+        return new Ball(new Random().nextInt(MAX_NUMBER),
                         Color.valueOf(new ColorSupplier().getRandomColor()));
     }
 }
