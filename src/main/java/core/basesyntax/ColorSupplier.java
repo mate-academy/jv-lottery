@@ -9,6 +9,5 @@ public class ColorSupplier {
     public Color getRandomColor() {
         int index = random.nextInt(colors.length);
         return colors[index];
-
     }
 }
