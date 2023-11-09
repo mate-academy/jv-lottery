@@ -9,20 +9,12 @@ public class Ball {
         this.number = number;
     }
 
-    public void setColor(String color) {
-        this.color = ColorSupplier.getRandomColor();
-    }
-
-    public void setNumber(int number) {
-        this.number = Lottery.getRandomBall().number;
-    }
-
     public int getNumber() {
         return Lottery.getRandomBall().number;
     }
 
     public String getColor() {
-        return ColorSupplier.getRandomColor();
+        return color;
     }
 
     @Override
