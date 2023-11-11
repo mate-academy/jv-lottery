@@ -1,10 +1,9 @@
 package core.basesyntax;
 
-import static core.basesyntax.Application.MAX_POSSIBLE_NUMBER_FOR_BALL;
-
 import java.util.Random;
 
 public class Lottery {
+    private static final int MAX_POSSIBLE_NUMBER_FOR_BALL = 100;
     private ColorSupplier colorSupplier = new ColorSupplier();
     private Random random = new Random();
 
