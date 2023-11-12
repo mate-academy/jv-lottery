@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
         Lottery bal = new Lottery();
@@ -8,10 +10,9 @@ public class Application {
         Ball ball2 = bal.getRandomBall();
         Ball ball3 = bal.getRandomBall();
 
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
+        for (Ball ball : Arrays.asList(ball1, ball2, ball3)) {
+            System.out.println(ball);
+        }
 
-        // create three balls using class Lottery and print information about them in console
     }
 }
