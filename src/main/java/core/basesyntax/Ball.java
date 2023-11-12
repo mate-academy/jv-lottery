@@ -21,6 +21,6 @@ public class Ball {
     }
 
     public String name() {
-        return "Color:" + getColor() + ", number = " + getNumber();
+        return "Color: " + getColor() + ", number = " + getNumber();
     }
 }

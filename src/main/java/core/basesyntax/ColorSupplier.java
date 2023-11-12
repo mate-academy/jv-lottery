@@ -13,8 +13,10 @@ public class ColorSupplier {
         WHITE
     }
 
+    private final Random randomColor = new Random();
+
     public String getRandomColor() {
-        int index = new Random().nextInt(Color.values().length);
+        int index = randomColor.nextInt(Color.values().length);
         Color color = Color.values()[index];
         return color.toString();
     }
