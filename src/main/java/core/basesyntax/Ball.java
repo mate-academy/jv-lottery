@@ -10,7 +10,7 @@ public class Ball {
     }
 
     public int getNumber() {
-        return Lottery.getRandomBall().number;
+        return number;
     }
 
     public String getColor() {
@@ -19,6 +19,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball " + "color: " + getColor() + ", ball number: " + getNumber();
+        return "Ball " + "color: " + color + ", ball number: " + number;
     }
 }
