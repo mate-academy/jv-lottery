@@ -9,3 +9,4 @@ public class ColorSupplier {
         return Colors.values()[index];
     }
 }
+
