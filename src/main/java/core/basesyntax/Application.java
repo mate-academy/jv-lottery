@@ -1,17 +1,12 @@
 package core.basesyntax;
 
-import java.util.Arrays;
-
 public class Application {
     public static void main(String[] args) {
-        Lottery bal = new Lottery();
-
-        Ball ball1 = bal.getRandomBall();
-        Ball ball2 = bal.getRandomBall();
-        Ball ball3 = bal.getRandomBall();
-
-        for (Ball ball : Arrays.asList(ball1, ball2, ball3)) {
-            System.out.println(ball);
+        Lottery lottery = new Lottery();
+        Ball[] ball = new Ball[3];
+        for (int i = 0; i < ball.length; i++) {
+            ball[i] = lottery.getRandomBall();
+            System.out.println(ball[i]);
         }
 
     }
