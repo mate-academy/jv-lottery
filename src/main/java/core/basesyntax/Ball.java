@@ -9,7 +9,4 @@ public class Ball {
         this.number = number;
     }
 
-    public String printInfo() {
-        return "Color: " + color + ", number = " + number;
-    }
 }
