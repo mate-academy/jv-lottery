@@ -19,17 +19,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + color +
-                ", number=" + number +
-                '}';
+        return "Ball{" + "color=" + color + ", number=" + number + '}';
     }
-}
-
-enum Color {
-    RED,
-    GREEN,
-    BLUE,
-    YELLOW,
-    ORANGE
 }
