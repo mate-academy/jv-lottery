@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class ColorSupplier {
-    public String getRandomColor() {
-        return null;
+    public static String getRandomColor() {
+        return getRandomColor();
     }
 }
