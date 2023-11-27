@@ -3,8 +3,10 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-
+    private static final int FIGURE_COUNT = 100;
     private ColorSupplier colorSupplier;
+
+    private Random random = new Random();
 
     public Lottery() {
         colorSupplier = new ColorSupplier();
@@ -12,8 +14,7 @@ public class Lottery {
 
     public Ball getRandomBall() {
         String randomColor = colorSupplier.getRandomColor();
-        Random random = new Random();
-        int randomNumber = random.nextInt(100);
+        int randomNumber = random.nextInt(FIGURE_COUNT);
         return new Ball(randomColor, randomNumber);
     }
 }

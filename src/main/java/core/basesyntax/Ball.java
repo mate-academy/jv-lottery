@@ -9,15 +9,7 @@ public class Ball {
         this.number = number;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public String toString() {
-        return "Color: " + color + ", Number: " + number;
+    public String name() {
+        return color + " " + number;
     }
 }
