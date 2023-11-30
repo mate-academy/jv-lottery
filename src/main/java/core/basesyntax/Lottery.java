@@ -6,8 +6,8 @@ public class Lottery extends Ball {
     public String getRandomBall() {
         int number = new Random().nextInt(100);
         String color = ColorSupplier.getRandomColor();
-        super.color = color;
-        super.number = number;
+        super.setColor(color);
+        super.setNumber(number);
         return color + " " + number;
     }
 }
