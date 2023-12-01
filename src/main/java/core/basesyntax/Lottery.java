@@ -2,12 +2,16 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery {
+public final class Lottery {
+    private static final int MAXIMUM_POSSIBLE_NUMBER = 100;
+    private final Ball randomBall = new Ball();
+    private final String randomColor = new ColorSupplier().getRandomColor();
+    private final Random random = new Random();
+    private final int randomNumber = random.nextInt(MAXIMUM_POSSIBLE_NUMBER);
+
     public Ball getRandomBall() {
-        Ball randomBall = new Ball();
-        String randomColor = new ColorSupplier().getRandomColor();
         randomBall.setColor(randomColor);
-        randomBall.setNumber(new Random().nextInt(100));
+        randomBall.setNumber(randomNumber);
         return randomBall;
     }
 }
