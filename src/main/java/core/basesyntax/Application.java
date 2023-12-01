@@ -7,8 +7,8 @@ public class Application {
 
         for (int i = 0; i < balls.length; i++) {
             balls[i] = lottery.getRandomBall();
-            System.out.println(balls[i].getBallColor() + " ball with number "
-                    + balls[i].getBallNumber());
+            System.out.println(balls[i].getColor() + " ball with number "
+                    + balls[i].getNumber());
         }
     }
 }
