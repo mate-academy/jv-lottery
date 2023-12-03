@@ -3,8 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    private ColorSupplier colorSupplier = new ColorSupplier();
     private int maxValue = 100;
+    // if I assing it as MAX_VALUE then there is a mistake when calling mvn clean package
+    private ColorSupplier colorSupplier = new ColorSupplier();
     private Random random = new Random();
 
     public Ball getRandomBall() {
