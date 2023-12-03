@@ -11,7 +11,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return color.name();
+        return color.name() + "\n" + getNumber();
     }
 
     public int getNumber() {
