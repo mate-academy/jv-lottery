@@ -2,15 +2,15 @@ package core.basesyntax;
 
 public class Ball {
     private String color;
-    private int namber;
+    private int number;
 
     public Ball(String color, int namber) {
         this.color = color;
-        this.namber = namber;
+        this.number = namber;
     }
 
     @Override
     public String toString() {
-        return color + " " + namber;
+        return color + " " + number;
     }
 }
