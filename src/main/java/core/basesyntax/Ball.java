@@ -19,7 +19,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball number is : " + number + "\nBall color is : " + color;
+        return "Ball number is : " + number + System.lineSeparator() + "Ball color is : " + color;
     }
 }
 
