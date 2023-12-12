@@ -12,5 +12,4 @@ public class Ball {
     public String toString() {
         return "Color = " + color + " numer = " + number;
     }
-
 }
