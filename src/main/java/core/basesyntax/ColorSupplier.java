@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-import java.net.PortUnreachableException;
 import java.util.Random;
 
 public class ColorSupplier {

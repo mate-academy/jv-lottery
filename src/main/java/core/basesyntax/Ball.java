@@ -1,14 +1,11 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Ball {
 
-    String color ;
-    int number ;
-    public Ball() {
+   private String color ;
+   private int number ;
 
-    };
+    public Ball() {}
 
     public Ball(int number, String color) {
         this.number = number;
@@ -17,9 +14,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + color +
-                ", number=" + number +
-                '}';
+        return "Ball{"
+                + "color=" + color
+                + ", number=" + number
+                + '}';
     }
 }
