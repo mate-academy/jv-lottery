@@ -1,9 +1,8 @@
 package core.basesyntax;
 
 public class Ball {
-
-   private String color ;
-   private int number ;
+   private String color;
+   private int number;
 
     public Ball() {}
 
@@ -16,7 +15,6 @@ public class Ball {
     public String toString() {
         return "Ball{"
                 + "color=" + color
-                + ", number=" + number
-                + '}';
+                + ", number=" + number + '}';
     }
 }
