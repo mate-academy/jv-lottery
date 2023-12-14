@@ -13,15 +13,15 @@ public class Ball {
         return color;
     }
 
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public int getNumber(){
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(int number){
+    public void setNumber(int number) {
         this.number = number;
     }
 

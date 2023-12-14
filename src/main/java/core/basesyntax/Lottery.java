@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lottery {
 
     private final Random random = new Random();
-    public final int MAX_VALUE= 100;
+    private static final int MAX_VALUE = 100;
 
     public Ball getRandomBall() {
         Random random = new Random();
