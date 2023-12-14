@@ -8,10 +8,10 @@ public class Application {
 
         Lottery [] lotteries = new Lottery[NUMBER_USERS];
 
-        for (int i=0; i < lotteries.length; i++) {
+        for (int i = 0; i < lotteries.length; i++) {
             lotteries[i] = new Lottery();
         }
-        for (Lottery lot : lotteries){
+        for (Lottery lot : lotteries) {
             System.out.println(lot.getRandomBall().toString());
         }
 
