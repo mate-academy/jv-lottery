@@ -4,8 +4,12 @@ import java.util.Random;
 
 public class Lottery {
 
+    private final Random random = new Random();
+    private static final int COUNT = 100;
+
     public Ball getRandomBall() {
-        int index = new Random().nextInt(100);
+        Random random = new Random();
+        int index = random.nextInt(100);
         ColorSupplier colorSupplier = new ColorSupplier();
         return new Ball(index, colorSupplier.getRandomColor());
     }
