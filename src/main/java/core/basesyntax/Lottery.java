@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import core.basesyntax.ball.Ball;
-import core.basesyntax.ball.Color;
 import core.basesyntax.ball.ColorSupplier;
 import java.util.Random;
 
