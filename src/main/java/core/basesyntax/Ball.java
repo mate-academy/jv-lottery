@@ -4,19 +4,19 @@ public class Ball {
     private String color;
     private int number;
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
+    public Ball(String color, int number) {
         this.color = color;
+        this.number = number;
     }
 
-    public int getNumber() {
-        return number;
+    // Constructor for a Ball with a color as Colors enum
+    public Ball(Colors color, int number) {
+        this.color = color.toString();
+        this.number = number;
     }
 
-    public void setNumber(int number) {
+    // Constructor for a Ball with only a number
+    public Ball(int number) {
         this.number = number;
     }
 
