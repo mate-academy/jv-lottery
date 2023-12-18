@@ -5,7 +5,6 @@ import core.basesyntax.ball.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
-
     private static final int BOUND = 100;
     private ColorSupplier colorSupplier = new ColorSupplier();
     private Random random = new Random();
