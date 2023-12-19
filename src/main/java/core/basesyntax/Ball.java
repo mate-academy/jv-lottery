@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-class Ball {
+public class Ball {
     private final Color color;
     private final int number;
 
@@ -10,17 +10,17 @@ class Ball {
     }
 
     public String toString() {
-        var s = "Ball{"
+        return "Ball{"
                 +
                 "color="
-                + color
+                +
+                color
                 +
                 ", number="
-                + number
+                +
+                number
                 +
                 '}';
-        return s;
     }
 }
-
 
