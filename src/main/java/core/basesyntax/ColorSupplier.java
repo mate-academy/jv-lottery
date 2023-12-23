@@ -10,9 +10,9 @@ public class ColorSupplier {
     }
 
     public String getRandomColor() {
-        Colors[] values = Colors.values();
+        Color[] values = Color.values();
         int randomIndex = random.nextInt(values.length);
-        Colors randomColor = values[randomIndex];
+        Color randomColor = values[randomIndex];
         return randomColor.toString();
     }
 }
