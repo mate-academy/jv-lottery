@@ -1,15 +1,16 @@
 package core.basesyntax;
 
+import java.util.Arrays;
+
 public class Application {
+    private static final int BALLS_LENGTH = 3;
 
     public static void main(String[] args) {
         Loterry loterry = new Loterry();
-        Ball one = loterry.getRandomBall();
-        Ball two = loterry.getRandomBall();
-        Ball three = loterry.getRandomBall();
-        System.out.println("Ball one: color is " + one.getColor() + " nuber is " + one.getNumber());
-        System.out.println("Ball two: color is " + two.getColor() + " nuber is " + two.getNumber());
-        System.out.println("Ball three: color is " + three.getColor() + " nuber is "
-                + three.getNumber());
+        Ball[] balls = new Ball[BALLS_LENGTH];
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = loterry.getRandomBall();
+        }
+        System.out.println(Arrays.toString(balls));
     }
 }
