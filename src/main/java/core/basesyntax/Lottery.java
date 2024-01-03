@@ -4,13 +4,11 @@ import java.util.Random;
 
 public class Lottery {
 
-    public static final int NUMERIC = 100;
+    private static final int MAX_BOUND = 101;
 
-    public static String getRandomBall() {
-
-        Colors color = new ColorSupplier().getRandomColor();
-        int randomCislo = new Random().nextInt(NUMERIC);
-
-        return color + " " + randomCislo;
+    public Ball getRandomBall() {
+        String color = String.valueOf(new ColorSupplier().getRandomColor());
+        int randomNumber = new Random().nextInt(MAX_BOUND);
+        return new Ball(color, randomNumber);
     }
 }
