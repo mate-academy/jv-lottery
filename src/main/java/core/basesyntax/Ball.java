@@ -1,31 +1,25 @@
 package core.basesyntax;
 
 public class Ball {
+    public static final int MAX_NUMBER_BALL = 101;
     private String color;
     private int number;
 
-    public void setColor(String color) {
+    public Ball(int number, String color ){
+        this.number = number;
         this.color = color;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getNumber() {
-        return number;
-    }
+    public Ball() {}
 
     @Override
     public String toString() {
         return "Ball{"
-                + "color='" + getColor()
+                + "color='"
+                + this.color
                 + '\''
-                + ", number=" + getNumber()
+                + ", number="
+                + this.number
                 + '}';
     }
 }
