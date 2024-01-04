@@ -7,7 +7,7 @@ public class Application {
         Loterry loterry = new Loterry();
         while (BALLS_LENGTH > 0) {
             Ball ball = loterry.getRandomBall();
-            System.out.println(ball.toString());
+            System.out.println(ball);
             BALLS_LENGTH--;
         }
     }
