@@ -12,4 +12,9 @@ public class Ball {
     public Ball() {
 
     }
+
+    @Override
+    public String toString() {
+        return color + ' ' + number;
+    }
 }
