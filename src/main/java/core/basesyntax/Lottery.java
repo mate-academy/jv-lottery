@@ -9,5 +9,6 @@ public class Lottery {
         String randomColor = colors[random.nextInt(colors.length)].name();
         int randomNumber = random.nextInt(100) + 1;
         return new Ball(randomColor, randomNumber);
+
     }
 }
