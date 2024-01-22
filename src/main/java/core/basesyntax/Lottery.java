@@ -5,11 +5,12 @@ import java.util.Random;
 public class Lottery {
     private Random random = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
-    private Ball ball = new Ball();
+    private int bound = 100;
 
-    public String getRandomBall() {
+    public Ball getRandomBall() {
+        Ball ball = new Ball();
         ball.setColor(colorSupplier.getRandomColor());
-        ball.setNumber(random.nextInt(100));
-        return ball.toString();
+        ball.setNumber(random.nextInt(bound));
+        return ball;
     }
 }

@@ -8,7 +8,7 @@ public class Application {
         Lottery lottery = new Lottery();
         String[] lotteries = new String[3];
         for (int i = 0; i < lotteries.length; i++) {
-            lotteries[i] = lottery.getRandomBall();
+            lotteries[i] = String.valueOf(lottery.getRandomBall());
         }
         System.out.println(Arrays.toString(lotteries));
     }
