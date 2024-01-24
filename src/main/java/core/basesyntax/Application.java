@@ -3,9 +3,9 @@ package core.basesyntax;
 public class Application {
     public static void main(String[] args) {
 
-        final int QUANTITY = 3;
+        final int NUM_BALLS = 3;
         Lottery lottery = new Lottery();
-        for (int i = 0; i < QUANTITY; i++) {
+        for (int i = 0; i < NUM_BALLS; i++) {
             Ball ball = lottery.getRandomBall();
             System.out.println(ball);
         }
