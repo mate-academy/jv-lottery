@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery {
     private static final int MAX_NUMBER = 100;
-    private static final Random RANDOM = new Random();
+    private final Random random = new Random();
 
     private final ColorSupplier colorSupplier;
 
@@ -19,13 +19,6 @@ public class Lottery {
     }
 
     private int getRandomNumber() {
-        return RANDOM.nextInt(MAX_NUMBER + 1); // включно з 0 до 100
-    }
-
-    public static void main(String[] args) {
-        Lottery lottery = new Lottery();
-        for (int i = 1; i <= 3; i++) {
-            System.out.println("Ball " + i + ": " + lottery.getRandomBall());
-        }
+        return random.nextInt(MAX_NUMBER + 1);
     }
 }
