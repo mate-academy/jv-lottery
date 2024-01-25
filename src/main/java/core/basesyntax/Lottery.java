@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    final int MAX_BALL_NUMBER = 100;
     public Ball getRandomBall() {
 
-        final int MAX_BALL_NUMBER = 100;
         Ball ball = new Ball();
         ColorSupplier colorSupplier = new ColorSupplier();
         ball.setColor(String.valueOf(colorSupplier.getRandomColor()));
