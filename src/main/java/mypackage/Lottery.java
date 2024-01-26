@@ -4,14 +4,15 @@ import core.basesyntax.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
+    private static final int BALL_COUNT = 100;
+    Random random = new Random();
+    ColorSupplier supplier = new ColorSupplier();
+
     public Ball getRandomBall() {
-        int randomNumber = new Random().nextInt(100);
-        ColorSupplier supplier = new ColorSupplier();
+
+        int randomNumber = random.nextInt(BALL_COUNT);
         String randomColor = supplier.getRandomColor();
 
-        Ball randomBall = new Ball();
-        randomBall.setColor(randomColor);
-        randomBall.setNumber(randomNumber);
-        return randomBall;
+        return new Ball(randomColor,randomNumber);
     }
 }

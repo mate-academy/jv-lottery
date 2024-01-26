@@ -4,6 +4,9 @@ public class Ball {
     private String color;
     private int number;
 
+    public Ball(String randomColor, int randomNumber) {
+    }
+
     public void setColor(String color) {
         this.color = color;
     }
