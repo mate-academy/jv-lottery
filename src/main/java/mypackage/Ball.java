@@ -5,6 +5,8 @@ public class Ball {
     private int number;
 
     public Ball(String randomColor, int randomNumber) {
+        this.color = randomColor;
+        this.number = randomNumber;
     }
 
     public void setColor(String color) {
