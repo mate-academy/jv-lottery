@@ -20,7 +20,7 @@ public class Ball {
         this.number = number;
     }
 
-    public void print () {
+    public void print() {
         System.out.println(getColor() + " " + getNumber());
     }
 }

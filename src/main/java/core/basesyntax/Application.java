@@ -10,4 +10,3 @@ public class Application {
         ball3.print();
     }
 }
-
