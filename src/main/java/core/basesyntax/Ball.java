@@ -9,8 +9,11 @@ public class Ball {
         this.number = number;
     }
 
+    @Override
     public String toString() {
-        return "Ball color = " + color + ", "
-                + "Ball number = " + number;
+        return "Ball{"
+                + "color=" + color
+                + ", number=" + number
+                + '}';
     }
 }
