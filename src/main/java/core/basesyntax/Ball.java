@@ -9,12 +9,19 @@ public class Ball {
         this.number = number;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
     @Override
     public String toString() {
-        String additionalZero = "";
-        if (number < 10) {
-            additionalZero += 0;
-        }
-        return "Ball: " + additionalZero + number + " " + color;
+        return "Ball{"
+                + "color='" + color + '\''
+                + ", number=" + number
+                + '}';
     }
 }
