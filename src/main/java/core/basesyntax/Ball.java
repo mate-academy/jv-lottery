@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return new StringBuilder().append("Ball number is: ").append(number).append("\nBall color is: ").append(color).toString();
+        return String.format("Ball number: %d%nBall color: %s", number, color);
     }
 }
