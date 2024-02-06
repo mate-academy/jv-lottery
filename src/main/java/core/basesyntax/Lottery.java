@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery {
     private static final int COLOR_COUNT = 101;
-    private ColorSupplier colorSupplier;
+    private final ColorSupplier colorSupplier;
 
     public Lottery(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
