@@ -4,10 +4,14 @@ import core.basesyntax.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
-    public static Ball getRandomBall() {
-        ColorSupplier colorSupplier = new ColorSupplier();
+    private static final int RANGE = 100;
+    private ColorSupplier colorSupplier;
+    private int ballNumber;
+
+    public Ball getRandomBall() {
+        this.colorSupplier = new ColorSupplier();
         String color = colorSupplier.getRandomColor();
-        int number = new Random().nextInt(100);
-        return new Ball(color, number);
+        this.ballNumber = new Random().nextInt(RANGE);
+        return new Ball(color, this.ballNumber);
     }
 }

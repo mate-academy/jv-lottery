@@ -4,8 +4,17 @@ import enums.Colors;
 import java.util.Random;
 
 public class ColorSupplier {
+    private int colorIndex;
+
+    public ColorSupplier() {
+        this.colorIndex = new Random().nextInt(Colors.values().length);
+    }
+
     public String getRandomColor() {
-        Colors[] colors = Colors.values();
-        return colors[new Random().nextInt(colors.length)].toString();
+        return Colors.values()[getColorIndex()].toString();
+    }
+
+    public int getColorIndex() {
+        return colorIndex;
     }
 }

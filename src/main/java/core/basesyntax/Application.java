@@ -6,12 +6,13 @@ import models.Lottery;
 public class Application {
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
-        Ball ball1 = Lottery.getRandomBall();
-        Ball ball2 = Lottery.getRandomBall();
-        Ball ball3 = Lottery.getRandomBall();
-
-        System.out.println(ball1.toString());
-        System.out.println(ball2.toString());
-        System.out.println(ball3.toString());
+        Ball[] balls = new Ball[3];
+        Lottery lottery = new Lottery();
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = lottery.getRandomBall();
+        }
+        for (int i = 0; i < balls.length; i++) {
+            System.out.println(balls[i].toString());
+        }
     }
 }
