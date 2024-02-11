@@ -11,7 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        String overridenString = super.toString();
         return "Overriden string method. "
                 + "Ball color: " + this.color
                 + ". Ball number: " + this.number + ".";
