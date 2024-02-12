@@ -18,7 +18,6 @@ public class Ball {
     }
 
     public String toString() {
-        return "Color is " + this.color + ", number is " + number;
+        return "Ball's color is " + this.color + ", ball's number is " + number;
     }
-
 }
