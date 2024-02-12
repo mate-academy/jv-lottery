@@ -1,9 +1,6 @@
 package core.basesyntax;
 
-import static java.lang.System.out;
-
 public class Application {
-
     private static final int NUMBER_OF_BALLS = 3;
 
     public static void main(String[] args) {
@@ -12,7 +9,7 @@ public class Application {
 
         for (int i = 0; i < balls.length; i++) {
             balls[i] = lottery.getRandomBall();
-            out.println(balls[i]);
+            System.out.println(balls[i]);
         }
     }
 }
