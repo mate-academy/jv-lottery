@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return String.format("Ball number: %d%nBall color: %s", number, color);
+        return String.format("Ball{number %d, color %s}", number, color);
     }
 }
