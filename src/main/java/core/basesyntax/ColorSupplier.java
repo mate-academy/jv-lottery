@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-    public static final int AMOUNT_OF_COLORS = 7;
+    public static final int AMOUNT_OF_COLORS = 11;
     Random random = new Random();
     
     public String getRandomColor() {
