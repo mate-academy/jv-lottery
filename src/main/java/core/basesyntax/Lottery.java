@@ -1,22 +1,22 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Lottery {
+    private static final int MAX_NUMBER = 100;
+    private final Random random = new Random();
+
     public Ball getRandomBall() {
-        String color = ColorSupplier.getRandomColor().toString();
-        int number = (int) (Math.random() * 100) + 1;
-        return new Ball(color, number);
+        ColorSupplier color = ColorSupplier.getRandomColor();
+        int number = random.nextInt(MAX_NUMBER) + 1;
+        return new Ball(color.toString(), number);
     }
 
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
-        Ball ball1 = lottery.getRandomBall();
-        Ball ball2 = lottery.getRandomBall();
-        Ball ball3 = lottery.getRandomBall();
-        System.out.println("Ball 1: "
-                + ball1);
-        System.out.println("Ball 2: "
-                + ball2);
-        System.out.println("Ball 3: "
-                + ball3);
+        for (int i = 0; i < 3; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println("Ball " + (i + 1) + ": " + ball);
+        }
     }
 }

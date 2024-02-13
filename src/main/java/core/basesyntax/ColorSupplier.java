@@ -9,8 +9,8 @@ public enum ColorSupplier {
     YELLOW,
     ORANGE;
 
+    private static final Random RANDOM = new Random();
     public static ColorSupplier getRandomColor() {
-        Random random = new Random();
-        return values()[random.nextInt(values().length)];
+        return values()[RANDOM.nextInt(values().length)];
     }
 }
