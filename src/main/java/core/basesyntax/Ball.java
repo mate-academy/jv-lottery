@@ -4,17 +4,21 @@ import java.util.Random;
 
 public class Ball {
     String color;
-    int number;
+    private int number;
+
     public int getRandomNumber() {
-    Random value = new Random();
-    number = value.nextInt(101);
-    return number;
+            Random value = new Random();
+            number = value.nextInt(101);
+            return number;
     }
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "number=" + number +
+        return "Ball{"
+                +
+                "number="
+                + number
+                +
                 '}';
     }
 }
