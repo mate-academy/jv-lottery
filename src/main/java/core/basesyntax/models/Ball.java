@@ -1,4 +1,4 @@
-package core.basesyntax;
+package core.basesyntax.models;
 
 public class Ball {
     private int number;
