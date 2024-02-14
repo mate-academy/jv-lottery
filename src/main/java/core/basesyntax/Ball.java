@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    private String color;
+    private ColorSupplier color;
     private int number;
 
     public int getRandomNumber() {
@@ -14,11 +14,9 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{"
-                +
-                "number="
-                + number
-                +
+        return "Ball{" +
+                "color='" + color + '\'' +
+                ", number=" + number +
                 '}';
     }
 }
