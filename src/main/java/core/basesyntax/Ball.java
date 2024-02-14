@@ -3,29 +3,19 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    private ColorSupplier color;
     private int number;
+    private static final int MAX_NUMBER = 101;
 
     public int getRandomNumber() {
         Random value = new Random();
-        number = value.nextInt(101);
+        number = value.nextInt(MAX_NUMBER);
         return number;
     }
 
     @Override
     public String toString() {
-        return "Ball{"
-                +
-                "color='"
-                + color
-                + '\''
-                +
-                ", number="
-                + number
-                +
+        return "Ball{" +
+                "number=" + number +
                 '}';
     }
 }
-
-
-
