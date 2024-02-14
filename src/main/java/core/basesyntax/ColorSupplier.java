@@ -6,8 +6,8 @@ public class ColorSupplier {
     private Random random = new Random();
 
     public Color getRandomColor() {
-        int sizeOfEnum = Color.values().length;
-        int indexOfReturnedColor = random.nextInt(sizeOfEnum);
-        return Color.values()[indexOfReturnedColor];
+        int colorsLength = Color.values().length;
+        int index = random.nextInt(colorsLength);
+        return Color.values()[index];
     }
 }
