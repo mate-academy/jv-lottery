@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Ball {
     private int number;
-    private static final int MAX_NUMBER = 101;
+    static final int MAX_NUMBER = 101;
 
     public int getRandomNumber() {
         Random value = new Random();
@@ -14,8 +14,11 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "number=" + number +
+        return "Ball{"
+                +
+                "number="
+                + number
+                +
                 '}';
     }
 }
