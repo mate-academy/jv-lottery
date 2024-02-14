@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
+    static final int MAX_NUMBER = 101;
     private Color color;
     private int number;
-    static final int MAX_NUMBER = 101;
 
     public int getRandomNumber() {
         Random value = new Random();
