@@ -3,6 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
+    private Color color;
     private int number;
     static final int MAX_NUMBER = 101;
 
