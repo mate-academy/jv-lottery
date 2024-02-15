@@ -1,16 +1,13 @@
 package core.basesyntax;
 
 public class Application {
+    private static final int BALLS = 3;
+
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
-        Ball firstball = Lottery.getRandomBall();
-        System.out.println("First ball color is " + firstball.getColor()
-                + " and number is " + firstball.getNumber());
-        Ball secondball = Lottery.getRandomBall();
-        System.out.println("First ball color is " + secondball.getColor()
-                + " and number is " + secondball.getNumber());
-        Ball thirdball = Lottery.getRandomBall();
-        System.out.println("First ball color is " + thirdball.getColor()
-                + " and number is " + thirdball.getNumber());
+        Lottery lottery = new Lottery();
+        for (int i = 0; i < BALLS; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println(ball);
+        }
     }
 }
