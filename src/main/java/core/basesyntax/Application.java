@@ -1,8 +1,5 @@
 package core.basesyntax;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Application {
     private static final int NUMBER_OF_BALLS = 3;
 
