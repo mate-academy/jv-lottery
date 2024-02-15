@@ -5,9 +5,9 @@ public class Application {
 
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
-        Lottery variant = new Lottery();
+        Lottery lottery = new Lottery();
         for (int i = 0; i < BALL_AMOUNT; i++) {
-            System.out.println(variant.getRandomBall());
+            System.out.println(lottery.getRandomBall());
         }
     }
 }
