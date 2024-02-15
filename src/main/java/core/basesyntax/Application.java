@@ -1,11 +1,12 @@
 package core.basesyntax;
 
 public class Application {
-    private static final Lottery lottery = new Lottery();
-    private static final int numberOfRandomBalls = 3;
+
+    private static final int NUMBER_OF_RANDOM_BALLS = 3;
 
     public static void main(String[] args) {
-        for (int i = 1; i <= numberOfRandomBalls; i++) {
+        Lottery lottery = new Lottery();
+        for (int i = 1; i <= NUMBER_OF_RANDOM_BALLS; i++) {
             System.out.println(i + " " + lottery.getRandomBall());
         }
     }

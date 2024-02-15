@@ -3,6 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private static final int NUMBER_MAX_BOUNDARY = 100;
     private final ColorSupplier colorSupplier;
     private final Random random;
 
@@ -13,9 +14,8 @@ public class Lottery {
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
-        final int numberMaxBoundary = 100;
         ball.setColor(colorSupplier.getRandomColor());
-        ball.setNumber(random.nextInt(numberMaxBoundary) + 1);
+        ball.setNumber(random.nextInt(NUMBER_MAX_BOUNDARY) + 1);
         return ball;
     }
 }
