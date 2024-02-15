@@ -6,7 +6,7 @@ public class Lottery {
     private static final int MAX_NUMBER = 101;
     private Random value = new Random();
 
-    public int getRandomNumber() {
+    private int getRandomNumber() {
         return value.nextInt(MAX_NUMBER);
     }
 
