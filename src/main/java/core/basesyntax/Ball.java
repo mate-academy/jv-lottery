@@ -3,15 +3,17 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    static final int MAX_NUMBER = 101;
     private Color color;
-    private int number;
 
-    public int getRandomNumber() {
-        Random value = new Random();
-        number = value.nextInt(MAX_NUMBER);
+    public int getNumber() {
         return number;
     }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    private int number;
 
     @Override
     public String toString() {
@@ -19,7 +21,6 @@ public class Ball {
                 +
                 "number="
                 + number
-                +
-                '}';
+                + '}';
     }
 }
