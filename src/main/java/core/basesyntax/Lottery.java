@@ -4,9 +4,8 @@ import java.util.Random;
 
 public class Lottery {
     public static final int MAX_NUMBER = 101;
-
+    Random value = new Random();
     public int getRandomNumber() {
-        Random value = new Random();
         return value.nextInt(MAX_NUMBER);
     }
 
