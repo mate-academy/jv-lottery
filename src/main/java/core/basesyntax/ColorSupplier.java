@@ -2,9 +2,12 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class ColorSupplier {
+class ColorSupplier {
+    // Moved Random to a class-level field
+    private static final Random random = new Random();
+
     public static Color getRandomColor() {
-        int index = new Random().nextInt(Color.values().length);
+        int index = random.nextInt(Color.values().length);
         return Color.values()[index];
     }
 }
