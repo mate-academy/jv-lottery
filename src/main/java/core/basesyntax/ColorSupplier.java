@@ -4,10 +4,10 @@ import enums.Color;
 import java.util.Random;
 
 public class ColorSupplier {
-    public final Random random;
+    private final Random random = new Random();
 
-    public ColorSupplier() {
-        this.random = new Random();
+    public Random getRandom() {
+        return random;
     }
 
     public String getRandomColor() {
