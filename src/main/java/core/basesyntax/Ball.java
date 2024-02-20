@@ -12,7 +12,7 @@ public class Ball {
         this.number = number;
     }
 
-    public enum ColorList {
+    public enum Color {
         RED,
         ORANGE,
         YELLOW,
