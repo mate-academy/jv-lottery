@@ -5,8 +5,9 @@ public class Application {
         Lottery lottery = new Lottery();
 
         for (int i = 1; i <= 3; i++) {
-            String ballNumber = String.valueOf(lottery.getRandomBall().getNumber());
-            String ballCollor = lottery.getRandomBall().getColor();
+            Ball ball = lottery.getRandomBall();
+            String ballNumber = String.valueOf(ball.getNumber());
+            String ballCollor = ball.getColor();
             System.out.println("Ball " + i + " number :" + ballNumber + " color : " + ballCollor);
         }
     }
