@@ -1,4 +1,4 @@
-package main.java.core.basesyntax;
+package core.basesyntax;
 
 public class Application extends Lottery {
     public static void main(String[] args) {
