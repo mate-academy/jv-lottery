@@ -2,28 +2,19 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class ColorSupplier {
+public class ColorSupplier extends colorball {
 
-    enum Color {
-        RED,
-        GREEN,
-        BLUE,
-        YELLOW,
-        ORANGE
+    private final int getIndex(){
+        return new Random().nextInt(Color.values().length);
     }
 
-    private final int index = new Random().nextInt(Color.values().length);
     private final Color color = Color.values()[getIndex()];
-
-    public int getIndex() {
-        return index;
-    }
 
     public Color getColor() {
         return color;
     }
 
     public String getRandomColor() {
-        return color.toString();
+        return color.name();
     }
 }
