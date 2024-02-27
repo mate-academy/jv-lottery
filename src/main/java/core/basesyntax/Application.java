@@ -6,7 +6,7 @@ public class Application extends Lottery {
     }
     public void createBall() {
         for (int i = 0; i < 3; i++) {
-            System.out.println(getRandomBall());
+            System.out.println(getRandomBall().toString());
         }
     }
 }
