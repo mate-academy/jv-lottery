@@ -8,6 +8,6 @@ public class Application {
 
         System.out.println(ball1);
         System.out.println(ball1);
-        System.out.println(ball1);// create three balls using class Lottery and print information about them in console
+        System.out.println(ball1);
     }
 }
