@@ -1,7 +1,7 @@
 package main.java.core.basesyntax;
 
 public class Application extends Lottery {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         System.out.println(getRandomBall());
         System.out.println(getRandomBall());
         System.out.println(getRandomBall());
