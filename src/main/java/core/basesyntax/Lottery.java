@@ -3,9 +3,14 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
-    int numberofBall = new Random().nextInt(100);
+    private final int numberofBall = new Random().nextInt(100);
+
+    public int getNumberofBall() {
+        return numberofBall;
+    }
+
     public Balls getRandomBall(String color, int numberofBall) {
-        this.numberofBall = numberofBall;
+        numberofBall = getNumberofBall();
         color = getRandomColor();
         return new Balls(color,numberofBall);
     }
