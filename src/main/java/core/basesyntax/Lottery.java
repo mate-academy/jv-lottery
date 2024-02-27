@@ -8,5 +8,4 @@ public class Lottery extends ColorSupplier {
         Ball ball = new Ball(getRandomColor(), ballIndex);
         return ball.toString();
     }
-
 }
