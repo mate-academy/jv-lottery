@@ -2,21 +2,15 @@ package core.basesyntax;
 
 import java.util.Random;
 
-class Lottery extends Ball {
-    Lottery() {
-        super();
-    }
-
-    Lottery(String color, int number) {
-        super(color, number);
-    }
+class Lottery {
+    private static final int NUMBER_BOUND = 101;
+    private Random randomInt = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
     // below method which provides Ball (randomColor, randomIndex);
-    Lottery getRandomBall() {
-        ColorSupplier colorSupplier = new ColorSupplier();
+    Ball getRandomBall() {
         String color = colorSupplier.getRandomColor();
-        Random randomInt = new Random();
-        int number = randomInt.nextInt(101);
-        return new Lottery(color, number);
+        int number = randomInt.nextInt(NUMBER_BOUND);
+        return new Ball(color, number);
     }
 }
