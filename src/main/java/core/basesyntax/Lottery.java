@@ -7,7 +7,6 @@ class Lottery {
     private Random randomInt = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
 
-    // below method which provides Ball (randomColor, randomIndex);
     public Ball getRandomBall() {
         String color = colorSupplier.getRandomColor();
         int number = randomInt.nextInt(NUMBER_BOUND);
