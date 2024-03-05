@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery {
 
-    public Ball getRandomball(){
+    public Ball getRandomball() {
         Random random = new Random();
         int randomNumber = random.nextInt(101);
 
