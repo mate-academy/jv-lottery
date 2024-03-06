@@ -1,12 +1,19 @@
 package core.basesyntax;
 
 public class Ball {
-    public static void ball(String color, int number) {
 
+    private String color;
+    private int number;
+
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return ("Ball: "
+                + "the number of the ball - " + number + ","
+                + " " + "the color of the ball - " + color);
     }
 }
