@@ -8,8 +8,8 @@ public class Lottery {
     private ColorSupplier supplier;
 
     public Lottery(Random random, ColorSupplier supplier) {
-        this.random = random;
         this.supplier = supplier;
+        this.random = random;
     }
 
     public Lottery() {
