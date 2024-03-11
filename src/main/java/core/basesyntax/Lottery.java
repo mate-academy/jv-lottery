@@ -7,11 +7,6 @@ public class Lottery {
     private Random random;
     private ColorSupplier supplier;
 
-    public Lottery(Random random, ColorSupplier supplier) {
-        this.supplier = supplier;
-        this.random = random;
-    }
-
     public Lottery() {
         this.random = new Random();
         this.supplier = new ColorSupplier();
