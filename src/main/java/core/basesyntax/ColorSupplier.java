@@ -10,3 +10,4 @@ public class ColorSupplier {
         return randomColor.toString();
     }
 }
+
