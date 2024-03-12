@@ -11,6 +11,6 @@ public class ColorSupplier {
 
     public Color getRandomColor() {
         Color[] colors = Color.values();
-        return colors[random.nextInt(colors.length)];
+        return Color.values()[random.nextInt(colors.length)];
     }
 }

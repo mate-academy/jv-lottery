@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lottery {
     private ColorSupplier colorSupplier;
     private Random random;
-    private final int maxRandom = 100;
+    private static final int maxRandom = 100;
 
     public Lottery(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
