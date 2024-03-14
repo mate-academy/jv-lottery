@@ -7,5 +7,10 @@ public enum Color {
     PURPLE,
     BLUE,
     GREEN,
-    RED
+    RED;
+
+    @Override
+    public String toString() {
+        return "default";
+    }
 }
