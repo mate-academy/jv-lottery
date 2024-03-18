@@ -1,2 +1,4 @@
-package core.basesyntax;public class Lottery {
+package core.basesyntax;
+
+public class Lottery {
 }
