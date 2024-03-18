@@ -1,2 +1,4 @@
-package core.basesyntax;public class Ball {
+package core.basesyntax;
+
+public class Ball {
 }
