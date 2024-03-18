@@ -8,7 +8,9 @@ public enum Color {
     BLACK,
     WHITE;
 
-    public String getColorName() {
-        return name().toLowerCase();
+    public String
+                getColorName() {
+        return
+                name().toLowerCase();
     }
 }
