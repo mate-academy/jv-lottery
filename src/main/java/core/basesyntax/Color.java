@@ -1,20 +1,14 @@
 package core.basesyntax;
 
 public enum Color {
-    RED("red"),
-    GREEN("green"),
-    BLUE("blue"),
-    YELLOW("yellow"),
-    BLACK("black"),
-    WHITE("white");
-
-    private final String colorName;
-
-    Color(String colorName) {
-        this.colorName = colorName;
-    }
+    RED,
+    GREEN,
+    BLUE,
+    YELLOW,
+    BLACK,
+    WHITE;
 
     public String getColorName() {
-        return colorName;
+        return name().toLowerCase();
     }
 }
