@@ -5,18 +5,17 @@ public class Ball {
     private String color;
     private int number;
 
-    public Ball (String color, int number){
+    public Ball(String color, int number) {
         this.color = color;
         this.number = number;
     }
 
-    public String getColor () {
+    public String getColor() {
         return this.color;
     }
 
-    public int getNumber () {
+    public int getNumber() {
         return this.number;
     }
-
 
 }
