@@ -7,10 +7,4 @@ public enum Color {
     YELLOW,
     BLACK,
     WHITE;
-
-    public String
-                getColorName() {
-        return
-                name().toLowerCase();
-    }
 }
