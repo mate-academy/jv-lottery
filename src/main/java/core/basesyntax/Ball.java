@@ -1,6 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
+
 public class Ball {
     private final String color;
     private final int number;
