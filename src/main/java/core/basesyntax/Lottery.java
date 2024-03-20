@@ -11,7 +11,7 @@ public class Lottery {
         return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAX_SIZE));
     }
 
-   Ball[] createBalls(int countBalls) {
+    public Ball[] createBalls(int countBalls) {
         Ball[] balls = new Ball[countBalls];
         for (int i = 0; i < countBalls; i++) {
             balls[i] = getRandomBall();
