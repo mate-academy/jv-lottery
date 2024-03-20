@@ -17,4 +17,8 @@ public class Ball {
         return this.number;
     }
 
+    @Override
+    public String toString() {
+        return Color.values().toString();
+    }
 }
