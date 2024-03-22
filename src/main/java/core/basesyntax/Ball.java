@@ -23,7 +23,7 @@ public class Ball {
 
     @Override
     public String toString() { // override to stringa
-        return "Random color is: " + color + "\n" + "Random number is: " + number; // pishem kak hotim
-        // videt vidod
+        return "Random color is: " + color + "\n" + "Random number is: " + number;
+        // pishem kak hotim videt vidod
     }
 }
