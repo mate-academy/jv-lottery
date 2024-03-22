@@ -3,19 +3,13 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    public Ball getRandomBall() {
-        // Ball potomy shto bydel brat ball i ego vozvrashat i
-        // prisvaivat znacheniya kotorie tam inicializirovany
-        Ball ball = new Ball(); // sozdaem novii Ball
-        ColorSupplier colorSupplier = new ColorSupplier();
-        // sozdaem noviy konstryktor kotorii generit cvet
+    private final ColorSupplier colorSupplier = new ColorSupplier();
+    private final Random random = new Random();
+
+    public Lottery getRandomBall() {
+        Ball ball = new Ball();
         ball.setColor(colorSupplier.getRandomColor());
-        // prisvaivaem cvet k ball istpolzya setter v
-        // kotorom berem metod random color shtobi zarandomit color
-        Random random = new Random(); // zovem konstryktor
-        // kotoriy daet nam vozmojnost randomit chisla
-        ball.setNumber(random.nextInt(100)); //prisvaivaem chislo
-        // cherez setter i randomim ego s nextInt. 100 eto predel 0-100
-        return ball; // retun ego
+        ball.setNumber(random.nextInt(100));
+        return ball;
     }
 }

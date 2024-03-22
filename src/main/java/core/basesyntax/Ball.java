@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Ball {
+public class Ball extends Lottery {
 
     private String color;
     private int number;
@@ -22,8 +22,7 @@ public class Ball {
     }
 
     @Override
-    public String toString() { // override to stringa
-        return "Random color is: " + color + "\n" + "Random number is: " + number; // pishem kak hotim
-        // videt vidod
+    public String toString() {
+        return "Random color is: " + color + "\n" + "Random number is: " + number;
     }
 }
