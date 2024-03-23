@@ -5,6 +5,11 @@ public class Ball extends Lottery {
     private String color;
     private int number;
 
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
+
     public int getNumber() {
         return number;
     }
@@ -23,6 +28,6 @@ public class Ball extends Lottery {
 
     @Override
     public String toString() {
-        return "Random color is: " + color + "\n" + "Random number is: " + number;
+        return "color is: " + color + "," + "number is: " + number;
     }
 }
