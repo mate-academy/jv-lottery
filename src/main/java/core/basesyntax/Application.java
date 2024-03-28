@@ -1,13 +1,14 @@
 package core.basesyntax;
 
-import java.util.Arrays;
-
 public class Application extends Lottery {
     public static void main(String[] args) {
         Ball[] balls = new Ball[3];
+        Lottery lottery = new Lottery();
         for (int i = 0; i < 3; i++) {
-            balls[i] = new Lottery().getRandomBall();
+            balls[i] = lottery.getRandomBall();
         }
-        System.out.println(Arrays.toString(balls));
+        for (Ball ball : balls) {
+            System.out.println(ball.toString());
+        }
     }
 }
