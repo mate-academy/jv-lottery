@@ -3,13 +3,15 @@ package core.basesyntax;
 import core.basesyntax.entity.Ball;
 
 public class Application {
-    public static void main(String[] args) {
-        Ball firstBall = Lottery.getRandomBall();
-        Ball secondBall = Lottery.getRandomBall();
-        Ball thirdBall = Lottery.getRandomBall();
+    private static final int NUMBER_OF_BALLS = 3;
 
-        System.out.println(firstBall.toString());
-        System.out.println(secondBall.toString());
-        System.out.println(thirdBall.toString());
+    public static void main(String[] args) {
+        Lottery lottery = new Lottery();
+
+        Ball[] balls = new Ball[NUMBER_OF_BALLS];
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = lottery.getRandomBall();
+            System.out.println(balls[i].toString());
+        }
     }
 }
