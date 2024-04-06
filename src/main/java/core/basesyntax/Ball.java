@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-public class Ball {
+import java.util.Random;
+
+public class Ball extends Random {
     private String color;
     private int number;
 
