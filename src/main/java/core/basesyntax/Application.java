@@ -8,7 +8,7 @@ public class Application extends Lottery {
             balls[i] = lottery.getRandomBall();
         }
         for (Ball ball : balls) {
-            System.out.println(ball.toString());
+            System.out.println(ball);
         }
     }
 }
