@@ -2,17 +2,17 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Lottery extends ColorSupplier {
+public class Lottery {
+    private static final Random random = new Random();
 
-    public Ball getRandomBall() {
-        Random randomNumber = new Random();
-        int randomIndex = randomNumber.nextInt(101);
-        String randomColor = String.valueOf(getRandomColor());
-        Ball ball = new Ball(randomColor, randomIndex);
-        return ball;
+    public static Ball getRandomBall() {
+        ColorSupplier colorSupplier = new ColorSupplier();
+        Colors randomColor = colorSupplier.getRandomColor();
+        int randomNumber = random.nextInt(100) + 1;
+        return new Ball(randomColor, randomNumber);
     }
 
-    public void getThreeRandomBalls() {
+    public static void printThreeRandomBalls() {
         System.out.println("Three Random Balls:");
         for (int i = 0; i < 3; i++) {
             Ball ball = getRandomBall();
