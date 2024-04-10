@@ -7,6 +7,6 @@ public class Lottery {
         ColorSupplier colorSupplier = new ColorSupplier();
         String color = colorSupplier.getRandomColor();
         int ballNumber = new Random().nextInt(100);
-        return "Ball Color " + color + " and number " + ballNumber;
+        return " Ball Color " + color + " and number " + ballNumber;
     }
 }
