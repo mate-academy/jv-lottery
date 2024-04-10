@@ -10,6 +10,8 @@ public class Ball {
     }
 
     public Ball(Color randomColor, int randomNumber) {
+        this.color = randomColor.name();
+        this.number = randomNumber;
     }
 
     public String toString() {
