@@ -9,9 +9,6 @@ public class Ball {
         this.number = number;
     }
 
-    public Ball(Color randomColor, int randomNumber) {
-    }
-
     public String toString() {
         return "Ball color = " + color + " Ball number = " + number;
     }
