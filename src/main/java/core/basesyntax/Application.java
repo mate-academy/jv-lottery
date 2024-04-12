@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 import static core.basesyntax.Lottery.getRandomBall;
 
 public class Application {
