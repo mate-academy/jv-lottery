@@ -1,10 +1,21 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Ball {
     private String color;
     private int number;
+    private final int ballCount = 100;
 
-    public String toString(String color) {
-        return String.valueOf(color);
+    public Ball() {
+        Random random = new Random();
+        ColorSupplier colorSupplier = new ColorSupplier();
+        color = colorSupplier.getRandomColor();
+        number = random.nextInt(ballCount);
+    }
+
+    @Override
+    public String toString() {
+        return " Ball Color " + color + " and number " + number;
     }
 }
