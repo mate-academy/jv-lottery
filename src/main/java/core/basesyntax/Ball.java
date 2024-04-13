@@ -1,17 +1,13 @@
 package core.basesyntax;
 
-import java.util.Random;
-
 public class Ball {
-    private String color;
-    private int number;
-    private final int ballCount = 100;
 
-    public Ball() {
-        Random random = new Random();
-        ColorSupplier colorSupplier = new ColorSupplier();
-        color = colorSupplier.getRandomColor();
-        number = random.nextInt(ballCount);
+    private final String color;
+    private final int number;
+
+    public Ball(String color,int number) {
+        this.color = color;
+        this.number = number;
     }
 
     @Override
