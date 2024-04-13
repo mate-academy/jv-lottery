@@ -12,8 +12,8 @@ public class Ball {
         return number;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String lotteryColor) {
+        this.color = lotteryColor;
     }
 
     public void setNumber(int number) {
