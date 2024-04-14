@@ -1,8 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
-
-import static core.basesyntax.Color.*;
+import static core.basesyntax.Color.values;
 
 public class ColorSupplier {
     private final Random random = new Random();
