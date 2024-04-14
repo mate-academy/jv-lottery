@@ -4,11 +4,10 @@ import java.util.Random;
 
 public class Lottery {
     private Random random;
-
     private ColorSupplier colorSupplier;
 
-    public Lottery(Random random) {
-        this.random = random;
+    public Lottery() {
+        this.random = new Random();
         this.colorSupplier = new ColorSupplier(this.random);
     }
 
