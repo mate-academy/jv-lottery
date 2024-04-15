@@ -11,14 +11,6 @@ public class Ball {
         this.number = number;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public Colors getColor() {
-        return color;
-    }
-
     @Override
     public String toString() {
         return "Ball{" +
