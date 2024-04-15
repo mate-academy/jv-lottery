@@ -2,19 +2,28 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class Ball extends ColorSupplier {
-    private String color;
+public class Ball {
+    private Colors color;
     private int number;
 
-    public Ball() {
-        this.number = new Random().nextInt(101);
-        this.color = super.getRandomColor();
+    public Ball(Colors color, int number) {
+        this.color = color;
+        this.number = number;
     }
 
-    public String getBall() {
-        StringBuilder builder = new StringBuilder();
-        builder.append(number);
-        String out = color + " " + builder.toString();
-        return out;
+    public int getNumber() {
+        return number;
+    }
+
+    public Colors getColor() {
+        return color;
+    }
+
+    @Override
+    public String toString() {
+        return "Ball{" +
+                "color=" + color +
+                ", number=" + number +
+                '}';
     }
 }
