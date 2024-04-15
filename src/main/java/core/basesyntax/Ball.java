@@ -9,7 +9,8 @@ public class Ball {
         this.number = number;
     }
 
-    public String getBallInfo() {
+    @Override
+    public String toString() {
         return getFormattedColor() + " ball, with number " + number;
     }
 
