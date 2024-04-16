@@ -2,11 +2,16 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public final class Lottery {
-    public static Ball getRandomBall() {
-        final Colors RandomColor = ColorSupplier.getRandomColor();
-        final Random RandomNumber = new Random();
-        final int RandomBall = RandomNumber.nextInt(101);
-        return new Ball(RandomColor, RandomBall);
+public class Lottery {
+    private final ColorSupplier colorSupplier;
+    public Lottery() {
+        this.colorSupplier = new ColorSupplier();
     }
-}
+
+    public Ball getRandomBall() {
+        final Colors randomColor = colorSupplier.getRandomColor();
+        final Random randomNumber = new Random();
+        final int randomBall = randomNumber.nextInt(101);
+        return new Ball(randomColor, randomBall);
+        }
+    }
