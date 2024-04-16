@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Lottery {
     private final ColorSupplier colorSupplier;
+
     public Lottery() {
         this.colorSupplier = new ColorSupplier();
     }
@@ -13,5 +14,5 @@ public class Lottery {
         final Random randomNumber = new Random();
         final int randomBall = randomNumber.nextInt(101);
         return new Ball(randomColor, randomBall);
-        }
     }
+}
