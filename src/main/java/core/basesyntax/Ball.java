@@ -11,10 +11,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return getFormattedColor() + " ball, with number " + number;
-    }
-
-    private String getFormattedColor() {
-        return color.substring(0, 1).toUpperCase() + color.substring(1).toLowerCase();
+        return color.substring(0, 1).toUpperCase() + color.substring(1).toLowerCase()
+                + " ball, with number " + number;
     }
 }
