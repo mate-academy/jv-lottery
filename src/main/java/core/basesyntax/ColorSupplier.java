@@ -14,3 +14,4 @@ public class ColorSupplier {
         return color;
     }
 }
+qqq
