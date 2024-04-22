@@ -1,10 +1,7 @@
 package core.basesyntax;
 
 import java.util.Random;
-// Enum for colors
-enum Color {
-    RED, BLUE, GREEN, YELLOW, ORANGE
-}
+
 public class ColorSupplier {
     public String getRandomColor() {
         Color[] colors = Color.values();
@@ -13,3 +10,4 @@ public class ColorSupplier {
         return colors[index].toString();
     }
 }
+
