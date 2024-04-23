@@ -9,9 +9,6 @@ public class Ball {
         this.number = number;
     }
 
-    public Ball() {
-    }
-
     public String getColor() {
         return color;
     }
@@ -24,7 +21,8 @@ public class Ball {
     public String toString() {
         return "Ball{"
                 + "color='"
-                + color + '\''
+                + color
+                + '\''
                 + ", number="
                 + number
                 + '}';
