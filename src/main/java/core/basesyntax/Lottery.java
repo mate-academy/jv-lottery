@@ -7,7 +7,7 @@ public class Lottery {
     private final Random random;
 
     public Lottery() {
-        this.random = new Random();
+        random = new Random();
     }
 
     public Ball getRandomBall() {
