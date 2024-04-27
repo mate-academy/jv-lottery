@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.lang.Math;
-
 public class ColorSupplier {
 
     public Colors getRandomColor() {
