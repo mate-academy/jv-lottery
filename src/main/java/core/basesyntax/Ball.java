@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball extends Random {
-    private String color;
+    private Color color;
     private int number;
 
     public Ball() {
@@ -17,7 +17,7 @@ public class Ball extends Random {
     }
 
     public void setColor(Color color) {
-        this.color = String.valueOf(color);
+        this.color = color;
     }
 
     public void setNumber(int number) {
