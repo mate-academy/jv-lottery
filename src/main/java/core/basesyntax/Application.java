@@ -1,5 +1,5 @@
 package core.basesyntax;
-
+//3
 public class Application {
     public static void main(String[] args) {
         ColorSupplier colorSupplier = new ColorSupplier();
