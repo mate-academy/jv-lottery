@@ -5,14 +5,18 @@ public class Application {
         // Create an instance of Lottery
         Lottery lottery = new Lottery();
 
-        // Create three balls using the getRandomBall() method
-        Ball ball1 = lottery.getRandomBall();
-        Ball ball2 = lottery.getRandomBall();
-        Ball ball3 = lottery.getRandomBall();
+        // Create an array to hold the balls
+        Ball[] balls = new Ball[3];
+
+        // Generate three random balls
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = lottery.getRandomBall();
+        }
 
         // Print information about the balls in the console
-        System.out.println("Ball 1: " + ball1);
-        System.out.println("Ball 2: " + ball2);
-        System.out.println("Ball 3: " + ball3);
+        for (int i = 0; i < balls.length; i++) {
+            System.out.println("Ball " + (i + 1) + ": " + balls[i]);
+        }
     }
 }
+
