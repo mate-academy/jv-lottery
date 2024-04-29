@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Application {
-public static void main(String[] args) {
+        public static void main(String[] args) {
 
         Ball firstBall = Lottery.getRandomBall();
         Ball secondBall = Lottery.getRandomBall();
