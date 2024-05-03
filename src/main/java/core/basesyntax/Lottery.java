@@ -10,12 +10,4 @@ public class Lottery {
         return new Ball(color.name().toLowerCase(),
                 new Random().nextInt(rand));
     }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
 }
