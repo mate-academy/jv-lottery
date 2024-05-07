@@ -5,7 +5,7 @@ public class Ball {
     private final int number;
 
     public Ball(Color color, int number) {
-        this.color = color.toString();
+        this.color = color.name();
         this.number = number;
     }
 

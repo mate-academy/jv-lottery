@@ -9,5 +9,3 @@ public enum Color {
     SKY,
     VIOLET
 }
-
-
