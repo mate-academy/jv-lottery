@@ -10,5 +10,5 @@ public class Lottery {
         Random random = new Random();
         ball.setNumber(random.nextInt(100));
         return ball.toString();
-    };
+    }
 }
