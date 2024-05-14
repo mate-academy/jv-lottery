@@ -4,12 +4,9 @@ public class Ball {
     private Color color;
     private int number;
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public void setColor(Color color) {
+    public Ball(Color color, int number) {
         this.color = color;
+        this.number = number;
     }
 
     @Override
