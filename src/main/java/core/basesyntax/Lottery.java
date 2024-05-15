@@ -5,10 +5,15 @@ import model.Ball;
 import model.ColorSupplier;
 
 public class Lottery {
-    public static Ball getRandomBall() {
+    private static final int MAX_NUMBER_RANGE = 100;
+
+    private final ColorSupplier colorSupplier = new ColorSupplier();
+    private final Random random = new Random();
+
+    public Ball getRandomBall() {
         return new Ball(
-                ColorSupplier.getRandomColor(),
-                new Random().nextInt(101)
+                colorSupplier.getRandomColor(),
+                random.nextInt(MAX_NUMBER_RANGE + 1)
         );
     }
 }
