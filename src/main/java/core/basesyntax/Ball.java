@@ -9,24 +9,8 @@ public class Ball {
         this.number = number;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     @Override
     public String toString() {
-        return "Color: " + color + "; Number: " + number;
+        return "Color: " + color.name() + "; Number: " + number;
     }
 }
