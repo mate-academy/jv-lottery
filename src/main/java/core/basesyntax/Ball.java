@@ -8,7 +8,7 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
-    //getter and setter to color
+
     public ColorSupplier.Color getColor() {
         return color;
     }
@@ -16,7 +16,7 @@ public class Ball {
     public void setColor() {
         this.color = color;
     }
-    //getter and setter to number
+
     public int getNumber() {
         return number;
     }
@@ -25,7 +25,7 @@ public class Ball {
         this.number = number;
     }
 
-    public String toString () {
+    public String toString() {
         return "Ball{color='" + color + "', number=" + number + "}";
     }
 }
