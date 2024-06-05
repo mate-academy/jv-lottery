@@ -1,15 +1,15 @@
 package core.basesyntax;
 
 public class Ball {
-    private ColorSupplier.Color color;
+    private ColorSupplier.Colors color;
     private int number;
 
-    public Ball(ColorSupplier.Color color, int number) {
+    public Ball(ColorSupplier.Colors color, int number) {
         this.color = color;
         this.number = number;
     }
 
-    public ColorSupplier.Color getColor() {
+    public ColorSupplier.Colors getColor() {
         return color;
     }
 

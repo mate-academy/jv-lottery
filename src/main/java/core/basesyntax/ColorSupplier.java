@@ -2,16 +2,12 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class ColorSupplier {
+public class ColorSupplier extends Color {
     private static final Random random = new Random();
 
-    public static Color getRandomColor() {
-        Color[] colors = Color.values();
+    public static Colors getRandomColors() {
+        Colors[] colors = Colors.values();
         int index = random.nextInt(colors.length);
         return colors[random.nextInt(colors.length)];
-    }
-
-    public enum Color {
-        RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, PINK;
     }
 }
