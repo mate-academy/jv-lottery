@@ -8,7 +8,7 @@ public class ColorSupplier {
     public static Color getRandomColor() {
         Color[] colors = Color.values();
         int index = random.nextInt(colors.length);
-        return colors[index];
+        return colors[random.nextInt(colors.length)];
     }
 
     public enum Color {
