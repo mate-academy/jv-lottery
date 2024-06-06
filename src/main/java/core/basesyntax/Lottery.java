@@ -1,12 +1,14 @@
 package core.basesyntax;
 
-public class Lottery extends Ball {
+public class Lottery {
     private Ball ball;
+    private ColorSupplier supplier;
 
     public Ball getRandomBall() {
         ball = new Ball();
-        getRandomNumber();
-        System.out.println(toString());
+        ball.setColor(new ColorSupplier().getRandomColor());
+        ball.getRandomNumber();
+        ball.toString();
         return ball;
     }
 }
