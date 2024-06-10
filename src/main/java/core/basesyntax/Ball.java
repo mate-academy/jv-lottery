@@ -1,19 +1,19 @@
 package core.basesyntax;
 
 public class Ball {
-    private ColorSupplier.Colors color;
+    private Color color;
     private int number;
 
-    public Ball(ColorSupplier.Colors color, int number) {
+    public Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }
 
-    public ColorSupplier.Colors getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor() {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -21,10 +21,11 @@ public class Ball {
         return number;
     }
 
-    public void setNumber() {
+    public void setNumber(int number) {
         this.number = number;
     }
 
+    @Override
     public String toString() {
         return "Ball{color='" + color + "', number=" + number + "}";
     }
