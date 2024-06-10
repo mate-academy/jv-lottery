@@ -30,3 +30,4 @@ public class Ball {
         return "Ball{color='" + color + "', number=" + number + "}";
     }
 }
+
