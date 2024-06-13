@@ -3,13 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier{
-    public int getRandomBall(){
+    public String getRandomBall(){
         Random random = new Random();
-        return random.nextInt(101) ;
-    }
-
-    @Override
-    public String getRandomColor() {
-        return super.getRandomColor();
+        return (String.valueOf(random.nextInt(101))+ "   " + getRandomColor());
     }
 }

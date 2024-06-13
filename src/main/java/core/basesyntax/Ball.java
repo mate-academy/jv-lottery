@@ -16,7 +16,6 @@ public class Ball {
     public int getNumber() {
         return number;
     }
-
     private String color;
     private int number;
 }
