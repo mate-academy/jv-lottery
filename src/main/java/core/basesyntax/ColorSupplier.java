@@ -10,6 +10,7 @@ public class ColorSupplier {
         return ballColor.name();
 
     }
+
     public void setIndex(int index) {
         this.index = index;
     }
