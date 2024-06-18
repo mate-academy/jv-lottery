@@ -16,6 +16,4 @@ public class Lottery {
 
         return ball.toString();
     }
-
-
 }
