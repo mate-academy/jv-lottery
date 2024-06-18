@@ -1,13 +1,16 @@
 package core.basesyntax;
 
-import java.util.Random;
+import java.util.Arrays;
 
 public class Application {
+    private static final int NUMBER_OF_BALLS = 3;
+
     public static void main(String[] args) {
-        Lottery lottery = new Lottery(new ColorSupplier(), new Random(), 100);
-        int numberOfBalls = 3;
-        for (int i = 0; i < numberOfBalls; i++) {
-            System.out.println(lottery.getRandomBall());
+        Ball[] balls = new Ball[NUMBER_OF_BALLS];
+        Lottery lottery = new Lottery();
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = lottery.getRandomBall();
         }
+        System.out.println(Arrays.toString(balls));
     }
 }
