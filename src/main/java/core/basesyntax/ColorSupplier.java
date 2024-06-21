@@ -4,9 +4,9 @@ import core.basesyntax.enums.Color;
 import java.util.Random;
 
 public class ColorSupplier {
-    private final Random random = new Random();
+    private final int index = new Random().nextInt(Color.values().length);
 
     public String getRandomColor() {
-        return Color.values()[random.nextInt(Color.values().length)].name();
+        return Color.values()[index].name();
     }
 }
