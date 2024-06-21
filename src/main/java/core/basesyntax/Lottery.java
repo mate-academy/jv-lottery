@@ -9,5 +9,4 @@ public class Lottery {
         ball.setNumber(new Random().nextInt(101));
         return ball.toString();
     }
-
 }
