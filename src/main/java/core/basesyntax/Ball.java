@@ -22,9 +22,11 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color=" + this.getColor() +
-                ", number=" + this.getNumber() +
-                '}';
+        return "Ball{"
+                + "color="
+                + this.getColor()
+                + ", number="
+                + this.getNumber()
+                + '}';
     }
 }
