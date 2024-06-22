@@ -8,7 +8,6 @@ public class Ball {
         this.color = ballColor;
         this.number = ballNumber;
     }
-
     @Override
     public String toString() {
         return "Ball{"
