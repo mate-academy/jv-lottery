@@ -10,19 +10,11 @@ public class Ball {
     }
 
     public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+        return this.color;
     }
 
     public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+        return this.number;
     }
 
     @Override
