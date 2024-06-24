@@ -1,21 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    private final String color;
-    private final int number;
+    private Color.GetColor color;
+    private int number;
 
-    public enum Color {
-        RED,
-        GREEN,
-        BLUE,
-        YELLOW,
-        ORANGE,
-        PURPLE,
-        BLACK,
-        WHITE
-    }
-
-    public Ball(String color, int number) {
+    public Ball(Color.GetColor color, int number) {
         this.color = color;
         this.number = number;
     }
