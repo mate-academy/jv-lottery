@@ -8,7 +8,9 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
+    public Ball(){
 
+   }
     public String getColor() {
         return color;
     }
