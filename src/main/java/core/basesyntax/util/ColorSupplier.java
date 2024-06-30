@@ -1,7 +1,6 @@
 package core.basesyntax.util;
 
 import core.basesyntax.model.Ball;
-
 import java.util.Random;
 
 public class ColorSupplier {
