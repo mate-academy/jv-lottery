@@ -8,9 +8,10 @@ public class Lottery {
     private static final Random random = new Random();
     private static final int MIN_NUM_BALL = 1;
     private static final int MAX_NUM_BALL = 100;
+    private final ColorSupplier colorSupplier = new ColorSupplier();
 
-    public static String getRandomBall() {
+    public String getRandomBall() {
         return new Ball(random.nextInt(MIN_NUM_BALL, MAX_NUM_BALL),
-                ColorSupplier.getRandomColor()).toString();
+                colorSupplier.getRandomColor()).toString();
     }
 }
