@@ -4,13 +4,10 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-    enum Color {
-        BLUE, WHITE, BLACK, YELLOW, RED;
-
-        public static Color getRandomColor() {
-            return values()[new Random().nextInt(values().length)];
-        }
+    public String getRandomColor() {
+        return Color.values()[new Random().nextInt(Color.values().length)].name();
     }
 }
+
 
 
