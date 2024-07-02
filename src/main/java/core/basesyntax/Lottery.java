@@ -6,9 +6,9 @@ import core.basesyntax.util.ColorSupplier;
 import java.util.Random;
 
 public class Lottery {
-    private final Random random = new Random();
     private static final int MIN_NUM_BALL = 1;
     private static final int MAX_NUM_BALL = 100;
+    private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
