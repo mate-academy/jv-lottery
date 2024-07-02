@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import core.basesyntax.model.Ball;
-import core.basesyntax.model.Color;
 import core.basesyntax.util.ColorSupplier;
 import java.util.Random;
 
@@ -13,7 +12,7 @@ public class Lottery {
 
     public Ball getRandomBall() {
         int numberBall = random.nextInt(MIN_NUM_BALL, MAX_NUM_BALL);
-        Color colorBall = colorSupplier.getRandomColor();
+        String colorBall = colorSupplier.getRandomColor();
         return new Ball(numberBall, colorBall);
     }
 }
