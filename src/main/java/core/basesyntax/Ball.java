@@ -11,9 +11,8 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "core.basesyntax.Ball{"
-                + "color='" + color
-                + '\''
+        return "Ball{"
+                + "color='" + color + '\''
                 + ", number=" + number
                 + '}';
     }

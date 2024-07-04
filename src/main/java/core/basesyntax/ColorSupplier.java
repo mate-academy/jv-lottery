@@ -8,6 +8,5 @@ public class ColorSupplier {
         Random random = new Random();
         int index = random.nextInt(colors.length);
         return colors[index];
-
     }
 }
