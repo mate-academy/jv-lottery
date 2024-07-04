@@ -4,8 +4,10 @@ import java.util.Random;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        int index = new Random().nextInt(BallCollors.values().length);
-        BallCollors color = BallCollors.values()[index];
-        return color.toString();
+        Random random = new Random();
+        Colors[] colors = Colors.values();
+        int index = random.nextInt(colors.length);
+        Colors color = colors[index];
+        return color.name().toLowerCase();
     }
 }
