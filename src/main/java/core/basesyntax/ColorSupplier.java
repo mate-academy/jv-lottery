@@ -3,18 +3,17 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
-
     private Random random;
 
     public ColorSupplier() {
         this.random = new Random();
     }
 
-    public Random getRandom() {
+    private Random getRandom() {
         return random;
     }
 
-    public void setRandom(Random random) {
+    private void setRandom(Random random) {
         this.random = random;
     }
 
