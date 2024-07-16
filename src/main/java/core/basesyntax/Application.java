@@ -11,4 +11,3 @@ public class Application extends Lottery {
         }
     }
 }
-
