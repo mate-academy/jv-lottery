@@ -21,7 +21,7 @@ public class Ball {
         this.number = number;
     }
 
-    public void setColor(java.lang.String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
