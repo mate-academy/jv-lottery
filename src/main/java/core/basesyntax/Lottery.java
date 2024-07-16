@@ -3,9 +3,11 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
+    public int getRandomNumber() {
+        final int MAX_BOUND = 100;
+         return new Random().nextInt(MAX_BOUND);
+    }
     public Ball getRandomBall() {
-        final int bound = 100;
-        int ballIndex = new Random().nextInt(bound);
-        return new Ball(getRandomColor(), ballIndex);
+        return new Ball(getRandomColor(), getRandomNumber());
     }
 }
