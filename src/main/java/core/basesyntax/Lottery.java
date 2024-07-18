@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery extends ColorSupplier {
-    public static final int MAX_BOUND = 100;
+    private static final int MAX_BOUND = 100;
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
