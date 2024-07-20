@@ -1,16 +1,16 @@
 package core.basesyntax;
 
 public class Ball {
-    private Colour colour;
+    private String color;
     private int number;
 
-    public Ball(Colour colour, int number) {
-        this.colour = colour;
+    public Ball(String color, int number) {
+        this.color = color;
         this.number = number;
     }
 
     @Override
     public String toString() {
-        return this.colour + " " + this.number;
+        return this.color + " " + this.number;
     }
 }
