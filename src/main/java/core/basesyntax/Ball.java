@@ -3,18 +3,21 @@ package core.basesyntax;
 public class Ball {
     private String color;
     private int number;
-    private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public int getNumber() {
         return number;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public void setNumber(int number) {
         this.number = number;
     }
 
-    public void setColor() {
-        color = colorSupplier.getRandomColor();
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
