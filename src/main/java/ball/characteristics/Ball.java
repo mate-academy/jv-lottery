@@ -1,15 +1,17 @@
 package ball.characteristics;
 
 public class Ball {
-    private int number;
-    private String color;
+    private final int number;
+    private final String color;
 
-    public void setColor(String color) {
+    public Ball(int number, String color) {
         this.color = color;
+        this.number = number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public Ball(Ball ball) {
+        this.color = ball.color;
+        this.number = ball.number;
     }
 
     public String getColor() {
@@ -22,6 +24,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return color;
+        return "The color of the ball is " + getColor()
+                + " and the number of the ball is  " + getNumber();
     }
 }
