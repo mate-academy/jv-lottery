@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-import ball.characteristics.Color;
 import java.util.Random;
 
 public class ColorSupplier {

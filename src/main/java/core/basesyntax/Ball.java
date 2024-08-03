@@ -1,4 +1,4 @@
-package ball.characteristics;
+package core.basesyntax;
 
 public class Ball {
     private final int number;
@@ -10,8 +10,8 @@ public class Ball {
     }
 
     public Ball(Ball ball) {
-        this.color = ball.color;
-        this.number = ball.number;
+        this.color = ball.getColor();
+        this.number = ball.getNumber();
     }
 
     public String getColor() {
@@ -28,3 +28,4 @@ public class Ball {
                 + " and the number of the ball is  " + getNumber();
     }
 }
+
