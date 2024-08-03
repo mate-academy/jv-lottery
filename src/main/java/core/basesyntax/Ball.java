@@ -27,6 +27,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{color=%s, number=%d}".formatted(color, number);
+        return String.format("Ball{color=%s, number=%d}", color, number);
     }
 }
