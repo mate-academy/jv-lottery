@@ -6,10 +6,9 @@ public class Lottery {
     private static final int MAX_NUMBER = 100;
     private Random random = new Random();
     private ColorSupplier supplier = new ColorSupplier();
-
     public Ball getRandomBall() {
         int number = random.nextInt(MAX_NUMBER);
-        Color color = supplier.getRandomColor();
+        String color = supplier.getRandomColor();
         return new Ball(color, number);
     }
 }
