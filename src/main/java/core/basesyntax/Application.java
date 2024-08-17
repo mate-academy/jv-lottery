@@ -2,15 +2,16 @@ package core.basesyntax;
 
 public class Application {
     public static void main(String[] args) {
-        ColorSupplier supplier = new ColorSupplier();
-        for(int i = 0; i < 3; i++) {
-            Colors value = supplier.getRandomColor();
-            System.out.println(value);
-        }
-        Lottery lottery = new Lottery();
-        for(int i = 0; i < 3; i++) {
-            int number = Lottery.getRandomBall();
-            System.out.println(number);
-        }
+       Lottery lottery = new Lottery();
+       Colors ball1 = lottery.getRandomBall();
+       Colors ball2 = lottery.getRandomBall();
+       Colors ball3 = lottery.getRandomBall();
+
+        System.out.println(ball1);
+        System.out.println(ball2);
+        System.out.println(ball3);
     }
-}
+        }
+
+
+
