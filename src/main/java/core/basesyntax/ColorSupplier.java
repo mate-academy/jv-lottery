@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class ColorSupplier {
     private final Random random = new Random();
-    private final Colors[] colorArr = Colors.values();
+    private final Color[] colorArr = Color.values();
 
-    public Colors getRandomColor() {
+    public String getRandomColor() {
         int colorIndex = random.nextInt(colorArr.length);
 
-        return colorArr[colorIndex];
+        return colorArr[colorIndex].name();
     }
 }
