@@ -10,4 +10,5 @@ public class ColorSupplier {
         int index = random.nextInt(colors.length);
         return colors[index].name();
     }
+
 }
