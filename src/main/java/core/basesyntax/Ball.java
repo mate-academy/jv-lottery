@@ -11,15 +11,16 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball {"
-                + "color = "
+        return "Ball { "
+                + " color = "
                 + color
                 + ", number = "
                 + number
-                + '}';
+                + " }";
     }
 
     public enum Color {
         RED, BLUE, GREEN, YELLOW, ORANGE, PURPLE, PINK;
     }
 }
+
