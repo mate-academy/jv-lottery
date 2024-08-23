@@ -4,20 +4,20 @@ import java.util.Random;
 
 public class ColorSupplier {
 
-  final int MaxValue = Color.values().length;
-  final Random random;
+    private static int MAX_VALUE = Color.values().length;
+    private final Random random;
 
-  public ColorSupplier(Random random) {
-    this.random = random;
-  }
+    public ColorSupplier(Random random) {
+        this.random = random;
+    }
 
-  public ColorSupplier() {
-    random = new Random();
-  }
+    public ColorSupplier() {
+        random = new Random();
+    }
 
-  public Color getRandomColor() {
+    public Color getRandomColor() {
 
-    int index = random.nextInt(MaxValue);
-    return Color.values()[index];
-  }
+        int index = random.nextInt(MAX_VALUE);
+        return Color.values()[index];
+    }
 }
