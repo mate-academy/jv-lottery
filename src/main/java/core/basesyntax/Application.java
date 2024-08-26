@@ -5,5 +5,6 @@ public class Application {
         Lottery ball = new Lottery();
 
         System.out.println(ball.getRandomBall());
+
     }
 }
