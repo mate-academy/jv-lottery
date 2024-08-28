@@ -13,5 +13,6 @@ public class Lottery {
         color = colorSupplier.getRandomColor();
         Ball ball = new Ball(color, number);
         return ball;
+
     }
 }
