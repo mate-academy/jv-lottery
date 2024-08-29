@@ -2,8 +2,8 @@ package core.basesyntax;
 
 import java.util.Random;
 
-class Lottery {
-    private int maxValue = 101;
+public class Lottery {
+    private final int maxValue = 101;
     private Random random = new Random();
     private ColorSupplier colorSupplier = new ColorSupplier();
 
