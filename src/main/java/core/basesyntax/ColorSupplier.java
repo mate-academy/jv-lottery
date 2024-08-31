@@ -1,7 +1,4 @@
 package core.basesyntax;
 
-public class ColorSupplier {
-    public String getRandomColor() {
-        return null;
-    }
+public class ColorSupplier extends RandoM {
 }
