@@ -1,7 +1,7 @@
 package model;
 
 public class Ball {
-    private final int  number;
+    private final int number;
     private final String color;
 
     public Ball(int number, String color) {
@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball [number=" + number + ", color=" + color + "]";
+        return "Ball [number = " + number + ", color = " + color + "]";
     }
 }
