@@ -5,9 +5,10 @@ import model.Colors;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        int index = new Random().nextInt(Colors.values().length);
+        Random rand = new Random();
+        int index = rand.nextInt(Colors.values().length);
         Colors color = Colors.values()[index];
 
-        return color.toString();
+        return color.name();
     }
 }
