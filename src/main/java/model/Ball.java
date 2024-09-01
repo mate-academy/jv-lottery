@@ -1,8 +1,8 @@
 package model;
 
 public class Ball {
-    private int number;
-    private String color;
+    private final int  number;
+    private final String color;
 
     public Ball(int number, String color) {
         this.number = number;

@@ -4,7 +4,7 @@ import java.util.Random;
 import model.Ball;
 
 public class Lottery {
-    private Random rand = new Random();
+    private final Random rand = new Random();
 
     public Ball getRandomBall() {
         ColorSupplier colorSupplier = new ColorSupplier();
