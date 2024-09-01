@@ -3,15 +3,14 @@ package core.basesyntax;
 import java.util.Random;
 
 public class RandoM extends Enum {
-    public void getRandomColor() {
+    public Color getRandomColor() {
         Random random = new Random();
-        int index = new Random().nextInt(Enum.Color.values().length);
-        Enum.Color color = Enum.Color.values()[index];
+        int index = random.nextInt(Color.values().length);
+        return Color.values()[index];
     }
 
-    public void getRandomNumber() {
+    public int getRandomNumber() {
         Random random = new Random();
-        int number = random.nextInt(100);
-        System.out.println(number);
+        return random.nextInt(100);
     }
 }
