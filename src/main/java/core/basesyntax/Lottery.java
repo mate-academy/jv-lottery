@@ -1,12 +1,9 @@
 package core.basesyntax;
 
 public class Lottery {
-    public static Colors getRandomBall() {
+    public Ball getRandomBall() {
         ColorSupplier colorSupplier = new ColorSupplier();
-        Colors randomColor = colorSupplier.getRandomColor();
+        String randomColor = colorSupplier.getRandomColor();
         return randomColor;
-
     }
 }
-
-
