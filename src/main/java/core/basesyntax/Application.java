@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import static core.basesyntax.ColorSupplier.getRandomColor;
-
 public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
@@ -12,8 +10,6 @@ public class Application {
         System.out.println(ball1);
         System.out.println(ball2);
         System.out.println(ball3);
-        System.out.println();
 
-        getRandomColor();
     }
 }
