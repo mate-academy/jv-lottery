@@ -5,10 +5,10 @@ import model.Ball;
 
 public class Lottery {
     private static final int MAX_RANDOM_NUMBER = 100;
-    private final Random rand = new Random();
+    private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        return new Ball(rand.nextInt(MAX_RANDOM_NUMBER), colorSupplier.getRandomColor());
+        return new Ball(random.nextInt(MAX_RANDOM_NUMBER), colorSupplier.getRandomColor());
     }
 }
