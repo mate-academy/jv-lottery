@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    private Colors color;
+    private Color color;
     private int number;
 
-    public void setColor(Colors color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -12,11 +12,16 @@ public class Ball {
         this.number = number;
     }
 
-    public Colors getColor() {
+    public Color getColor() {
         return color;
     }
 
     public int getNumber() {
         return number;
+    }
+
+    @Override
+    public String toString() {
+        return "color: " + color + " & number: " + number;
     }
 }
