@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Lottery {
     private static final int MAXIMUM_NUMBER = 100;
-    private ColorSupplier colorSupplier = new ColorSupplier();
-    private Random random = new Random();
+    private static final ColorSupplier colorSupplier = new ColorSupplier();
+    private static final Random random = new Random();
 
     public Ball getRandomBall() {
         return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAXIMUM_NUMBER + 1));
