@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class Ball {
     private int number;
-    private String color;
+    private Colors color;
 
     public int getNumber() {
         return number;
@@ -13,15 +13,18 @@ public class Ball {
     }
 
     public String getColor() {
-        return color;
+        return color.name();
     }
 
-    public void setColor(String color) {
+    public void setColor(Colors color) {
         this.color = color;
     }
 
     @Override
     public String toString() {
+        if (color == null) {
+            return "Ball number: " + number;
+        }
         return "Ball number: " + number + ", color: " + color;
     }
 }
