@@ -6,13 +6,13 @@ public class Lottery {
 
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
-    private static final int MAX_RANDOM_NUMBER = 100;
+    private final int max = 100;
 
     public int getRandomBall() {
         ColorSupplier color = new ColorSupplier();
         System.out.println(color.getRandomColor());
         Random random = new Random();
-        int number = random.nextInt(MAX_RANDOM_NUMBER);
+        int number = random.nextInt(max);
         return number;
     }
 }
