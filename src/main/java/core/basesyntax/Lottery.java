@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Lottery {
 
-    final int bound = 100;
+    private final int bound = 100;
 
     public Ball getRandomBall() {
 
