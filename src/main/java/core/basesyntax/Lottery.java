@@ -6,12 +6,11 @@ public class Lottery {
 
     private final ColorSupplier colorSupplier = new ColorSupplier();
     private final Random randomValueSupplier = new Random();
-    private final int maxValue = 101;
+    private static final int MAX_VALUE = 101;
 
     public Ball getRandomBall() {
-        int number = randomValueSupplier.nextInt(maxValue);
+        int number = randomValueSupplier.nextInt(MAX_VALUE);
         return new Ball(colorSupplier.getRandomColor(), number);
-
     }
 }
 
