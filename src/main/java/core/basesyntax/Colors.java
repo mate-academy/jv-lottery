@@ -8,5 +8,5 @@ public enum Colors {
     GREEN,
     MAGENTA,
     YELLOW,
-    GERY
+    GREY
 }
