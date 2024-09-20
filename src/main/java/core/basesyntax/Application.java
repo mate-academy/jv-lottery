@@ -7,8 +7,12 @@ public class Application {
 
         for (int i = 0; i < 3; i++) {
             Ball ball = lottery.getRandomBall();
+            if (ball == null) {
+                throw new IllegalArgumentException("Invlaid value");
+            }
             System.out.println(ball);
         }
     }
 }
+
 
