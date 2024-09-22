@@ -4,13 +4,11 @@ public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
+        int numberOfBalls = 3;  // Кількість м'ячів, які потрібно створити
 
-        Ball ball1 = lottery.getRandomBall();
-        Ball ball2 = lottery.getRandomBall();
-        Ball ball3 = lottery.getRandomBall();
-
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
+        for (int i = 0; i < numberOfBalls; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println(ball);
+        }
     }
 }
