@@ -10,9 +10,8 @@ public class Lottery {
     private static final Random random = new Random();
 
     public Ball getRandomBall() {
-        String color = String.valueOf(colorSupplier.getRandomColor());
+        String color = colorSupplier.getRandomColor();
         int number = random.nextInt(MAX_BALLS_VALUE);
         return new Ball(color, number);
     }
-
 }
