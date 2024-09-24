@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
-        int numberOfBalls = 3;  // Кількість м'ячів, які потрібно створити
+        int numberOfBalls = 3;
 
         for (int i = 0; i < numberOfBalls; i++) {
             Ball ball = lottery.getRandomBall();
