@@ -4,8 +4,11 @@ import java.util.Random;
 
 public class ColorSupplier extends Ball {
 
+    private static final Random random = new Random();
+
     public String getRandomColor() {
-        int colors = new Random().nextInt(Colors.values().length);
+
+        int colors = random.nextInt(Colors.values().length);
         return String.valueOf(Colors.values()[colors]);
     }
 
