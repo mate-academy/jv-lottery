@@ -9,7 +9,8 @@ public class ColorSupplier extends Ball {
     public String getRandomColor() {
 
         int colors = random.nextInt(Colors.values().length);
-        return String.valueOf(Colors.values()[colors]);
+        return Colors.values()[colors].name();
+
     }
 
 }
