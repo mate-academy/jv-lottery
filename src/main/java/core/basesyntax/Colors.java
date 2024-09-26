@@ -5,7 +5,6 @@ public enum Colors {
     RED,
     GREEN,
     BLUE,
-    YELLOW,
-    value;
+    YELLOW
 
 }
