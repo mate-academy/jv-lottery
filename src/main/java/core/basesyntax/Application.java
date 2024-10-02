@@ -5,9 +5,9 @@ public class Application {
         // create three balls using class Lottery and print information about them in console
         Lottery lottery = new Lottery();
 
-        Ball ball1 = lottery.GetRandomBall();
-        Ball ball2 = lottery.GetRandomBall();
-        Ball ball3 = lottery.GetRandomBall();
+        Ball ball1 = lottery.getRandomBall();
+        Ball ball2 = lottery.getRandomBall();
+        Ball ball3 = lottery.getRandomBall();
 
         System.out.println(ball1);
         System.out.println(ball2);
