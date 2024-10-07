@@ -10,9 +10,9 @@ public class Application {
         Ball ball2 = lottery.getRandomBall();
         Ball ball3 = lottery.getRandomBall();
 
-        System.out.println(ball1.toString());
-        System.out.println(ball2.toString());
-        System.out.println(ball3.toString());
+        System.out.println(ball1);
+        System.out.println(ball2);
+        System.out.println(ball3);
         // create three balls using class Lottery and print information about them in console
     }
 }

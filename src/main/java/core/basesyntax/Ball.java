@@ -10,7 +10,7 @@ public class Ball {
   }
 
   public void setColor(String color) {
-    this.color = color.toLowerCase();
+    this.color = color;
   }
 
   public int getNumber() {
@@ -27,6 +27,6 @@ public class Ball {
   }
   @Override
   public String toString() {
-    return "Ball is of color " + color + " and has a number " + number + ".";
+    return "Ball is of color " + color.toLowerCase() + " and has a number " + number + ".";
   }
 }
