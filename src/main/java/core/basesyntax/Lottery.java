@@ -7,8 +7,8 @@ public class Lottery {
         ColorSupplier colorSupplier = new ColorSupplier();
         int numberOfBall = new Random().nextInt(100);
         Ball ball = new Ball();
-        ball.SetColor(colorSupplier.toString());
-        ball.SetNumber(numberOfBall);
+        ball.setColor(colorSupplier.toString());
+        ball.setNumber(numberOfBall);
         return ball;
     }
 

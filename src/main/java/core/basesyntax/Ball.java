@@ -8,16 +8,18 @@ public class Ball {
         return color;
     }
 
-    public void SetColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
+
     public int getNumber() {
         return number;
     }
 
-    public void SetNumber(int number) {
+    public void setNumber(int number) {
         this.number = number;
     }
+
     @Override
     public String toString() {
         return "Ball " + color + " " + number;
