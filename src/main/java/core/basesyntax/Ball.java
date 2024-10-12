@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Ball {
     private String color;
     private int number;
@@ -20,7 +18,7 @@ public class Ball {
     public int getNumber() {
         return number;
     }
-    public int setNumber(int number) {
+    public void setNumber(int number) {
         this.number = number;
     }
     // Override the toString() method
