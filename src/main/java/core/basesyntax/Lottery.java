@@ -4,6 +4,6 @@ public class Lottery {
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        return new Ball(colorSupplier.getRandomColor(), ColorSupplier.random.nextInt(101));
+        return new Ball(colorSupplier.getRandomColor(), colorSupplier.getRandom().nextInt(101));
     }
 }
