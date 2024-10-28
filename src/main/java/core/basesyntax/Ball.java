@@ -2,9 +2,9 @@ package core.basesyntax;
 
 public class Ball {
 
-    String color;
+    private String color;
 
-    int number;
+    private int number;
 
     public Ball(String color, int number) {
         this.color = color;
@@ -13,10 +13,13 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
-                '}';
+        return "Ball{"
+                + "color='"
+                + color
+                + '\''
+                + ", number="
+                + number
+                + '}';
     }
 
 
