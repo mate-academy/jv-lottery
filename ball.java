@@ -1,12 +1,12 @@
-public class ball {
+public class Ball {
     int number;
     Colors color;
-    public ball(int number, Colors color){
+    public Ball(int number, Colors color){
         this.number = number;
         this.color = color;
     }
 
     public String toString(){
-        return "ball" + "color" + number;
+        return "Ball{color='" + color + "', number=" + number + "}"
     }
 }
