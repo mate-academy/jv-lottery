@@ -4,8 +4,8 @@ public class Lottery {
         Random random = new Random();
         int numb = random.nextInt(100);
         ColorSupplier ColorsSupplier = new ColorSupplier();
-        Colors gege = ColorsSupplier.getRandomColor();
+        Colors sum = ColorsSupplier.getRandomColor();
         Ball sum = new Ball(numb, sum);
-        return ball;
+        return Ball;
     }
 }
