@@ -6,7 +6,7 @@ enum Color {
     GREEN,
     BLUE,
     YELLOW,
-    ORANGE;
+    ORANGE
 }
 public class ColorSupplier {
     public Color getRandomColor() {
