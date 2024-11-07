@@ -3,12 +3,13 @@ package core.basesyntax;
 public class Application {
     public static void main(String[] args) {
         // create three balls using class Lottery and print information about them in console
-        Lottery ball1 = new Lottery();
-        Lottery ball2 = new Lottery();
-        Lottery ball3 = new Lottery();
+        Lottery[] balls = new Lottery[3];
+        for (int i = 0; i < balls.length; i++) {
+            balls[i] = new Lottery();
+        }
 
-        System.out.println(ball1.getRandomBall());
-        System.out.println(ball2.getRandomBall());
-        System.out.println(ball3.getRandomBall());
+        for (Lottery ball : balls) {
+            System.out.println(ball.getRandomBall());
+        }
     }
 }
