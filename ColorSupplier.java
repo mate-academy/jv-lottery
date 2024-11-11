@@ -1,9 +1,9 @@
 import java.util.Random;
-public class ColorSupplier {
-    public Colors getRandomColor() {
+class ColorSupplier {
+    private static final String[] COLORS = {"Red", "Green", "Blue", "Yellow", "Purple", "Orange"};
+
+    public String getRandomColor() {
         Random random = new Random();
-        Colors[] color = Colors.values();
-        int sum = random.nextInt(color.length);
-        return  color[sum];
+        return COLORS[random.nextInt(COLORS.length)];
     }
 }
