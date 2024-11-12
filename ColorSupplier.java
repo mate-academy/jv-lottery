@@ -8,4 +8,3 @@ public class ColorSupplier {
         return  color[sum];
     }
 }
-
