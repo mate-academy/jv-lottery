@@ -1,7 +1,7 @@
 public enum Colors {
-    Red,
-    Green,
-    Blue,
+Red,
+Green,
+Blue,
     Yellow,
     Orange,
     Purple,

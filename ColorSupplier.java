@@ -1,9 +1,11 @@
 import java.util.Random;
-class ColorSupplier {
-    private static final String[] COLORS = {"Red", "Green", "Blue", "Yellow", "Purple", "Orange"};
 
-    public String getRandomColor() {
+public class ColorSupplier {
+    public Colors getRandomColor() {
         Random random = new Random();
-        return COLORS[random.nextInt(COLORS.length)];
+        Colors[] color = Colors.values();
+        int sum = random.nextInt(color.length);
+        return  color[sum];
     }
 }
+
