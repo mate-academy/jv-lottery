@@ -7,6 +7,5 @@ public class Application {
         for (Ball ball : balls) {
             System.out.println(Lottery.getRandomBall());
         }
-        // create three balls using class Lottery and print information about them in console
     }
 }
