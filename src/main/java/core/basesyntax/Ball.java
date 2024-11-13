@@ -1,18 +1,23 @@
 package core.basesyntax;
 
 public class Ball {
-    String color;
-    int number;
+    private String color;
+    private int number;
+
+    // Конструктор класу Ball
+    public Ball(String color, int number) {
+        this.color = color;
+        this.number = number;
+    }
+
     @Override
     public String toString() {
         return "Ball {color='" + color + "', number=" + number + "}";
     }
 }
-public Ball(String color, int number) {
-        this.color = color;
-        this.number = number;
-    }
-enum Color {
+package core.basesyntax;
+
+public enum Color {
     RED,
     GREEN,
     BLUE,
