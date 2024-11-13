@@ -1,8 +1,5 @@
 package core.basesyntax;
-
-
 import java.util.Random;
-    
 public class ColorSupplier {
     private Random rmd = new Random();
 
