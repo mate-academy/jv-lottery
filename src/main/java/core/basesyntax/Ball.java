@@ -15,8 +15,6 @@ public class Ball {
         return "Ball {color='" + color + "', number=" + number + "}";
     }
 }
-package core.basesyntax;
-
 public enum Color {
     RED,
     GREEN,
