@@ -10,6 +10,6 @@ public Ball(String color, int number) {
 }
     @Override
     public String toString() {
-        System.out.println("Color :" + color + ", number :" + number);
+        return "Color :" + color + ", number :" + number;
     }
 }
