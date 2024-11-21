@@ -4,7 +4,7 @@ public enum Color {
     BLACK,
     WHITE,
     GREEN,
-    YELLOU,
+    YELLOW,
     RED,
     BLUE
 }
