@@ -24,5 +24,4 @@ public class Ball {
                 + ", number=" + getNumber()
                 + '}';
     }
-
 }
