@@ -1,12 +1,20 @@
 package core.basesyntax;
 
 public class Ball {
-    private Colors color;
+    private Color color;
     private int number;
 
-    public Ball(Colors randomColor, int number) {
+    public Ball(Color randomColor, int number) {
         this.color = randomColor;
         this.number = number;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
@@ -17,11 +25,4 @@ public class Ball {
                 + '}';
     }
 
-    public Colors getColor() {
-        return color;
-    }
-
-    public int getNumber() {
-        return number;
-    }
 }
