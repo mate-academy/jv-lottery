@@ -2,9 +2,9 @@ package core.basesyntax;
 
 public class Ball {
     private String color;
-    private Long number;
+    private int number;
 
-    public Ball(String color, Long number) {
+    public Ball(String color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -20,11 +20,11 @@ public class Ball {
         this.color = color;
     }
 
-    public Long getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(Long number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
