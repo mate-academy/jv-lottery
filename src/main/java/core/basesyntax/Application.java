@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import main.java.core.basesyntax.Lottery;
-
 import java.util.ArrayList;
 import java.util.List;
 
