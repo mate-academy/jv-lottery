@@ -7,6 +7,6 @@ public class ColorSupplier {
         Random random = new Random();
         int index = random.nextInt(DiffColors.values().length);
         DiffColors color = DiffColors.values()[index];
-        return color.toString();
+        return color.name();
     }
 }
