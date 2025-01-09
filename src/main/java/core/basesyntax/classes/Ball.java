@@ -11,7 +11,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return null;
+        return String.format("Ball of %s color, with number %d", this.color, this.number);
     }
 
     public Color getColor() {

@@ -6,9 +6,9 @@ import java.util.Random;
 public class Lottery {
 
     public Ball getRandomBall() {
-        int randomBounce = 100;
+        final int RANDOM_BOUNCE = 100;
         Random random = new Random();
         ColorSupplier color = new ColorSupplier();
-        return new Ball(color.getRandomColor(), random.nextInt(randomBounce));
+        return new Ball(color.getRandomColor(), random.nextInt(RANDOM_BOUNCE));
     }
 }
