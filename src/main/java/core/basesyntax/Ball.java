@@ -13,16 +13,20 @@ public class Ball {
         return color;
     }
 
-
-
     public int getNumber() {
         return number;
     }
     @Override
     public String toString() {
-        return "Ball{" +
-                "color='" + color + '\'' +
-                ", number=" + number +
+        return "Ball{"
+                +
+                "color='"
+                + color
+                + '\''
+                +
+                ", number="
+                + number
+                +
                 '}';
     }
 }
