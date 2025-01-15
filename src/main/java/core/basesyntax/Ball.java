@@ -1,11 +1,12 @@
 package core.basesyntax;
+
 import java.util.Random;
 
 public class Ball {
-    String color;
-    int number;
+    private final String color;
+    private final int number;
 
-    public Ball () {
+    public Ball() {
         Random random = new Random();
         this.number = random.nextInt(101);
         this.color = new ColorSupplier().getRandomColor();
