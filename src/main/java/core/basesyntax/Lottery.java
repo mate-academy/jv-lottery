@@ -1,11 +1,9 @@
 package core.basesyntax;
 
-import java.awt.*;
 import java.util.Random;
 
 public class Lottery {
     private final ColorSupplier colorSupplier;
-
     public Lottery(ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
     }
