@@ -3,13 +3,13 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    private final String color;
+    private final Color color;
     private final int number;
 
-    public Ball() {
+    public Ball(Color color) {
         Random random = new Random();
         this.number = random.nextInt(101);
-        this.color = new ColorSupplier().getRandomColor();
+        this.color = color;
     }
 
     @Override
