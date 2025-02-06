@@ -16,3 +16,5 @@ public class Lottery {
         return new Ball(randoColor, randomNumber);
     }
 }
+
+
