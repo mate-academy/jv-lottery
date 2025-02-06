@@ -12,6 +12,7 @@ public class Ball {
     public Color getColor() {
         return color;
     }
+
     public int getNumber() {
         return number;
     }
