@@ -19,7 +19,7 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball{" + "color='" + color + '\'' + ", number=" + number + '}';
+        return String.format("Ball{color='%s', number=%d}", color, number);
     }
 }
 
