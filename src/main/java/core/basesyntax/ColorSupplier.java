@@ -1,6 +1,7 @@
 package core.basesyntax;
-import java.awt.*;
+
 import java.util.Random;
+
 
 public class ColorSupplier {
     private static final Random random = new Random();
