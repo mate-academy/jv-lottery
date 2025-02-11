@@ -1,10 +1,11 @@
 package core.basesyntax;
+
 import java.util.Random;
 
 public class ColorSupplier {
     public static String getRandomColor() {
         enum Color {
-            Red, Black, Green;
+            Red, Black, Green
         }
 
         int index = new Random().nextInt(Color.values().length);

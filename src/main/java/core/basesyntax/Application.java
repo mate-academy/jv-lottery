@@ -6,8 +6,8 @@ public class Application {
         Ball ball2 = Lottery.getRandomBall();
         Ball ball3 = Lottery.getRandomBall();
 
-        System.out.println(ball1.toString());
-        System.out.println(ball2.toString());
-        System.out.println(ball3.toString());
+        System.out.println(ball1);
+        System.out.println(ball2);
+        System.out.println(ball3);
     }
 }
