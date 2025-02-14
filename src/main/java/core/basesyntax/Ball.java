@@ -19,6 +19,7 @@ public class Ball {
 
     @Override
     public String toString() {
+        System.out.println("Kolor: " + color + " Numer: " + number);
         return super.toString();
     }
 }
