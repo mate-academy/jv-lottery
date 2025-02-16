@@ -7,7 +7,7 @@ public class Application {
         //Ball ball3 = new Ball();
         //Lottery ball2 = new Lottery();
         //Lottery ball3 = new Lottery();
-        
+
         Ball ball1 = new Lottery().getRamdomBall();
         Ball ball2 = new Lottery().getRamdomBall();
         Ball ball3 = new Lottery().getRamdomBall();
