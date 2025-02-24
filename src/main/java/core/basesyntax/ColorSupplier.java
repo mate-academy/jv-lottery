@@ -10,9 +10,8 @@ public class ColorSupplier {
             return Colors.RED.getColor();
         } else if (number == 2) {
             return Colors.BLUE.getColor();
-        } else if (number == 3) {
+        } else {
             return Colors.GREEN.getColor();
         }
-        return "";
     }
 }
