@@ -10,18 +10,8 @@ public class Ball {
         this.ballColor = ballColor;
     }
 
-    public Ball() {
-    }
-
     public Color[] getBallColors() {
         return ballColors;
-    }
-
-    public Color getColorByIndex(int index) {
-        if (index >= 0 && index < ballColors.length) {
-            return ballColors[index];
-        }
-        return null;
     }
 
     public void setBallColors(Color[] ballColors) {
