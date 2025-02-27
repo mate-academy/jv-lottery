@@ -5,13 +5,13 @@ public class Ball extends ColorSupplier {
     private int number;
     private String color;
 
-    public String getColor() {
-        return this.color;
-    }
+  // public String getColor() {
+     //  return this.color;
+  //  }
 
-    public int getNumber() {
-        return this.number;
-    }
+   // public int getNumber() {
+    //    return this.number;
+   // }
 
     public void setColor(String color) {
         this.color = color;
