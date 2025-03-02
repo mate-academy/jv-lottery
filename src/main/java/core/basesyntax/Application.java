@@ -5,11 +5,8 @@ public class Application {
 
         Lottery lottery = new Lottery();
 
-        System.out.println("First random ball = " + lottery.getRandomBall());
-
-        System.out.println("Second random ball = " + lottery.getRandomBall());
-
-        System.out.println("Third random ball = " + lottery.getRandomBall());
-
+        for (int i = 0; i < 3; i++) {
+            System.out.println(lottery.getRandomBall());
+        }
     }
 }
