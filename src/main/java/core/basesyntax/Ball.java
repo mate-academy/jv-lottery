@@ -3,8 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Ball {
-    int number;
-    Colors color;
+    private int number;
+    private Colors color;
 
     public Ball() {
         number = new Random().nextInt(100);
@@ -13,10 +13,10 @@ public class Ball {
 
     @Override
     public String
-    toString() {
-        return "Ball{" +
-                "number=" + number +
-                ", color='" + color + '\'' +
-                '}';
+            toString() {
+        return "Ball{"
+                + "number=" + number
+                + ", color='" + color
+                + '\'' + '}';
     }
 }

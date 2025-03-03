@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Lottery {
-     static public Ball getRandomBall() {
+    public static Ball getRandomBall() {
         return new Ball();
     }
 }
