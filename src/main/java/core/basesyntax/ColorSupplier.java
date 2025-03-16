@@ -10,6 +10,7 @@ public class ColorSupplier {
         YELLOW,
         ORANGE
     }
+
     public String getRandomColor() {
         Random random = new Random();
         return Color.values()[random.nextInt(Color.values().length)].toString();
