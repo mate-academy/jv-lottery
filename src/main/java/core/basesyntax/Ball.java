@@ -15,15 +15,7 @@ public class Ball {
 
     }
 
-    public Ball getRandomBall() {
-        Random random = new Random();
 
-        String color = ColorSupplier.getRandomColor();
-
-        int number = random.nextInt(100);
-        return new Ball(color, number);
-
-    }
 
     @Override
     public String toString() {
