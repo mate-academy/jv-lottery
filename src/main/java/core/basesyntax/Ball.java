@@ -1,5 +1,7 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class Ball {
     private int number;
     private String color;
@@ -13,20 +15,14 @@ public class Ball {
 
     }
 
-    public int getNumber() {
-        return number;
-    }
+    public Ball getRandomBall() {
+        Random random = new Random();
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
+        String color = ColorSupplier.getRandomColor();
 
-    public String getColor() {
-        return color;
-    }
+        int number = random.nextInt(100);
+        return new Ball(color, number);
 
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override
