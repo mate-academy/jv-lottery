@@ -1,10 +1,6 @@
 package core.basesyntax;
 
-enum Color {
-    RED, BLUE, GREEN, YELLOW, ORANGE, PURPLE, BLACK, WHITE
-}
-
-class Ball {
+public class Ball {
     private final Color color;
     private final int number;
 
