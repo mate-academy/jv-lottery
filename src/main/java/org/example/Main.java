@@ -1,6 +1,6 @@
 package org.example;
 
- public class Main {
+public class Main {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
@@ -13,4 +13,4 @@ package org.example;
         System.out.println(ball3);
     }
 }
-// This is my change for PR ddjfnkjdbfdkjbfksdfb
+
