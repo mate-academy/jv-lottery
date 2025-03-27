@@ -7,7 +7,7 @@ public class Lottery {
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     public Ball getRandomBall() {
-        String randomColor = String.valueOf(colorSupplier.getRandomColor());
+        String randomColor = colorSupplier.getRandomColor().name();
         int randomNumber = random.nextInt(100) + 1;
         return new Ball(randomColor, randomNumber);
     }
