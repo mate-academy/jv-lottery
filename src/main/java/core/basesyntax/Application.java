@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Application extends Ball {
+public class Application {
     public static void main(String[] args) {
         Lottery firstBall = new Lottery();
         System.out.println(firstBall.getRandomBall());
