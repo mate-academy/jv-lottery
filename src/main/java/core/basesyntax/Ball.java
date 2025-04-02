@@ -8,6 +8,6 @@ public class Ball extends ColorSupplier {
 
     @Override
     public String toString() {
-        return color + number;
+        return (color + number).toString();
     }
 }

@@ -1,7 +1,8 @@
 package core.basesyntax;
 
-public class Lottery extends Ball {
+public class Lottery {
     public String getRandomBall() {
-        return "the ball is " + toString();
+        Ball ball = new Ball();
+        return "the ball is " + ball.toString();
     }
 }
