@@ -13,9 +13,9 @@ public class ColorSupplier {
         BROWN
     }
 
-    public static String getRandomColor() {
+    public String getRandomColor() {
         int index = new Random().nextInt(Colors.values().length);
         Colors color = Colors.values()[index];
-        return color.toString();
+        return color.name();
     }
 }
