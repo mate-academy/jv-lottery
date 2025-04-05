@@ -6,6 +6,6 @@ public class ColorSupplier {
     public Ball.Color getRandomColor() {
         Random random = new Random();
         Ball.Color[] colors = Ball.Color.values();
-        return colors[random.nextInt(colors.length - 1)];
+        return colors[random.nextInt(colors.length)];
     }
 }
