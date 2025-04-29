@@ -10,7 +10,7 @@ public class ColorSupplier {
         int randomColorIndex = random.nextInt(lengthColors);
         Color randomColor = Color.values()[randomColorIndex];
 
-        return randomColor.toString();
+        return randomColor.name();
     }
 
 }
