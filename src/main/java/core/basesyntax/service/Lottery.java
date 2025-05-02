@@ -1,4 +1,4 @@
-package core.basesyntax;
+package core.basesyntax.service;
 
 import core.basesyntax.model.Ball;
 import java.util.Random;
