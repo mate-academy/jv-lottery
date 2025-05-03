@@ -8,25 +8,23 @@ public class Ball {
         return color;
     }
 
-    public void setColor() {
-        ColorSupplier colorSupplier = new ColorSupplier();
-        this.color = colorSupplier.getRandomColor();
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getNumber() {
         return number;
     }
 
-    public void setNumber() {
-        NumberSupplier numberSupplier = new NumberSupplier();
-        this.number = numberSupplier.getRandomNumber();
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return "Ball{ "
-                + "color: " + getColor() + ",\n"
-                + " number: " + getNumber()
+        return "Ball{"
+                + "color: " + getColor()
+                + ", number: " + getNumber()
                 + "}";
     }
 }
