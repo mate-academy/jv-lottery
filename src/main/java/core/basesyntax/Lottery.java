@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Lottery {
-    public void getRandomBall() {
+    public Ball getRandomBall() {
         Ball ball = new Ball();
         ball.setColor();
         ball.setNumber();
-        System.out.println(ball);
+        return ball;
     }
 }

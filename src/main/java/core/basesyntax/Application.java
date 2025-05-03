@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
             Lottery lottery = new Lottery();
-            lottery.getRandomBall();
+            System.out.println(lottery.getRandomBall());
         }
     }
 }
