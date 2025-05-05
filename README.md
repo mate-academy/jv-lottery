@@ -4,7 +4,7 @@ Let's create a simple lottery that will return balls with a random color and ran
 
 Your tasks are:
 - create a `Ball` class with the following fields: `color` and `number` and override the `toString()` method
-- create an enum with different colors
+- create an enum with different color
 - implement method `getRandomColor()` in class `ColorSupplier`. 
 This method should return a random color, based on the enum values (use the `Random` class for this) 
 
