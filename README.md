@@ -1,6 +1,6 @@
 # jv-lottery
 
-Let's create a simple lottery that will return balls with a random color and random number.
+
 
 Your tasks are:
 - create a `Ball` class with the following fields: `color` and `number` and override the `toString()` method
