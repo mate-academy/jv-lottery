@@ -2,6 +2,7 @@ package core.basesyntax;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        return null;
+        int index = (int)(Math.random() * Color.values().length);
+        return Color.values()[index].toString();
     }
 }
