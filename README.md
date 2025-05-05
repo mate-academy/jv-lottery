@@ -1,6 +1,6 @@
 # jv-lottery
 
-Let's create a simple lottery that will return balls with a random color and random number.
+``Let's create a simple lottery that will return balls with a random color and random number.
 
 Your tasks are:
 - create a `Ball` class with the following fields: `color` and `number` and override the `toString()` method
@@ -12,6 +12,6 @@ Then create a `Lottery` class with the `getRandomBall()` method, which will retu
 This method should create a ball with a random color and a random number (the maximum possible number should be 100) and return this ball from the method.
 
 To test the program, in the main() method, create three balls using the `getRandomBall()` method from the `Lottery` class.
-And print information about them in the console.
+And print information about them in the console.``
 
 #### [Try to avoid these common mistakes, while solving task](./checklist.md)
