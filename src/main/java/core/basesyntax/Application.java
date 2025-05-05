@@ -1,7 +1,13 @@
 package core.basesyntax;
 
+import core.basesyntax.model.Ball;
+import core.basesyntax.suppliers.BallService;
+
 public class Application {
     public static void main(String[] args) {
-        // create three balls using class Lottery and print information about them in console
+        BallService ballService = new BallService();
+        int numberOfBalls = 3;
+        Ball[] balls = ballService.createBalls(numberOfBalls);
+        ballService.printBalls(balls);
     }
 }
