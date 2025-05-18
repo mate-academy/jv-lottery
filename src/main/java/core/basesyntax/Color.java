@@ -1,0 +1,31 @@
+package core.basesyntax;
+
+public enum Color {
+    WHITE,
+    BLACK,
+    GRAY,
+    DARK_GRAY,
+    DARK_BLUE,
+    DARK_GREEN,
+    DARK_AQUA,
+    DARK_RED,
+    DARK_PURPLE,
+    GOLD,
+    GRAY_PURPLE,
+    DARK_GRAY_PURPLE,
+    DARK_BLUE_PURPLE,
+    GOLD_PURPLE,
+    DARK_GREEN_PURPLE,
+    AQUA,
+    RED,
+    LIGHT_PURPLE,
+    YELLOW,
+    BLUE,
+    GREEN,
+    AQUA_PURPLE,
+    RED_PURPLE,
+    LIGHT_PURPLE_PURPLE,
+    YELLOW_PURPLE,
+    BLUE_PURPLE,
+    GREY_PURPLE
+}
