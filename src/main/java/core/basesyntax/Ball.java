@@ -11,6 +11,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Ball number " + number + " is " + color;
     }
 }
