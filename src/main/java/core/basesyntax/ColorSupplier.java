@@ -1,7 +1,10 @@
 package core.basesyntax;
 
+import java.util.Random;
+
 public class ColorSupplier {
-    public String getRandomColor() {
-        return null;
+    int indColor = new Random().nextInt(Ball.Colors.values().length);
+    final String getRandomColor() {
+        return Ball.Colors.values()[indColor].name();
     }
 }
