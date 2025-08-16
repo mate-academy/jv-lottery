@@ -9,6 +9,7 @@ public class Lottery {
 
         ColorSupplier randomColor = new ColorSupplier();
 
-        return ( "Number of ball Is: " + randomNumberBall + ", color: " + randomColor.getRandomColor());
+        return ("Number of ball Is: " + randomNumberBall
+                + ", color: " + randomColor.getRandomColor());
     }
 }
