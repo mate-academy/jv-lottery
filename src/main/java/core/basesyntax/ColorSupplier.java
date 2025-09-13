@@ -15,7 +15,8 @@ public class ColorSupplier {
                 return Colors.GREEN.toString();
             case 2:
                 return Colors.BLUE.toString();
+            default:
+                return "";
         }
-        return "";
     }
 }
