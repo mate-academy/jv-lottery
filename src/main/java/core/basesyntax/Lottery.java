@@ -5,17 +5,14 @@ import java.util.Random;
 public class Lottery {
     private final Random random;
     private final ColorSupplier colorSupplier;
-    private final int maxNumber;
+    private static final int MAX_NUMBER = 101;
 
-    public Lottery(int maxNumber) {
+    public Lottery() {
         this.random = new Random();
         this.colorSupplier = new ColorSupplier();
-        this.maxNumber = maxNumber;
     }
 
     public Ball getRandomBall() {
-        String color = colorSupplier.getRandomColor();
-        int number = random.nextInt(maxNumber);
-        return new Ball(color, number);
+        return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAX_NUMBER));
     }
 }
