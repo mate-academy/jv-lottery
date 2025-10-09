@@ -8,14 +8,17 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
+
     public Color getColor() {
         return color;
     }
+
     public int getNumber() {
         return number;
     }
+
     @Override
-    public String toString(){
-        return "Ball{color=" + color + ", number=" + number + "}";
+    public String toString() {
+        return "Ball{color=" + color + ",number=" + number + "}";
     }
 }
