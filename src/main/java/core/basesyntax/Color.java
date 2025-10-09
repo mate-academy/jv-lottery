@@ -6,5 +6,5 @@ public enum Color {
     BRONZE,
     WHITE,
     BLACK,
-    RED
+    RED;
 }
