@@ -1,19 +1,17 @@
 package core.basesyntax;
 
 public class Application {
+    private static final int BALLS_COUNT = 3; // Використання константи замість magic number
+
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
         System.out.println("--- LOTTERY DRAW ---");
 
-        // Створюємо та виводимо три кульки
-        Ball ball1 = lottery.getRandomBall();
-        System.out.println("Draw 1: " + ball1);
-
-        Ball ball2 = lottery.getRandomBall();
-        System.out.println("Draw 2: " + ball2);
-
-        Ball ball3 = lottery.getRandomBall();
-        System.out.println("Draw 3: " + ball3);
+        // Використання for-loop для створення кількох об'єктів
+        for (int i = 0; i < BALLS_COUNT; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println("Draw " + (i + 1) + ": " + ball);
+        }
     }
 }

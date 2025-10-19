@@ -9,9 +9,9 @@ public class Ball {
         this.number = number;
     }
 
-    // Перевизначаємо toString() для виведення інформації про кульку
     @Override
     public String toString() {
-        return "Ball {color: " + color + ", number: " + number + "}";
+        // Використовуємо color.name() замість неявного toString()
+        return "Ball {color: " + color.name() + ", number: " + number + "}";
     }
 }
