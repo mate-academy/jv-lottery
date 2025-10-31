@@ -9,5 +9,11 @@ public enum Colors {
     PURPLE,
     WHITE,
     BLACK,
-    GRAY
+    GRAY,
+    PINK,
+    CYAN,
+    BROWN,
+    CHERRY,
+    AQUAMARINE,
+    INDIGO
 }
