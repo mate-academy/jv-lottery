@@ -11,3 +11,4 @@ public class Lottery {
         return new Ball(colorSupplier.getRandomColor(), random.nextInt(MAX_NUMBER + 1));
     }
 }
+
