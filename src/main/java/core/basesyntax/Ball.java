@@ -21,7 +21,7 @@ public class Ball {
     public String toString() {
         return "Ball{"
                 +
-                "color='" + getColor() + '\''
+                "color=" + getColor() + ""
                 +
                 ", number=" + getNumber()
                 +
