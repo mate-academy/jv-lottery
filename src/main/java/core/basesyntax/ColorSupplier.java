@@ -3,11 +3,10 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public Color getRandomColor() {
         Color[] colors = Color.values();
-        int index = random.nextInt(colors.length);
-        return colors[index];
+        return colors[random.nextInt(colors.length)];
     }
 }
