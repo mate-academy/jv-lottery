@@ -6,6 +6,7 @@ public class Lottery {
     private static final int MAX_NUMBER = 100;
     private static final String[] COLORS = {"Red", "Blue", "Green", "Yellow", "Black", "White"
     };
+    private final ColorSupplier colorSupplier = new ColorSupplier();
 
     private Random random = new Random();
 
