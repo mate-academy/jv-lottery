@@ -8,9 +8,6 @@ public class ColorSupplier {
     private final Random random = new Random();
 
     public Color getRandomColor() {
-
-        Color[] values = Color.values();
-        int idx = random.nextInt(values.length);
-        return values[idx];
+        return Color.values()[random.nextInt(Color.values().length)];
     }
 }
