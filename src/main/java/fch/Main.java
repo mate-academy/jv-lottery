@@ -4,7 +4,7 @@ import fch.models.Ball;
 import fch.models.Lottery;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
 
         /*
         Program creates three instances of Ball class using getRandomBall method from the Lottery class.
@@ -12,17 +12,15 @@ public class Main {
         It prints information about each instance calling toString method.
          */
 
-        Ball randomBall1 = Lottery.getRandomBall();
+        Lottery lottery = new Lottery();
 
-        Ball randomBall2 = Lottery.getRandomBall();
+        for (int i = 0; i < 3; i++) {
 
-        Ball randomBall3 = Lottery.getRandomBall();
+            Ball randomBall = lottery.getRandomBall();
 
-        System.out.println(randomBall1.toString());
+            System.out.println(randomBall.toString());
 
-        System.out.println(randomBall2.toString());
-
-        System.out.println(randomBall3.toString());
+        }
 
     }
 }

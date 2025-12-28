@@ -10,9 +10,11 @@ public class Lottery {
     The method generates a random Integer (0-100) and calls getRandomColor method from ColorSupplier class.
      */
 
-    public static Ball getRandomBall() {
+    public Ball getRandomBall() {
 
-        Color color = ColorSupplier.getRandomColor();
+        ColorSupplier cs = new ColorSupplier();
+
+        Color color = cs.getRandomColor();
 
         int number = new Random().nextInt(101);
 
