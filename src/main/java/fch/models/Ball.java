@@ -11,9 +11,9 @@ public class Ball {
      */
 
 
-    public Color color;
+    private Color color;
 
-    public int number;
+    private int number;
 
     public Ball(Color color, int number) {
 
