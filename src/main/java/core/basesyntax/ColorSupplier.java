@@ -8,4 +8,3 @@ public class ColorSupplier {
         return Colors.values()[index].toString();
     }
 }
-// This method should return a random color, based on the enum values (use the Random class for this)
