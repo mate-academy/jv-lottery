@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Ball {
-    private String color;
+    private Color color; // Використовуємо Enum замість String
     private int number;
 
-    public Ball(String color, int number) {
+    public Ball(Color color, int number) {
         this.color = color;
         this.number = number;
     }
@@ -12,17 +12,8 @@ public class Ball {
     @Override
     public String toString() {
         return "Ball{"
-                + "color='" + color + '\''
-                + ", number=" + number
+                + "color='" + color
+                + "', number=" + number
                 + '}';
-    }
-
-    public enum Color {
-        RED,
-        BLUE,
-        GREEN,
-        YELLOW,
-        WHITE,
-        BLACK
     }
 }
