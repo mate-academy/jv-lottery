@@ -11,7 +11,7 @@ public class Lottery {
         String color = colorSupplier.getRandomColor();
 
         // 2. Генеруємо випадкове число до 100
-        int number = random.nextInt(100);
+        int number = random.nextInt(101);
 
         // 3. Створюємо і повертаємо новий об'єкт Ball з цими даними
         return new Ball(color, number);
