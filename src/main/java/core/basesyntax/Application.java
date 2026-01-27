@@ -1,14 +1,13 @@
 package core.basesyntax;
 
 public class Application {
+    private static final int BALL_COUNT = 3;
+
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
 
-        // Цикл для створення та виведення 3 кульок
-        for (int i = 0; i < 3; i++) {
-            Ball ball = lottery.getRandomBall();
-            // Метод toString() у класі Ball спрацює автоматично при виведенні
-            System.out.println(ball);
+        for (int i = 0; i < BALL_COUNT; i++) {
+            System.out.println(lottery.getRandomBall());
         }
     }
 }

@@ -3,17 +3,17 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
+    private static final int MAX_NUMBER = 100;
     private final ColorSupplier colorSupplier = new ColorSupplier();
     private final Random random = new Random();
 
     public Ball getRandomBall() {
-        // 1. Отримуємо випадковий колір через наш саплайєр
         String color = colorSupplier.getRandomColor();
 
-        // 2. Генеруємо випадкове число до 100
-        int number = random.nextInt(101);
+        // random.nextInt(100) дає від 0 до 99.
+        // Щоб включити 100, треба писати 101 або (MAX_NUMBER + 1)
+        int number = random.nextInt(MAX_NUMBER + 1);
 
-        // 3. Створюємо і повертаємо новий об'єкт Ball з цими даними
         return new Ball(color, number);
     }
 }
