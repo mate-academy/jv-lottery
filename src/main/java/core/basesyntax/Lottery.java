@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Lottery {
     private static final int numberUpTo = 101;
-    private Random rn;
-    private ColorSupplier colorSupplier;
+    private Random rn = new Random();
+    private ColorSupplier colorSupplier = new ColorSupplier();
 
     public void setRn(Random rn) {
         this.rn = rn;
