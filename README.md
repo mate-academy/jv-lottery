@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# mate_test_repository
+=======
 # jv-lottery
 
 Let's create a simple lottery that will return balls with a random color and random number.
@@ -15,3 +18,4 @@ To test the program, in the main() method, create three balls using the `getRand
 And print information about them in the console.
 
 #### [Try to avoid these common mistakes, while solving task](./checklist.md)
+>>>>>>> b478459708f54a5527b8183f5e30d6efea512eec
