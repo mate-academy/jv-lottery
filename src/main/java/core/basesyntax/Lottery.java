@@ -5,6 +5,7 @@ import java.util.Random;
 public class Lottery extends ColorSupplier {
     private static final int MAX_BALL_NUMBER = 101;
     private final Random random = new Random();
+
     public Lottery() {
     }
 
