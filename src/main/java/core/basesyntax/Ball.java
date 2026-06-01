@@ -1,5 +1,4 @@
 package core.basesyntax;
-package core.basesyntax;
 
 public class Ball {
     private Color color;
