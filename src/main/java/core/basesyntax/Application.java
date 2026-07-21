@@ -8,8 +8,6 @@ public class Application {
             balls[i] = lottery.getRandomBall();
             System.out.println(balls[i]);
         }
-
-        // create three balls using class Lottery and print information about them in console
     }
 }
 
