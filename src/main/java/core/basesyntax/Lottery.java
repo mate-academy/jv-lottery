@@ -4,16 +4,17 @@ import java.util.Random;
 
 public class Lottery {
     private static final int MAX_LOTTERY_NUMBER = 100;
+    ColorSupplier colorSupplier = new ColorSupplier();
+    Random random = new Random();
 
     public Ball getRandomBall() {
         Ball ball = new Ball();
 
-        ColorSupplier colorSupplier = new ColorSupplier();
-        ball.setColor(colorSupplier.getRandomColor());
+        String ballColor = colorSupplier.getRandomColor();
+        ball.setColor(ballColor);
 
-        Random random = new Random();
-        int n = random.nextInt(MAX_LOTTERY_NUMBER + 1);
-        ball.setNumber(n);
+        int ballNumber = random.nextInt(MAX_LOTTERY_NUMBER + 1);
+        ball.setNumber(ballNumber);
 
         return ball;
     }
