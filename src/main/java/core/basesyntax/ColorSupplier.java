@@ -10,11 +10,6 @@ public class ColorSupplier {
         int index = random.nextInt(n);
 
         Colors color = Colors.values()[index];
-        return switch (color) {
-            case RED -> "red";
-            case BLUE -> "blue";
-            case YELLOW -> "yellow";
-            case GREEN -> "green";
-        };
+        return color.name();
     }
 }
