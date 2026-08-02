@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Ball {
     private final Colors colors;
     private final int number;
