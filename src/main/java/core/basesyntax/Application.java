@@ -5,12 +5,10 @@ public class Application {
         // create three balls using class Lottery and print information about them in console
         Lottery lottery = new Lottery();
 
-        Ball ball1 = lottery.getRandomBall();
-        Ball ball2 = lottery.getRandomBall();
-        Ball ball3 = lottery.getRandomBall();
+        for (int i = 0; i < 3; i++) {
+            Ball ball = lottery.getRandomBall();
+            System.out.println(ball.toString());
+        }
 
-        System.out.println(ball1.toString());
-        System.out.println(ball2.toString());
-        System.out.println(ball3.toString());
     }
 }
