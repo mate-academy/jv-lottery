@@ -8,8 +8,16 @@ public class Ball {
         this.number = number;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     public void setColor(Colors color) {
         this.color = color;
+    }
+
+    public Colors getColor() {
+        return color;
     }
 
     @Override
