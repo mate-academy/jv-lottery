@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public class Ball {
-    private Colors color;
+    private Color color;
     private int number;
 
     public void setNumber(int number) {
@@ -12,11 +12,11 @@ public class Ball {
         return number;
     }
 
-    public void setColor(Colors color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public Colors getColor() {
+    public Color getColor() {
         return color;
     }
 
