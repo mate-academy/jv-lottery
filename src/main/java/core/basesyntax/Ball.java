@@ -8,10 +8,6 @@ public class Ball {
         this.color = color;
         this.number = number;
     }
-
-    public Ball(String color) {
-        this.color = color;
-    }
     
     public String getColor() {
         return color;
