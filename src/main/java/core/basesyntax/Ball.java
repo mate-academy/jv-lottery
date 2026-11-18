@@ -1,14 +1,19 @@
 package core.basesyntax;
 
-public class Balls {
-    private String color;
+public class Ball {
+    private Color color;
     private int number;
+
+    public Ball(Color color, int number) {
+        this.color = color;
+        this.number = number;
+    }
 
     public int getNumber() {
         return number;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -16,15 +21,15 @@ public class Balls {
         this.number = number;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
     @Override
-    public String toString(){
-    return "Ball{"
-        + "color = " + color
-        + ", number = " + number
-        + '}';
+    public String toString() {
+        return "Ball{"
+                + "color = " + color
+                + ", number = " + number
+                + '}';
     }
 }
